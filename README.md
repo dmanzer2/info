@@ -1,2 +1,2 @@
-# info.github.io
+# dminfo.github.io
 my professional site
