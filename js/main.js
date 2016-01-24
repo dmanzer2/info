@@ -195,7 +195,7 @@ MANZER.contactForm = function(){
 
 		$.ajax({
 			type: "POST",
-			url: "php/contact.php",
+			url: "../php/contact.php",
 			data: fields,
 			dataType: 'json',
 			success: function(response) {
