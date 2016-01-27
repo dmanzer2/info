@@ -1,0 +1,29 @@
+{
+  "name": "dminfo.github.io",
+  "homepage": "https://github.com/dmanzer2/dminfo.github.io",
+  "authors": [
+    "David Manzer <dmanzer2@gmail.com>"
+  ],
+  "description": "personal site",
+  "main": "index.html",
+  "moduleType": [
+    "es6",
+    "node"
+  ],
+  "keywords": [
+    "design",
+    "development",
+    "site"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "handlebars": "~4.0.5"
+  }
+}
