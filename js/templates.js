@@ -39,7 +39,7 @@
 		return out + '</ul>';
 	});
 
-	var template = Handlebars.compile(document.getElementById('people-template').innerHTML);
+	var template = Handlebars.compile(document.getElementById('work-template').innerHTML);
 
 	content.innerHTML = template(data);
 
