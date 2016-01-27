@@ -9,7 +9,7 @@
 <!-- Meta Tags -->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<title>David Manzer // Design and Front End Developer</title>
+<title>David Manzer </ Design and Front End Developer</title>
 <meta name="description" content="David Manzer's professional website" />
 
 <!-- Mobile Specifics -->
@@ -22,31 +22,23 @@
 
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
-
 <!-- Main Style -->
 <link href="css/main.css" rel="stylesheet">
-
 <!-- Supersized -->
 <link href="css/supersized.css" rel="stylesheet">
 <link href="css/supersized.shutter.css" rel="stylesheet">
-
 <!-- FancyBox -->
 <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
-
 <!-- Font Icons -->
 <link href="css/fonts.css" rel="stylesheet">
-
 <!-- Shortcodes -->
 <link href="css/shortcodes.css" rel="stylesheet">
-
 <!-- Responsive -->
 <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
 <link href="css/responsive.css" rel="stylesheet">
-
 <!-- Supersized -->
 <link href="css/supersized.css" rel="stylesheet">
 <link href="css/supersized.shutter.css" rel="stylesheet">
-
 <!-- Google Font -->
 <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
 
@@ -61,7 +53,27 @@
 <!-- Modernizr -->
 <script src="js/modernizr.js"></script>
 
-<!-- Analytics -->
+
+
+
+<!--Handlebars tempalting control here-->
+<script src="bower_components/handlebars/handlebars.js"></script>
+	<script id="people-template" type="text/template">
+		{{! This is a comment}}
+		<!-- This is an HTML comment -->
+		<h1>{{bold title}}</h1>
+		{{#list people}}
+			<h1>{{name}}</h1>
+			<div>{{email}}</div>
+		{{/list}}
+	</script>
+<script src="js/templating.js"></script>
+
+
+
+
+
+
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -75,7 +87,6 @@
   })();
 
 </script>
-<!-- End Analytics -->
 
 </head>
 
