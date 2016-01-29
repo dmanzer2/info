@@ -1,5 +1,5 @@
 (function(){
-	var content = document.getElementById('content');
+	var content = document.getElementById('work-template');
 	var html = '';
 	var data = {
 		title: 'Really cool people',

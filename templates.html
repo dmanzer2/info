@@ -53,6 +53,18 @@
 <!-- Modernizr -->
 <script src="js/modernizr.js"></script>
 
+
+
+
+<!--Handlebars tempalate control here-->
+<script src="bower_components/handlebars/handlebars.js"></script>
+
+
+
+
+
+
+
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'Insert Your Code']);
@@ -118,9 +130,14 @@
 <!-- End Header -->
 
 <!-- Our Work Section -->
+
+
+<div id="work-template"></div>
+
 <div id="work" class="page">
 	<div class="container">
-    	<!-- Title Page -->
+
+      <!-- Title Page -->
         <div class="row">
             <div class="span12">
                 <div class="title-page">
@@ -130,6 +147,34 @@
             </div>
         </div>
         <!-- End Title Page -->
+
+
+
+
+
+
+
+        <!--Template-->
+        <script id="work-template" type="text/template">
+          {{! This is a comment }}
+          <h1>{{bold title}}</h1>
+          {{#list people}}
+            <h1>{{name}}</h1>
+            <div>{{email}}</div>
+          {{/list}}
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -642,6 +687,7 @@
 
 <!-- Js -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
+<script src="js/templates.js"></script>
 <script src="js/bootstrap.min.js"></script> <!-- Bootstrap -->
 <script src="js/supersized.3.2.7.min.js"></script> <!-- Slider -->
 <script src="js/waypoints.js"></script> <!-- WayPoints -->
