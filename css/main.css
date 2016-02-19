@@ -317,7 +317,7 @@ h3.spec {
 	text-shadow: none;
 }
 
-@media (min-width: 465px) {
+@media only screen and (max-width: 450px) {
 	#home-slider .slide-content {
 		font-size: 40px;
 	}
