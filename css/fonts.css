@@ -14,7 +14,7 @@ Font-Face Icons
 }
 
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
-[data-icon]:before {
+[data-fa]:before {
 	font-family: 'Icons';
 	content: attr(data-icon);
 	speak: none;
