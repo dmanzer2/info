@@ -14,7 +14,7 @@ Font-Face Icons
 }
 
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
-[data-icon]:before, [data-fa]:before {
+[data-icon]:before {
 	font-family: 'Icons';
 	content: attr(data-icon);
 	speak: none;
@@ -25,7 +25,7 @@ Font-Face Icons
 	-webkit-font-smoothing: antialiased;
 }
 
-[class^="font-"]:before, [class*=" font-"]:before, [class^="fa-"]:before, [class*=" fa-"]:before {
+[class^="font-"]:before, [class*=" font-"]:before {
 	font-family: 'Icons';
 	speak: none;
 	font-style: normal;
@@ -35,7 +35,7 @@ Font-Face Icons
 	-webkit-font-smoothing: antialiased;
 }
 
-[class^="font-"], [class*=" font-"], [class*=" fa-"], [class*=" fa-"]{
+[class^="font-"], [class*=" font-"]{
 	display:inline-block;
 	line-height:1em;
 }
