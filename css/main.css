@@ -281,6 +281,7 @@ h3.spec {
    Home Slider
 ================================================== */
 
+
 #home-slider {
 	position: relative;
 	overflow: hidden;
@@ -314,6 +315,12 @@ h3.spec {
 	margin: 0;
 	text-align: center;
 	text-shadow: none;
+}
+
+@media (max-width: 465px) {
+	#home-slider .slide-content {
+		font-size: 40px;
+	}
 }
 
 #home-slider .slide-content {
