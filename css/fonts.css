@@ -25,7 +25,7 @@ Font-Face Icons
 	-webkit-font-smoothing: antialiased;
 }
 
-[class^="font-"]:before, [class*=" font-"]:before {
+[class^="fa-"]:before, [class*=" fa-"]:before {
 	font-family: 'Icons';
 	speak: none;
 	font-style: normal;
@@ -35,8 +35,8 @@ Font-Face Icons
 	-webkit-font-smoothing: antialiased;
 }
 
-[class^="font-"],
-[class*=" font-"]{
+[class^="fa-"],
+[class*=" fa-"]{
 	display:inline-block;
 	line-height:1em;
 }
@@ -783,4 +783,3 @@ you can use the generic selector below, but it's slower:
 .font-icon-adjust:before {
 	content: "\e0f1";
 }
-
