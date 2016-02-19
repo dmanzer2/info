@@ -112,7 +112,7 @@
 	}
 
 	.type-work {
-		background: url() no-repeat;
+		background: url(../img/filter-icon.png) no-repeat;
 		width: 16px;
 		height: 16px;
 		display: inline-block;
@@ -406,7 +406,7 @@
 		}
 
 		.type-work {
-			background-image: url();
+			background-image: url(../img/filter-icon_@2x.png);
 			background-size: 16px 16px;
 		}
 	}
