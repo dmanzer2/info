@@ -317,17 +317,17 @@ h3.spec {
 	text-shadow: none;
 }
 
-@media only screen and (max-width: 450px) {
-	#home-slider .slide-content {
-		font-size: 40px;
-	}
-}
-
 #home-slider .slide-content {
 	font-size: 60px;
 	color: #FFFFFF;
 	letter-spacing: -3px;
 	text-transform: uppercase;
+}
+
+@media only screen and (max-width: 450px) {
+	#home-slider .slide-content {
+		font-size: 40px;
+	}
 }
 
 #home-slider .control-nav {
