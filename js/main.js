@@ -223,7 +223,7 @@ MANZER.tweetFeed = function(){
 
     $("#ticker").tweet({
           modpath: 'js/twitter/',
-          username: "Bluxart", // Change this with YOUR ID
+          username: "dmanzer2", // Change this with YOUR ID
           page: 1,
           avatar_size: 0,
           count: 10,
