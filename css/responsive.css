@@ -397,7 +397,7 @@
 
 		header #logo a {
 			background-image: url(../img/dm-logo_@2x.png);
-			background-size: 96px 30px;
+			background-size: auto 30px;
 		}
 
 		.menu-nav {
@@ -408,5 +408,6 @@
 		.type-work {
 			background-image: url(../img/filter-icon_@2x.png);
 			background-size: 16px 16px;
+			background-repeat: no-repeat;
 		}
 	}
