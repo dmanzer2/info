@@ -201,11 +201,11 @@ MANZER.contactForm = function(){
 			success: function(response) {
 
 				if(response.status){
-					$('#contact-form input').val('');
-					$('#contact-form textarea').val('');
+					$('#contact-form input').val('input success');
+					$('#contact-form textarea').val('textarea success');
 				}
 
-				$('#response').empty('Thank you!').html(response.html);
+				$('#response').empty().html(response.html);
 			}
 		});
 		return false;
