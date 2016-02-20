@@ -205,7 +205,7 @@ MANZER.contactForm = function(){
 					$('#contact-form textarea').val('');
 				}
 
-				$('#response').empty().html(response.html);
+				$('#response').empty('Thank you!').html(response.html);
 			}
 		});
 		return false;
