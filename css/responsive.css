@@ -406,7 +406,7 @@
 		}
 
 		.type-work {
-			background-image: url(../img/filter-icon_@2x.png);
+			/*background-image: url(../img/filter-icon_@2x.png);*/
 			background-size: 16px 16px;
 			background-repeat: no-repeat;
 		}
