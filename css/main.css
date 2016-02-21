@@ -325,9 +325,19 @@ h3.spec {
 	text-transform: uppercase;
 }
 
+#home-slider .slide-content-title {
+	font-size: 40px;
+	color: #FFFFFF;
+	letter-spacing: -3px;
+	text-transform: uppercase;
+}
+
 @media only screen and (max-width: 450px) {
 	#home-slider .slide-content {
 		font-size: 40px;
+	}
+	#home-slider .slide-content-title {
+		font-size: 20px;
 	}
 }
 
