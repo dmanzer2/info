@@ -312,7 +312,7 @@ h3.spec {
 
 #home-slider #slidecaption {
 	width: 100%;
-	line-height: 250px;
+	line-height: 5px;
 	margin: 0;
 	text-align: center;
 	text-shadow: none;
@@ -327,7 +327,7 @@ h3.spec {
 
 #home-slider .slide-content-title {
 	font-size: 40px;
-	color: #FFFFFF;
+	color: #eee;
 	letter-spacing: -3px;
 	text-transform: uppercase;
 }
