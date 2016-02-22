@@ -962,6 +962,11 @@ nav#menu #menu-nav li a:hover {
 form#contact-form p input:focus {
 	color:#e9322d;
 	border:1px solid #e9322d;
+	-webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
 }
 
 #contact-form input {
