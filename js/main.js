@@ -187,6 +187,7 @@ MANZER.fancyBox = function(){
    Contact Form
 ================================================== */
 
+
 MANZER.contactForm = function(){
 	$('#contact-form');
 	$contactForm.submit(function(e) {
@@ -210,6 +211,7 @@ MANZER.contactForm = function(){
 		});
 	});
 }
+
 
 /* ==================================================
    Twitter Feed
