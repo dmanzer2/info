@@ -959,6 +959,10 @@ nav#menu #menu-nav li a:hover {
   resize: none;
 }
 
+#contact-form input.submit {
+	border:none;
+}
+
 form#contact-form p input:focus,
 form#contact-form p textarea:focus {
 	color:#e9322d;
