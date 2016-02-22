@@ -187,7 +187,6 @@ MANZER.fancyBox = function(){
    Contact Form
 ================================================== */
 
-
 MANZER.contactForm = function(){
 
 	var $contactForm = $('#contact-form');
@@ -204,9 +203,10 @@ MANZER.contactForm = function(){
 			success: function(data) {
 				$contactForm.find('.alert-standard').fadeOut(1500);
 				$contactForm.append('<div class="alert alert-success">Message sent!</div>');
+				$contactForm.fadeOut(3500);
 			},
 			error: function(err) {
-				$contactForm.find('.alert-standard').hide(1500);
+				$contactForm.find('.alert-standard').fadeOut(3500);
 				$contactForm.append('<div class="alert alert-error">Ops, there was an error.</div>');
 			}
 		});
