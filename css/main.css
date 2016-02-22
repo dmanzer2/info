@@ -959,8 +959,8 @@ nav#menu #menu-nav li a:hover {
     resize: none;
 }
 
-#contact-form input:focus,
-#contact-form textarea:focus {
+input#contact_name:focus,
+textarea#contact_message:focus {
 	color:#e9322d;
 	border:1px solid #e9322d;
 	-webkit-transition: background 0.1s linear 0s, color 0.1s linear 0s;
