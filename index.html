@@ -1227,10 +1227,34 @@
       <!-- End Title Page -->
 
       <!-- Contact Form -->
+
+
       <div class="row">
         <div class="span9">
 
-          <form id="contact-form" class="contact-form" action="php/contact.php">
+          <form name="sendMessage" id="contactForm" class="contact-form" novalidate>
+            <p class="contact-name">
+              <input id="name" type="text" placeholder="Full Name" required data-validation-required-message="Please enter your name." />
+              <span class="help-block text-danger"></span>
+            </p>
+            <p class="contact-email">
+
+              <input id="email" type="email" placeholder="Email Address" required data-validation-required-message="Please enter email address." />
+              <span class="help-block text-danger"></span>
+            </p>
+            <p class="contact-message">
+
+              <textarea id="message" placeholder="Your Message" rows="15" cols="40" required data-validation-required-message="Please enter a message."></textarea>
+              <span class="help-block text-danger"></span>
+            </p>
+            <p class="contact-submit">
+              <a id="contact-submit" class="submit" href="#">Send Your Email</a>
+            </p>
+            <div id="success"></div>
+          </form>
+
+
+          <!--<form id="contact-form" class="contact-form" action="php/contact.php">
             <p class="contact-name">
               <input id="contact_name" type="text" placeholder="Full Name" value="" name="name" />
             </p>
@@ -1244,7 +1268,7 @@
               <a id="contact-submit" class="submit" href="#">Send Your Email</a>
             </p>
             <div id="response"></div>
-          </form>
+          </form>-->
 
         </div>
 
