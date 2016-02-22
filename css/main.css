@@ -1003,6 +1003,10 @@ nav#menu #menu-nav li a:hover {
 	color: #FFFFFF;
 }
 
+.is-hidden {
+	display: none;
+}
+
 
 /* ==================================================
    Twitter Feed
