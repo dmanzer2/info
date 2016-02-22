@@ -959,7 +959,7 @@ nav#menu #menu-nav li a:hover {
   resize: none;
 }
 
-p.contact-* input:focus {
+form#contact-form input:focus {
 	color:#e9322d;
 	border:1px solid #e9322d;
 }
