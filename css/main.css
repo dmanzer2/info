@@ -959,11 +959,24 @@ nav#menu #menu-nav li a:hover {
   resize: none;
 }
 
-form#contact-form p input:focus,
-form#contact-form p textarea:focus {
-	color:#e9322d;
-	border:1px solid #e9322d;
+
+input[type=text], textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #2F3238;
 }
+
+input[type=text]:focus, textarea:focus {
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(233, 50, 45, 1);
+}
+
 
 #contact-form input {
     width: 100%;
