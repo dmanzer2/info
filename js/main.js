@@ -199,7 +199,7 @@ MANZER.contactForm = function(){
 			data: $(this).serialize(),
 			dataType: 'json',
 			beforeSend: function() {
-				$contactForm.append('<div class="alert alert-standard">Sending message…</div>');
+				$contactForm.append('<div class="alert alert-standard">Sending message…</div>').fadeOut(1000);
 			},
 			success: function(data) {
 				$contactForm.find('.alert--loading').hide();
