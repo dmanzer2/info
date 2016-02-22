@@ -207,7 +207,8 @@ MANZER.contactForm = function(){
 			error: function(err) {
 				$contactForm.find('.alert-standard').hide();
 				$contactForm.append('<div class="alert alert-error">Ops, there was an error.</div>');
-			}
+			},
+			cache: false
 		});
 	});
 
