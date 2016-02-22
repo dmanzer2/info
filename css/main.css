@@ -959,14 +959,15 @@ nav#menu #menu-nav li a:hover {
   resize: none;
 }
 
-form#contact-form p input:focus {
+form#contact-form p input:focus,
+form#contact-form p textarea:focus {
 	color:#e9322d;
 	border:1px solid #e9322d;
-	-webkit-transition: opacity 1s ease-in;
-    -moz-transition: opacity 1s ease-in;
-    -o-transition: opacity 1s ease-in;
-    -ms-transition: opacity 1s ease-in;
-    transition: opacity 1s ease-in;
+	-webkit-transition: opacity .15s ease-in;
+    -moz-transition: opacity .15s ease-in;
+    -o-transition: opacity .15s ease-in;
+    -ms-transition: opacity .15s ease-in;
+    transition: opacity .15s ease-in;
 }
 
 #contact-form input {
