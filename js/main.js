@@ -199,14 +199,14 @@ MANZER.contactForm = function(){
 			data: $(this).serialize(),
 			dataType: 'json',
 			beforeSend: function() {
-				$contactForm.append('<div class="alert alert-standard">Sending message…</div>').fadeOut(1000);
+				$contactForm.append('<div class="alert alert-standard">Sending message…</div>');
 			},
 			success: function(data) {
-				$contactForm.find('.alert--loading').hide();
+				$contactForm.find('.alert-standard').fadeOut(1500);
 				$contactForm.append('<div class="alert alert-success">Message sent!</div>');
 			},
 			error: function(err) {
-				$contactForm.find('.alert--loading').hide();
+				$contactForm.find('.alert-standard').hide(1500);
 				$contactForm.append('<div class="alert alert-error">Ops, there was an error.</div>');
 			}
 		});
