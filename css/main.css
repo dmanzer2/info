@@ -337,8 +337,14 @@ h3.spec {
 		font-size: 40px;
 	}
 	#home-slider .slide-content-title {
-		font-size: 20px;
+		font-size: 16px;
 	}
+
+	#home-slider #slidecaption {
+		line-height: 35px;
+		letter-spacing: -1px;
+	}
+
 }
 
 #home-slider .control-nav {
