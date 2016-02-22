@@ -1231,28 +1231,21 @@
 
       <div class="row">
         <div class="span9">
-
-          <form name="sendMessage" id="contactForm" class="contact-form" novalidate>
+          <form id="contact-form" class="contact-form" action="//formspree.io/dmanzer2@gmail.com" method="POST">
             <p class="contact-name">
-              <input id="name" type="text" placeholder="Full Name" required data-validation-required-message="Please enter your name." />
-              <span class="help-block text-danger"></span>
+              <input id="contact_name" type="text" placeholder="Full Name" value="" name="name" />
             </p>
             <p class="contact-email">
-
-              <input id="email" type="email" placeholder="Email Address" required data-validation-required-message="Please enter email address." />
-              <span class="help-block text-danger"></span>
+              <input id="contact_email" type="email" placeholder="Email Address" value="" name="_replyto" />
             </p>
             <p class="contact-message">
-
-              <textarea id="message" placeholder="Your Message" rows="15" cols="40" required data-validation-required-message="Please enter a message."></textarea>
-              <span class="help-block text-danger"></span>
+              <textarea id="contact_message" placeholder="Your Message" name="message" rows="15" cols="40"></textarea>
             </p>
             <p class="contact-submit">
-              <a id="contact-submit" class="submit" href="#">Send Your Email</a>
+              <a id="contact-submit" class="submit" href="#" type="submit" value="Send">Send Your Email</a>
             </p>
-            <div id="success"></div>
+            <div id="response"></div>
           </form>
-
 
           <!--<form id="contact-form" class="contact-form" action="php/contact.php">
             <p class="contact-name">
