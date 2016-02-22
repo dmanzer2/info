@@ -335,14 +335,15 @@ h3.spec {
 @media only screen and (max-width: 450px) {
 	#home-slider .slide-content {
 		font-size: 40px;
+		letter-spacing: -2px;
 	}
 	#home-slider .slide-content-title {
 		font-size: 16px;
+		letter-spacing: -1px;
 	}
 
 	#home-slider #slidecaption {
 		line-height: 35px;
-		letter-spacing: -1px;
 	}
 
 }
