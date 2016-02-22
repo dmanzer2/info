@@ -187,12 +187,14 @@ MANZER.fancyBox = function(){
    Contact Form
 ================================================== */
 
+
 MANZER.contactForm = function(){
-	$('#contact-form');
+
+	var $contactForm = $('#contact-form');
 	$contactForm.submit(function(e) {
 		e.preventDefault();
 		$.ajax({
-			url: '//formspree.io/dmanzer2@email.com',
+			url: '//formspree.io/dmanzer2@gmail.com',
 			method: 'POST',
 			data: $(this).serialize(),
 			dataType: 'json',
@@ -209,6 +211,7 @@ MANZER.contactForm = function(){
 			}
 		});
 	});
+
 }
 
 /* ==================================================
