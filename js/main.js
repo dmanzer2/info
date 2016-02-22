@@ -188,78 +188,31 @@ MANZER.fancyBox = function(){
 ================================================== */
 
 
-var $firstName = name; // success and fail message
-//checking for white space
-if (firstName.indexOf(' ') >= 0) {
-		firstName = name.split(' ').slice(0, -1).join(' ');
-}
+MANZER.contactForm = function(){
 
-$.ajax({
-  url: '//formspree.io/dmanzer2@gmail.com',
-  method: 'POST',
-  data: $('#contact-form').serialize(),
-  dataType: 'json',
-	cache: false,
-  beforeSend: function() {
-		$('#success').html("<div class=''>");
-		$('#success > .alert-success').html("<button type='button' class='' data-dismiss='alert' aria-hidden='true'>&times;")
-			.append("</button>");
-		$('#success > .alert-success')
-				.append("<strong>Your message is sending.</strong>");
-		$('#success > .alert-success')
-			.append('</div>');
-		//clear fields
-		$('#contactForm').trigger("reset");
-	},
-  success: function(data) {
-		$('#success').html("<div class=''>");
-		$('#success > .alert-success').html("<button type='button' class='' data-dismiss='alert' aria-hidden='true'>&times;")
-			.append("</button>");
-		$('#success > .alert-success')
-				.append("<strong>Your message has been sent.</strong>");
-		$('#success > .alert-success')
-			.append('</div>');
-		//clear fields
-		$('#contactForm').trigger("reset");
-	},
-	error: fuction(err) {
-		//Failed send
-		$('#success').html("<div class=''>");
-		$('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-			.append("</button>");
-		$('#success > .alert-danger').append("<strong>Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later.");
-		$('#success > .alert-danger').append('</div>');
-		//clear fields
-		$('#contactForm').trigger("reset");
-	}
-
-});
-
-/*MANZER.contactForm = function(){
-	$("#contact-submit").on('click',function() {
-		$contact_form = $('#contact-form');
-
-		var fields = $contact_form.serialize();
-
+	var $contactForm = $('#contact-form');
+	$contactForm.submit(function(e) {
+		e.preventDefault();
 		$.ajax({
-			type: "POST",
-			url: "../php/contact.php",
-			data: fields,
+			url: '//formspree.io/dmanzer2@gmail.com',
+			method: 'POST',
+			data: $(this).serialize(),
 			dataType: 'json',
-			success: function(response) {
-
-				if(response.status){
-					$('#contact-form input').val('');
-					$('#contact-form textarea').val('');
-				}
-
-				$('#response').empty().html(response.html);
+			beforeSend: function() {
+				$contactForm.append('<div class="alert alert--loading">Sending message…</div>');
+			},
+			success: function(data) {
+				$contactForm.find('.alert--loading').hide();
+				$contactForm.append('<div class="alert alert--success">Message sent!</div>');
+			},
+			error: function(err) {
+				$contactForm.find('.alert--loading').hide();
+				$contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
 			}
 		});
-		return false;
 	});
-}*/
 
+}
 
 /* ==================================================
    Twitter Feed
