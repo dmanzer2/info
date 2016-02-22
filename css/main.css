@@ -963,11 +963,12 @@ form#contact-form p input:focus,
 form#contact-form p textarea:focus {
 	color:#e9322d;
 	border:1px solid #e9322d;
-	-webkit-transition: opacity .15s ease-in;
-    -moz-transition: opacity .15s ease-in;
-    -o-transition: opacity .15s ease-in;
-    -ms-transition: opacity .15s ease-in;
-    transition: opacity .15s ease-in;
+	-webkit-transition: border-color ease-in-out .15s;
+    -moz-transition: border-color ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s;
+    -ms-transition: border-color ease-in-out .15s;
+    transition: border-color ease-in-out .15s;
+
 }
 
 #contact-form input {
