@@ -202,7 +202,7 @@ MANZER.contactForm = function(){
 			},
 			success: function(data) {
 				$contactForm.find('.alert-standard').fadeOut(1500);
-				$contactForm.append('<div class="alert alert-success">Message sent!</div>');
+				$contactForm.append('<div class="alert alert-success close">Message sent!</div>');
 			},
 			error: function(err) {
 				$contactForm.find('.alert-standard').hide();
@@ -411,7 +411,7 @@ $(document).ready(function(){
 						Placeholders.init({
 						live: true,
 						hideOnFocus: false,
-						className: "yourClass",
+						className: "",
 						textColor: "#999"
 						});
 				}
