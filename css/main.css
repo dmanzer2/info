@@ -1004,7 +1004,7 @@ nav#menu #menu-nav li a:hover {
 }
 
 .is-hidden {
-	display: none;
+	display: none !important;
 }
 
 
