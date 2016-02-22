@@ -202,6 +202,7 @@ MANZER.contactForm = function(){
 			success: function(data) {
 				$contactForm.find('.alert--loading').hide();
 				$contactForm.append('<div class="alert alert--success">Message sent!</div>');
+				$('contactForm').trigger("reset");
 			},
 			error: function(err) {
 				$contactForm.find('.alert--loading').hide();
