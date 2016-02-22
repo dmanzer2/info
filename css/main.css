@@ -940,33 +940,28 @@ nav#menu #menu-nav li a:hover {
 
 #contact-form input,
 #contact-form textarea {
-    border: none;
+  border: none;
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
-    border-radius: 0;
+  border-radius: 0;
 
-    -webkit-box-shadow: none;
+  -webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
 
 	background: #26292E;
-    color: #FFFFFF;
-    font-size: 16px;
-    height: auto;
-    padding: 15px;
+  color: #FFFFFF;
+  font-size: 16px;
+  height: auto;
+  padding: 15px;
 	margin: 0;
 
-    resize: none;
+  resize: none;
 }
 
-input#contact_name:focus,
-textarea#contact_message:focus {
+p.contact-* input:focus {
 	color:#e9322d;
 	border:1px solid #e9322d;
-	-webkit-transition: background 0.1s linear 0s, color 0.1s linear 0s;
-	   -moz-transition: background 0.1s linear 0s, color 0.1s linear 0s;
-		 -o-transition: background 0.1s linear 0s, color 0.1s linear 0s;
-		    transition: background 0.1s linear 0s, color 0.1s linear 0s;
 }
 
 #contact-form input {
