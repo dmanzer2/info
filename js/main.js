@@ -203,8 +203,8 @@ MANZER.contactForm = function(){
 			success: function(data) {
 				$contactForm.find('.alert-standard').fadeOut(1500);
 				$contactForm.append('<div class="alert alert-success">Message sent!</div>');
-				$contactForm.delay('<div class="alert alert-success">Message sent!</div>', 6500);
-				this.reset('#contact-form');
+				$contactForm.delay(6500).reset();
+
 			},
 			error: function(err) {
 				$contactForm.find('.alert-standard').hide();
