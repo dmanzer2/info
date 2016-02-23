@@ -210,8 +210,9 @@ MANZER.contactForm = function(){
 			},
 			cache: false
 		});
+		$("#contact-form")[0].reset();
 	});
-	$("#contact-form")[0].reset();
+	
 }
 
 
