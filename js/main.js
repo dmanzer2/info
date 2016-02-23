@@ -210,7 +210,7 @@ MANZER.contactForm = function(){
 			},
 			cache: false,
 			complete: {
-				$contactForm[0].reset();
+				$contactForm.reset();
 			}
 		});
 	});
