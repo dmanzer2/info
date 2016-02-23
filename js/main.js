@@ -209,9 +209,7 @@ MANZER.contactForm = function(){
 				$contactForm.append('<div class="alert alert-error">Ops, there was an error.</div>');
 			},
 			cache: false,
-			complete: {
-				$contactForm.reset();
-			}
+			
 		});
 	});
 
