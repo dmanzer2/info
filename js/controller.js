@@ -1,6 +1,6 @@
 var myApp = angular.module('myApp',[]);
 
-dmanzerApp.controller('WorkController', ['$scope', function($scope) {
+myApp.controller('WebController', ['$scope', function($scope) {
   $scope.webdevelopment = [
     {
     "name" : "image-web-01",
