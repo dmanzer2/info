@@ -24,6 +24,6 @@
     "tests"
   ],
   "dependencies": {
-    "handlebars": "~4.0.5"
+    "angular": "^1.5.0"
   }
 }
