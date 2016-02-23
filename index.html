@@ -158,15 +158,16 @@
                 <section id="projects">
                   <ul id="thumbs" ng-controller="WorkController">
 
+
                     <!-- layout Items -->
                   	<li class="item-thumbs span3 layout" ng-repeat="item in layout">
                     	<!-- Full Image -->
-                    	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{description}}" href="img/work/layout-design/full/{{shortname}}-full.jpg">
+                    	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{description}}" ng-href="img/work/layout-design/full/{{shortname}}-full.jpg">
                       	<span class="overlay-img"></span>
                         <span class="overlay-img-thumb font-icon-plus"></span>
                       </a>
                       <!-- Thumb Image and Description -->
-                      <img src="img/work/layout-design/thumbs/{{shortname}}.jpg" alt="">
+                      <ng-src="img/work/layout-design/thumbs/{{shortname}}.jpg" alt="">
                     </li>
                   	<!-- End layout Items -->
 
