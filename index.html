@@ -156,7 +156,7 @@
                   <ul id="thumbs" ng-controller="WorkController">
 
                     <!-- layout Items -->
-                  	<li class="item-thumbs span3 layout clearfix" ng-repeat="item in layout" ng-if="$index % 3 == 0">
+                  	<li class="item-thumbs span3 layout row" ng-repeat="item in layout" ng-if="$index % 3 == 0">
                     	<!-- Full Image -->
                     	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" href="img/work/layout-design/full/{{item.shortname}}-full.jpg">
                       	<span class="overlay-img"></span>
@@ -168,7 +168,7 @@
                   	<!-- End layout Items -->
 
                     <!-- Identity Items -->
-                    <li class="item-thumbs span3 identity clearfix" ng-repeat="item in logos" ng-if="$index % 3 == 0">
+                    <li class="item-thumbs span3 identity row" ng-repeat="item in logos" ng-if="$index % 3 == 0">
                     <!-- Full Image -->
                       <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" href="img/work/logos-branding/full/{{item.shortname}}-full.jpg">
                         <span class="overlay-img"></span>
@@ -181,7 +181,7 @@
 
                     <!--Illustrations Start-->
       							<!-- Item Project and Filter Name -->
-                    <li class="item-thumbs span3 illustration clearfix" ng-repeat="item in illustrations" ng-if="$index % 3 == 0">
+                    <li class="item-thumbs span3 illustration row" ng-repeat="item in illustrations" ng-if="$index % 3 == 0">
                       <!-- Full Image -->
                       <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" href="img/work/illustrations/full/{{item.shortname}}-full.jpg">
                         <span class="overlay-img"></span>
@@ -194,7 +194,7 @@
 
                     <!--Package Design Start-->
                     <!-- Item Project and Filter Name -->
-                    <li class="item-thumbs span3 package clearfix" ng-repeat="item in package" ng-if="$index % 3 == 0">
+                    <li class="item-thumbs span3 package row" ng-repeat="item in package" ng-if="$index % 3 == 0">
                       <!-- Full Image -->
                       <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" href="img/work/package-design/full/{{item.shortname}}-full.jpg">
                         <span class="overlay-img"></span>
@@ -207,7 +207,7 @@
 
                     <!--Web Start-->
                     <!-- Item Project and Filter Name -->
-                    <li class="item-thumbs span3 web clearfix" ng-repeat="item in web" ng-if="$index % 3 == 0">
+                    <li class="item-thumbs span3 web row" ng-repeat="item in web" ng-if="$index % 3 == 0">
                       <!-- Full Image -->
                       <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" href="img/work/web-development/full/{{item.shortname}}-full.jpg">
                         <span class="overlay-img"></span>
@@ -219,7 +219,7 @@
                     <!-- End Item Project -->
 
                     <!-- Email Start -->
-                    <li class="item-thumbs span3 email clearfix" ng-repeat="item in email" ng-if="$index % 3 == 0">
+                    <li class="item-thumbs span3 email row" ng-repeat="item in email" ng-if="$index % 3 == 0">
                       <!-- Full Image -->
                       <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" href="img/work/email-development/full/{{item.shortname}}-full.jpg">
                         <span class="overlay-img"></span>
@@ -231,7 +231,7 @@
                     <!-- End Item Project -->
 
                     <!-- Photography Start -->
-                    <li class="item-thumbs span3 photography clearfix" ng-repeat="item in photo" ng-if="$index % 3 == 0">
+                    <li class="item-thumbs span3 photography row" ng-repeat="item in photo" ng-if="$index % 3 == 0">
                       <!-- Full Image -->
                       <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" href="img/work/creative-photography/full/{{item.shortname}}-full.jpg">
                         <span class="overlay-img"></span>
@@ -243,7 +243,7 @@
                     <!-- End Item Project -->
 
       							<!-- Fonts Start -->
-                    <li class="item-thumbs span3 fonts clearfix" ng-repeat="item in fonts" ng-if="$index % 3 == 0">
+                    <li class="item-thumbs span3 fonts row" ng-repeat="item in fonts" ng-if="$index % 3 == 0">
                       <!-- Full Image -->
                       <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" href="img/work/font-development/full/{{item.shortname}}-full.jpg">
                         <span class="overlay-img"></span>
