@@ -14,6 +14,6 @@ myApp.controller('WorkController', ['$scope', '$http', function ($scope, $http) 
     $scope.package = data;
   });
   $http.get('js/web-dev.json').success(function(data) {
-    $scope.package = data;
+    $scope.web = data;
   });
 }]);
