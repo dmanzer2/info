@@ -1099,7 +1099,7 @@ form#contact-form p textarea:focus {
 	display: block;
 	width: 70px;
 	height: 70px;
-	background: #26292E;
+	background-color: #26292E;
 
 	-webkit-transition: all 400ms ease-out 0s;
 	-moz-transition: all 400ms ease-out 0s;

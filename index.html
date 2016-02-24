@@ -155,171 +155,33 @@
 
             <div class="span9">
               <div class="row">
-                <section id="projects">
-                  <ul id="thumbs" ng-controller="WorkController">
+                <section id="projects" ng-controller="WorkController">
+                  <ul id="thumbs">
 
-                    <!-- layout Items
+
+
+                    <!-- layout Items -->
                   	<li class="item-thumbs span3 layout" ng-repeat="item in layout">
+                    	<!-- Full Image -->
                     	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{description}}" ng-href="img/work/layout-design/full/{{shortname}}-full.jpg">
                       	<span class="overlay-img"></span>
                         <span class="overlay-img-thumb font-icon-plus"></span>
                       </a>
-                      <ng-src="img/work/layout-design/thumbs/{{shortname}}.jpg" alt="">
-                    </li>
-                  	 End layout Items -->
-
-
-
-
-
-
-
-
-
-
-  				          <!-- layout Items -->
-                  	<li class="item-thumbs span3 layout">
-                    	<!-- Full Image -->
-                    	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="img/work/layout-design/full/image-ad-01-full.jpg">
-                      	<span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
                       <!-- Thumb Image and Description -->
-                      <img src="img/work/layout-design/thumbs/image-ad-01.jpg" alt="">
+                      <img ng-src="img/work/layout-design/thumbs/{{shortname}}.jpg" alt="Thumb of {{item.name}}">
                     </li>
                   	<!-- End layout Items -->
 
-                    <!-- Item Project and Filter Name -->
-                  	<li class="item-thumbs span3 layout">
-                    	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                    	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="img/work/layout-design/full/image-ad-02-full.jpg">
-                      	<span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img src="img/work/layout-design/thumbs/image-ad-02.jpg" alt="">
-                    </li>
-                  	<!-- End Item Project -->
 
-                    <!-- Item Project and Filter Name -->
-                  	<li class="item-thumbs span3 layout">
-                    	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                    	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="img/work/layout-design/full/image-ad-03-full.jpg">
-                      	<span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img src="img/work/layout-design/thumbs/image-ad-03.jpg" alt="">
-                    </li>
-                  	<!-- End Item Project -->
 
-                    <!-- Item Project and Filter Name -->
-                  	<li class="item-thumbs span3 layout">
-                    	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                    	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="img/work/layout-design/full/image-ad-04-full.jpg">
-                      	<span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img src="img/work/layout-design/thumbs/image-ad-04.jpg" alt="">
-                    </li>
-                  	<!-- End Item Project -->
 
-                    <!-- Item Project and Filter Name -->
-                  	<li class="item-thumbs span3 layout">
-                    	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                    	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="img/work/layout-design/full/image-ad-05-full.jpg">
-                      	<span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img src="img/work/layout-design/thumbs/image-ad-05.jpg" alt="">
-                    </li>
-                  	<!-- End Item Project -->
 
-                    <!-- Item Project and Filter Name -->
-                  	<li class="item-thumbs span3 layout">
-                    	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                    	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="img/work/layout-design/full/image-ad-06-full.jpg">
-                      	<span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img src="img/work/layout-design/thumbs/image-ad-06.jpg" alt="">
-                    </li>
-                  	<!-- End Item Project -->
 
-                    <!-- Item Project and Filter Name -->
-                  	<li class="item-thumbs span3 layout">
-                    	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                    	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="img/work/layout-design/full/image-ad-07-full.jpg">
-                      	<span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img src="img/work/layout-design/thumbs/image-ad-07.jpg" alt="">
-                    </li>
-                  	<!-- End Item Project -->
 
-                    <!-- Item Project and Filter Name -->
-                  	<li class="item-thumbs span3 layout">
-                    	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                    	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="img/work/layout-design/full/image-ad-08-full.jpg">
-                      	<span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img src="img/work/layout-design/thumbs/image-ad-08.jpg" alt="">
-                    </li>
-                  	<!-- End Item Project -->
 
-                    <!-- Item Project and Filter Name -->
-                  	<li class="item-thumbs span3 layout">
-                    	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                    	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="img/work/layout-design/full/image-ad-09-full.jpg">
-                      	<span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img src="img/work/layout-design/thumbs/image-ad-09.jpg" alt="">
-                    </li>
-                  	<!-- End Item Project -->
 
-                    <!-- Item Project and Filter Name -->
-                  	<li class="item-thumbs span3 layout">
-                    	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                    	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="img/work/layout-design/full/image-ad-10-full.jpg">
-                      	<span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img src="img/work/layout-design/thumbs/image-ad-10.jpg" alt="">
-                    </li>
-                  	<!-- End Item Project -->
 
-                    <!-- Item Project and Filter Name -->
-                  	<li class="item-thumbs span3 layout">
-                    	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                    	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="img/work/layout-design/full/image-ad-11-full.jpg">
-                      	<span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img src="img/work/layout-design/thumbs/image-ad-11.jpg" alt="">
-                    </li>
-                  	<!-- End Item Project -->
 
-                    <!-- Item Project and Filter Name -->
-                  	<li class="item-thumbs span3 layout">
-                    	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                    	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="img/work/layout-design/full/image-ad-12-full.jpg">
-                      	<span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img src="img/work/layout-design/thumbs/image-ad-12.jpg" alt="">
-                    </li>
-                  	<!-- End Item Project -->
 
 
 
