@@ -158,8 +158,6 @@
                 <section id="projects" ng-controller="WorkController">
                   <ul id="thumbs">
 
-
-
                     <!-- layout Items -->
                   	<li class="item-thumbs span3 layout" ng-repeat="item in layout">
                     	<!-- Full Image -->
@@ -172,162 +170,22 @@
                     </li>
                   	<!-- End layout Items -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    <!-- Item Project and Filter Name -->
-                    <li class="item-thumbs span3 identity">
-                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Road Show Brand for Tradeshow Event | Medium: Illustrator" href="img/work/logos-branding/full/image-lb-01-full.jpg">
+                    <!-- Identity Items -->
+                    <li class="item-thumbs span3 identity" ng-repeat="item in logos">
+                    <!-- Full Image -->
+                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" ng-href="img/work/logos-branding/full/{{item.shortname}}-full.jpg">
                         <span class="overlay-img"></span>
                         <span class="overlay-img-thumb font-icon-plus"></span>
                       </a>
                       <!-- Thumb Image and Description -->
-                      <img src="img/work/logos-branding/thumbs/image-lb-01.jpg" alt="">
+                      <img ng-src="img/work/logos-branding/thumbs/{{item.shortname}}.jpg" alt="Thumb of {{item.name}}">
                     </li>
                     <!-- End Item Project -->
 
-                    <!-- Item Project and Filter Name -->
-                    <li class="item-thumbs span3 identity">
-                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Identity for Web Hosting Company | Medium: Illustrator" href="img/work/logos-branding/full/image-lb-02-full.jpg">
-                        <span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img src="img/work/logos-branding/thumbs/image-lb-02.jpg" alt="">
-                    </li>
-                    <!-- End Item Project -->
 
-                    <!-- Item Project and Filter Name -->
-                    <li class="item-thumbs span3 identity">
-                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="img/work/logos-branding/full/image-lb-03-full.jpg">
-                        <span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img src="img/work/logos-branding/thumbs/image-lb-03.jpg" alt="">
-                    </li>
-                    <!-- End Item Project -->
 
-                    <!-- Item Project and Filter Name -->
-                    <li class="item-thumbs span3 identity">
-                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="img/work/logos-branding/full/image-lb-04-full.jpg">
-                        <span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img src="img/work/logos-branding/thumbs/image-lb-04.jpg" alt="">
-                    </li>
-                    <!-- End Item Project -->
 
-                    <!-- Item Project and Filter Name -->
-                    <li class="item-thumbs span3 identity">
-                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="img/work/logos-branding/full/image-lb-05-full.jpg">
-                        <span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img src="img/work/logos-branding/thumbs/image-lb-05.jpg" alt="">
-                    </li>
-                    <!-- End Item Project -->
-
-                    <!-- Item Project and Filter Name -->
-                    <li class="item-thumbs span3 identity">
-                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="img/work/logos-branding/full/image-lb-06-full.jpg">
-                        <span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img src="img/work/logos-branding/thumbs/image-lb-06.jpg" alt="">
-                    </li>
-                    <!-- End Item Project -->
-
-                    <!-- Item Project and Filter Name -->
-                    <li class="item-thumbs span3 identity">
-                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="img/work/logos-branding/full/image-lb-07-full.jpg">
-                        <span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img src="img/work/logos-branding/thumbs/image-lb-07.jpg" alt="">
-                    </li>
-                    <!-- End Item Project -->
-
-                    <!-- Item Project and Filter Name -->
-                    <li class="item-thumbs span3 identity">
-                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="img/work/logos-branding/full/image-lb-08-full.jpg">
-                        <span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img src="img/work/logos-branding/thumbs/image-lb-08.jpg" alt="">
-                    </li>
-                    <!-- End Item Project -->
-
-                    <!-- Item Project and Filter Name -->
-                    <li class="item-thumbs span3 identity">
-                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="img/work/logos-branding/full/image-lb-09-full.jpg">
-                        <span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img src="img/work/logos-branding/thumbs/image-lb-09.jpg" alt="">
-                    </li>
-                    <!-- End Item Project -->
-
-                    <!-- Item Project and Filter Name -->
-                    <li class="item-thumbs span3 identity">
-                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="img/work/logos-branding/full/image-lb-10-full.jpg">
-                        <span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img src="img/work/logos-branding/thumbs/image-lb-10.jpg" alt="">
-                    </li>
-                    <!-- End Item Project -->
-
-                    <!-- Item Project and Filter Name -->
-                    <li class="item-thumbs span3 identity">
-                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="img/work/logos-branding/full/image-lb-11-full.jpg">
-                        <span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img src="img/work/logos-branding/thumbs/image-lb-11.jpg" alt="">
-                    </li>
-                    <!-- End Item Project -->
-
-                    <!-- Item Project and Filter Name -->
-                    <li class="item-thumbs span3 identity">
-                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                        <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="img/work/logos-branding/full/image-lb-12-full.jpg">
-                        <span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img src="img/work/logos-branding/thumbs/image-lb-12.jpg" alt="">
-                    </li>
-                    <!-- End Item Project -->
+                  
 
 
 
