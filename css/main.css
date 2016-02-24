@@ -102,6 +102,15 @@ hr {
 	text-decoration:line-through;
 }
 
+.cf:before, .cf:after {
+	content: "";
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}
+
 input, button, select, textarea {
 	font-weight: 300;
 	font-family: 'Lato', sans-serif;
