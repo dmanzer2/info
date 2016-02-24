@@ -16,5 +16,8 @@ myApp.controller('WorkController', ['$scope', '$http', function ($scope, $http) 
   $http.get('js/web-dev.json').success(function(data) {
     $scope.web = data;
   });
+  $http.get('js/eml-dev.json').success(function(data) {
+    $scope.email = data;
+  });
 
 }]);
