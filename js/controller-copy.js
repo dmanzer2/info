@@ -64,7 +64,7 @@ myApp.controller('WorkController', function WorkController($scope) {
     "medium" : "web development",
     "client" : "employer",
     "description" : "Here's where it goes"
-    }
+    },
   ],
   $scope.layout = [
     {
@@ -150,7 +150,9 @@ myApp.controller('WorkController', function WorkController($scope) {
     "medium" : "web development",
     "client" : "employer",
     "description" : "Here's where it goes"
-    }
-  ]
+    },
+  ],
 
-});
+
+
+}]);
