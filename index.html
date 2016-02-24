@@ -152,8 +152,8 @@
 
             <div class="span9">
               <div class="row">
-                <section id="projects" style="min-height:600px;">
-                  <ul id="thumbs" ng-controller="WorkController">
+                <section id="projects">
+                  <ul id="thumbs" ng-controller="WorkController" style="min-heright:600px;">
 
                     <!-- layout Items -->
                   	<li class="item-thumbs span3 layout" ng-repeat="item in layout">
@@ -231,7 +231,7 @@
                     <!-- End Item Project -->
 
                     <!-- Photography Start -->
-                    <li class="item-thumbs span3 photography" ng-repeat="item in photo">
+                    <li class="item-thumbs span3 photography row" ng-repeat="item in photo">
                       <!-- Full Image -->
                       <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" href="img/work/creative-photography/full/{{item.shortname}}-full.jpg">
                         <span class="overlay-img"></span>
@@ -243,7 +243,7 @@
                     <!-- End Item Project -->
 
       							<!-- Fonts Start -->
-                    <li class="item-thumbs span3 fonts" ng-repeat="item in fonts">
+                    <li class="item-thumbs span3 fonts row" ng-repeat="item in fonts">
                       <!-- Full Image -->
                       <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" href="img/work/font-development/full/{{item.shortname}}-full.jpg">
                         <span class="overlay-img"></span>
@@ -254,106 +254,8 @@
                     </li>
                     <!-- End Item Project -->
 
-                    <!-- Item Project and Filter Name -->
-                    <li class="item-thumbs span3 fonts">
-                      <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="img/work/font-development/full/image-fd-02-full.jpg">
-                        <span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img src="img/work/font-development/thumbs/image-fd-02.jpg" alt="">
-                    </li>
-                    <!-- End Item Project -->
-
-                    <!-- Item Project and Filter Name -->
-                    <li class="item-thumbs span3 fonts">
-                      <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="img/work/font-development/full/image-fd-03-full.jpg">
-                        <span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img src="img/work/font-development/thumbs/image-fd-03.jpg" alt="">
-                    </li>
-                    <!-- End Item Project -->
-
-                    <!-- Item Project and Filter Name -->
-                    <li class="item-thumbs span3 fonts">
-                      <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="img/work/font-development/full/image-fd-04-full.jpg">
-                        <span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img src="img/work/font-development/thumbs/image-fd-04.jpg" alt="">
-                    </li>
-                    <!-- End Item Project -->
-
-                    <!-- Item Project and Filter Name -->
-                    <li class="item-thumbs span3 fonts">
-                      <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="img/work/font-development/full/image-fd-05-full.jpg">
-                        <span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img src="img/work/font-development/thumbs/image-fd-05.jpg" alt="">
-                    </li>
-                    <!-- End Item Project -->
-
-                    <!-- Item Project and Filter Name -->
-                    <li class="item-thumbs span3 fonts">
-                      <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="img/work/font-development/full/image-fd-06-full.jpg">
-                        <span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img src="img/work/font-development/thumbs/image-fd-06.jpg" alt="">
-                    </li>
-                    <!-- End Item Project -->
-
-                    <!-- Item Project and Filter Name -->
-                    <li class="item-thumbs span3 fonts">
-                      <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="img/work/font-development/full/image-fd-07-full.jpg">
-                        <span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img src="img/work/font-development/thumbs/image-fd-07.jpg" alt="">
-                    </li>
-                    <!-- End Item Project -->
-
-                    <!-- Item Project and Filter Name -->
-                    <li class="item-thumbs span3 fonts">
-                      <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="img/work/font-development/full/image-fd-08-full.jpg">
-                        <span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img src="img/work/font-development/thumbs/image-fd-08.jpg" alt="">
-                    </li>
-                    <!-- End Item Project -->
-
-                    <!-- Item Project and Filter Name -->
-                    <li class="item-thumbs span3 fonts">
-                      <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="img/work/font-development/full/image-fd-09-full.jpg">
-                        <span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img src="img/work/font-development/thumbs/image-fd-09.jpg" alt="">
-                    </li>
-                    <!-- End Item Project -->
-
                   </ul>
                 </section>
-
-
 
               </div>
             </div>
