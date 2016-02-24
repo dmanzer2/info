@@ -22,5 +22,8 @@ myApp.controller('WorkController', ['$scope', '$http', function ($scope, $http) 
   $http.get('js/cre-pho.json').success(function(data) {
     $scope.photo = data;
   });
+  $http.get('js/fnt-dev.json').success(function(data) {
+    $scope.fonts = data;
+  });
 
 }]);
