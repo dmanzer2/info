@@ -16,4 +16,13 @@ myApp.controller('WorkController', ['$scope', '$http', function ($scope, $http) 
   $http.get('js/web-dev.json').success(function(data) {
     $scope.web = data;
   });
+  $http.get('js/eml-dev.json').success(function(data) {
+    $scope.email = data;
+  });
+  $http.get('js/cre-pho.json').success(function(data) {
+    $scope.photos = data;
+  });
+  $http.get('js/fnt-dev.json').success(function(data) {
+    $scope.fonts = data;
+  });
 }]);
