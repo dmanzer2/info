@@ -19,5 +19,8 @@ myApp.controller('WorkController', ['$scope', '$http', function ($scope, $http) 
   $http.get('js/eml-dev.json').success(function(data) {
     $scope.email = data;
   });
+  $http.get('js/cre-pho.json').success(function(data) {
+    $scope.photo = data;
+  });
 
 }]);
