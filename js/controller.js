@@ -10,4 +10,10 @@ myApp.controller('WorkController', ['$scope', '$http', function ($scope, $http) 
   $http.get('js/illust.json').success(function(data) {
     $scope.illustrations = data;
   });
+  $http.get('js/pac-des.json').success(function(data) {
+    $scope.package = data;
+  });
+  $http.get('js/web-dev.json').success(function(data) {
+    $scope.package = data;
+  });
 }]);

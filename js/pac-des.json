@@ -1,0 +1,23 @@
+[
+  {
+  "name" : "image-pd-01",
+  "shortname" : "image-pd-01",
+  "medium" : "package design",
+  "client" : "employer",
+  "description" : "Here's where it goes"
+  },
+  {
+  "name" : "image-pd-02",
+  "shortname" : "image-pd-02",
+  "medium" : "package design",
+  "client" : "employer",
+  "description" : "Here's where it goes"
+  },
+  {
+  "name" : "image-pd-03",
+  "shortname" : "image-pd-03",
+  "medium" : "package design",
+  "client" : "employer",
+  "description" : "Here's where it goes"
+  }
+]
