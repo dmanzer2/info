@@ -163,12 +163,12 @@
                     <!-- layout Items -->
                   	<li class="item-thumbs span3 layout" ng-repeat="item in layout">
                     	<!-- Full Image -->
-                    	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{description}}" ng-href="img/work/layout-design/full/{{shortname}}-full.jpg">
+                    	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" ng-href="img/work/layout-design/full/{{item.shortname}}-full.jpg">
                       	<span class="overlay-img"></span>
                         <span class="overlay-img-thumb font-icon-plus"></span>
                       </a>
                       <!-- Thumb Image and Description -->
-                      <img ng-src="img/work/layout-design/thumbs/{{shortname}}.jpg" alt="Thumb of {{item.name}}">
+                      <img ng-src="img/work/layout-design/thumbs/{{item.shortname}}.jpg" alt="Thumb of {{item.name}}">
                     </li>
                   	<!-- End layout Items -->
 
