@@ -102,15 +102,6 @@ hr {
 	text-decoration:line-through;
 }
 
-.cf:before, .cf:after {
-	content: "";
-	display: table;
-}
-
-.cf:after {
-	clear: both;
-}
-
 input, button, select, textarea {
 	font-weight: 300;
 	font-family: 'Lato', sans-serif;
@@ -1112,12 +1103,12 @@ form#contact-form p textarea:focus {
 	display: block;
 	width: 70px;
 	height: 70px;
-	background-color: #26292E;
+	background: #26292E;
 
-	-webkit-transition: all 400ms ease-out 0s;
-	-moz-transition: all 400ms ease-out 0s;
-	-o-transition: all 400ms ease-out 0s;
-	transition: all 400ms ease-out 0s;
+	-webkit-transition: background-color, all, 400ms, ease-out, 0s;
+	-moz-transition: background-color, all, 400ms, ease-out, 0s;
+	-o-transition: background-color, all, 400ms, ease-out 0s;
+	transition: background-color, all, 400ms, ease-out 0s;
 
 	-webkit-transform: rotateY(180deg);
 	-moz-transform: rotateY(180deg);
