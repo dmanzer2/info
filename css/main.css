@@ -1074,11 +1074,11 @@ form#contact-form p textarea:focus {
 /* ==================================================
    Social Area
 ================================================== */
-@media only screen and (max-width: 450px) {
+/*@media only screen and (max-width: 450px) {
 	nav#social ul li a {
 		background-color: #26292E;
 	}
-}
+}*/
 
 #social-area {
   text-align: center;
