@@ -1095,10 +1095,10 @@ form#contact-form p textarea:focus {
 	margin-left: 0;
 }
 
-@media only screen and (min-width: 980px) {
-.page {
-	padding-top:0;
-}
+@media only screen and (max-width: 980px) {
+	.page {
+		padding-top:0;
+	}
 }
 
 @media only screen and (min-width: 980px) {
