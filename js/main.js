@@ -313,6 +313,7 @@ MANZER.utils = function(){
       	$(this).addClass('active');
     });
 
+	$('#social ul li a').css({'background-color': 'red'});
 }
 
 /* ==================================================
