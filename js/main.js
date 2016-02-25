@@ -312,8 +312,6 @@ MANZER.utils = function(){
 		$(".active").removeClass("active");
       	$(this).addClass('active');
     });
-
-	$('#social ul li a').css({'background-color': 'red'});
 }
 
 /* ==================================================
