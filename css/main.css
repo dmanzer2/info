@@ -804,6 +804,10 @@ nav#menu #menu-nav li a:hover {
 	filter: alpha(opacity=100);
 }
 
+li.item-thumbs:last-child {
+  display: none;
+}
+
 
 /* ==================================================
    About Section
