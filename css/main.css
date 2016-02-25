@@ -1074,6 +1074,11 @@ form#contact-form p textarea:focus {
 /* ==================================================
    Social Area
 ================================================== */
+@media only screen and (max-width: 750px) {
+	nav#social ul li a {
+		background: red !important;
+	}
+}
 
 #social-area {
   text-align: center;
@@ -1112,15 +1117,6 @@ form#contact-form p textarea:focus {
 	-ms-transform: rotateY(180deg);
 	-o-transform: rotateY(180deg);
 	transform: rotateY(180deg);
-}
-
-@media all and (max-width: 450px) and (min-width: 800px) {
-	#social ul li a {
-		display: block;
-		width: 70px;
-		height: 70px;
-		background-color: #26292E !important;
-	}
 }
 
 #social ul li a span {
