@@ -308,6 +308,11 @@ MANZER.utils = function(){
       	$(this).addClass('active');
     });
 
+	$('#social ul li a').bind('touchstart', function(){
+		$(".active").removeClass("active");
+      	$(this).addClass('active');
+    });
+
 }
 
 /* ==================================================
