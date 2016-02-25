@@ -1095,7 +1095,7 @@ form#contact-form p textarea:focus {
 	margin-left: 0;
 }
 
-#social ul li a {
+#social.page ul li a {
 	display: block;
 	width: 70px;
 	height: 70px;
@@ -1114,7 +1114,7 @@ form#contact-form p textarea:focus {
 	transform: rotateY(180deg);
 }
 
-#social ul li a span {
+#social.page ul li a span {
 	display: inline-block;
 	margin: 0;
 	color: #55606a;
