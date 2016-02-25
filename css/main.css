@@ -1095,7 +1095,7 @@ form#contact-form p textarea:focus {
 	margin-left: 0;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (min-width: 750px) {
 	#social ul li a {
 		display: block;
 		width: 70px;
