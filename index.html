@@ -243,7 +243,7 @@
                     <!-- End Item Project -->
 
       							<!-- Fonts Start -->
-                    <li class="item-thumbs span3 fonts" ng-repeat="item in fonts">
+                    <li class="item-thumbs span3 fonts" ng-repeat="item in fonts" ng-if="($index + 1) % 3 == 0">
                       <!-- Full Image -->
                       <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" href="img/work/font-development/full/{{item.shortname}}-full.jpg">
                         <span class="overlay-img"></span>
