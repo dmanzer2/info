@@ -1100,6 +1100,7 @@ form#contact-form p textarea:focus {
 	width: 70px;
 	height: 70px;
 	background-color: #26292E;
+	visibility: visible;
 
 	-webkit-transition: all 400ms ease-out 0s;
 	-moz-transition: all 400ms ease-out 0s;
@@ -1122,6 +1123,7 @@ form#contact-form p textarea:focus {
 
 	opacity: 0.3;
 	filter: alpha(opacity=30);
+	visibility: visible;
 
 	-webkit-transition: all 400ms ease-out 0s;
 	-moz-transition: all 400ms ease-out 0s;
@@ -1151,6 +1153,7 @@ form#contact-form p textarea:focus {
 	color: #FFFFFF;
 	opacity: 1;
 	filter: alpha(opacity=100);
+	visibility: visible;
 
 	-webkit-transform: rotateY(0deg);
 	-moz-transform: rotateY(0deg);
