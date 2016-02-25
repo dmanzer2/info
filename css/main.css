@@ -1074,15 +1074,15 @@ form#contact-form p textarea:focus {
    Social Area
 ================================================== */
 
-@media only screen and (max-width: 450px) {
-	#social ul li a {
+@media only screen and (max-width: 750px) {
+	nav.socMobile ul li a {
 		display: block;
 		width: 70px;
 		height: 70px;
 		background-color: #26292E;
 		visibility: visible;
 	}
-	#social ul li a span {
+	nav.socMobile ul li a span {
 		display: inline-block;
 		margin: 0;
 		color: #55606a;
