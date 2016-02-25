@@ -1120,18 +1120,6 @@ form#contact-form p textarea:focus {
 		width: 70px;
 		height: 70px;
 		background-color: #26292E !important;
-		visibility: visible;
-
-		-webkit-transition: none;
-		-moz-transition: none;
-		-o-transition: none;
-		transition: none;
-
-		-webkit-transform: none;
-		-moz-transform: none;
-		-ms-transform: none;
-		-o-transform: none;
-		transform: none;
 	}
 }
 
