@@ -159,7 +159,7 @@
                   <ul id="thumbs" ng-controller="WorkController">
 
                     <!-- layout Items -->
-                  	<li class="item-thumbs span3 all" ng-repeat="item in all | limitTo:quantity">
+                  	<li class="item-thumbs span3 all" ng-repeat="item in all | limitTo:quantity | orderBy:random">
                     	<!-- Full Image -->
                     	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" href="img/work/layout-design/full/{{item.shortname}}-full.jpg">
                       	<span class="overlay-img"></span>

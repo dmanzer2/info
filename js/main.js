@@ -110,7 +110,7 @@ MANZER.filter = function (){
 		var $container = $('#projects');
 
 		$container.imagesLoaded(function() {
-			$container.isotope({
+			$container.fadeIn(1000).isotope({
 			  // options
 			  animationEngine: 'best-available',
 			  itemSelector : '.item-thumbs',
@@ -159,6 +159,7 @@ MANZER.filter = function (){
 ================================================== */
 
 MANZER.fancyBox = function(){
+
 	if($('.fancybox').length > 0 || $('.fancybox-media').length > 0 || $('.fancybox-various').length > 0){
 
 		$(".fancybox").fancybox({
