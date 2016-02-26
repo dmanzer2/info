@@ -114,10 +114,10 @@ MANZER.filter = function (){
 			  // options
 			  animationEngine: 'best-available',
 			  itemSelector : '.item-thumbs',
-			  layoutMode : 'fitRows'
+			  layoutMode : 'fitRows',
+
 			});
 		});
-
 
 		// filter items when filter link is clicked
 		var $optionSets = $('#options .option-set'),

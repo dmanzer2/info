@@ -1,6 +1,7 @@
 var myApp = angular.module('myApp',[]);
 
 myApp.controller('WorkController', ['$scope', '$http', function ($scope, $http) {
+
   $http.get('js/lay-des.json').success(function(data) {
     $scope.layout = data;
   });
@@ -24,6 +25,12 @@ myApp.controller('WorkController', ['$scope', '$http', function ($scope, $http) 
   });
   $http.get('js/fnt-dev.json').success(function(data) {
     $scope.fonts = data;
+  });
+
+  //This is a filter for all items/////////////////////////////////
+  $http.get('js/all.json').success(function(data) {
+    $scope.all = data;
+    $scope.quantity = 12;
   });
 
 }]);
