@@ -8,21 +8,22 @@ module.exports = function(grunt){
 			files:['*/**','server/**'],
 			tasks:[]
 		},
-  		express:{
-  			all:{
-  				options:{
-  					port:9000,
-  					hostname:'localhost',
-  					bases:['.'],
-  					livereload:true
-  				}
-  			}
-  		}
+		express:{
+			all:{
+				options:{
+					port:9000,
+					hostname:'localhost',
+					bases:['.'],
+					livereload:true
+				}
+			}
+		},
+
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-express');
 	grunt.registerTask('default',['express','watch']);
-	grunt.registerTask('server',['express','watch']);
+	grunt.registerTask('serve',['express','watch']);
 
 	};
