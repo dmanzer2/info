@@ -115,7 +115,7 @@ MANZER.filter = function (){
 			  animationEngine: 'best-available',
 			  itemSelector : '.item-thumbs',
 			  layoutMode : 'fitRows',
-
+			  
 			});
 		});
 
