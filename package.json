@@ -1,0 +1,36 @@
+{
+  "name": "dmanzer",
+  "version": "1.0.0",
+  "description": "professional site",
+  "main": "index.html",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-express": "^1.4.1"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmanzer2/dminfo.github.io.git"
+  },
+  "keywords": [
+    "design",
+    "and",
+    "front",
+    "end",
+    "development"
+  ],
+  "author": "David Manzer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmanzer2/dminfo.github.io/issues"
+  },
+  "homepage": "https://github.com/dmanzer2/dminfo.github.io#readme"
+}
