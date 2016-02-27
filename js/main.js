@@ -376,8 +376,16 @@ $(document).ready(function(){
 	Modernizr.load([
 	{
 		test: Modernizr.placeholder,
-		nope: 'js/placeholder.js'
+		nope: 'js/placeholder.js',
+		complete : function() {
+				if (!Modernizr.placeholder) {
+						live: true,
+						className: "",
+						textColor: "#999"
+						});
+				}
 		}
+	}
 	]);
 
 	// Preload the page with jPreLoader
