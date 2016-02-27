@@ -376,18 +376,8 @@ $(document).ready(function(){
 	Modernizr.load([
 	{
 		test: Modernizr.placeholder,
-		nope: 'js/placeholder.js',
-		complete : function() {
-				if (!Modernizr.placeholder) {
-						Placeholders.init({
-						live: true,
-						hideOnFocus: false,
-						className: "",
-						textColor: "#999"
-						});
-				}
+		nope: 'js/placeholder.js'
 		}
-	}
 	]);
 
 	// Preload the page with jPreLoader
