@@ -115,7 +115,7 @@ MANZER.filter = function (){
 			  animationEngine: 'best-available',
 			  itemSelector : '.item-thumbs',
 			  layoutMode : 'fitRows',
-			  
+
 			});
 		});
 
@@ -410,7 +410,6 @@ $(document).ready(function(){
 	MANZER.filter();
 	MANZER.fancyBox();
 	MANZER.contactForm();
-	MANZER.tweetFeed();
 	MANZER.scrollToTop();
 	MANZER.utils();
 	MANZER.accordion();
