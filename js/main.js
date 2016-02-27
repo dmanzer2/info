@@ -377,14 +377,6 @@ $(document).ready(function(){
 	{
 		test: Modernizr.placeholder,
 		nope: 'js/placeholder.js',
-		complete : function() {
-				if (!Modernizr.placeholder) {
-						live: true,
-						className: "",
-						textColor: "#999"
-						});
-				}
-		}
 	}
 	]);
 
