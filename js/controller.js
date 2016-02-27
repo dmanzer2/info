@@ -29,11 +29,7 @@ myApp.controller('WorkController', ['$scope', '$http', function ($scope, $http) 
 
   //This is a filter for all items/////////////////////////////////
   $http.get('js/all.json').success(function(data) {
-    $scope.all = data;
-    $scope.all.quantity = 12;
-    $scope.all = function(){
-      return Math.floor((Math.random()*6)+1);
-    }
+    $scope.featured = data;
   });
 
 }]);
