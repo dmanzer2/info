@@ -3,7 +3,7 @@ jQuery(function($){
 var MANZER = window.MANZER || {};
 
 /* ==================================================
-   Mobile Navigation
+	Mobile Navigation
 ================================================== */
 var mobileMenuClone = $('#menu').clone().attr('id', 'navigation-mobile');
 
@@ -43,7 +43,7 @@ MANZER.listenerMenu = function(){
 
 
 /* ==================================================
-   Slider Options
+	Slider Options
 ================================================== */
 
 MANZER.slider = function(){
@@ -93,7 +93,7 @@ MANZER.slider = function(){
 
 
 /* ==================================================
-   Navigation Fix
+	Navigation Fix
 ================================================== */
 
 MANZER.nav = function(){
@@ -102,7 +102,7 @@ MANZER.nav = function(){
 
 
 /* ==================================================
-   Filter Works
+	Filter Works
 ================================================== */
 
 MANZER.filter = function (){
@@ -156,7 +156,7 @@ MANZER.filter = function (){
 
 
 /* ==================================================
-   FancyBox
+	FancyBox
 ================================================== */
 
 MANZER.fancyBox = function(){
@@ -185,7 +185,7 @@ MANZER.fancyBox = function(){
 
 
 /* ==================================================
-   Contact Form
+	Contact Form
 ================================================== */
 
 MANZER.contactForm = function(){
@@ -219,7 +219,7 @@ MANZER.contactForm = function(){
 
 
 /* ==================================================
-   Menu Highlight
+	Menu Highlight
 ================================================== */
 
 MANZER.menu = function(){
@@ -235,7 +235,7 @@ MANZER.menu = function(){
 }
 
 /* ==================================================
-   Next Section
+	Next Section
 ================================================== */
 
 MANZER.goSection = function(){
@@ -248,7 +248,7 @@ MANZER.goSection = function(){
 }
 
 /* ==================================================
-   GoUp
+	GoUp
 ================================================== */
 
 MANZER.goUp = function(){
@@ -316,7 +316,7 @@ MANZER.utils = function(){
 }
 
 /* ==================================================
-   Accordion
+	Accordion
 ================================================== */
 
 MANZER.accordion = function(){
@@ -338,7 +338,7 @@ MANZER.accordion = function(){
 }
 
 /* ==================================================
-   Toggle
+	Toggle
 ================================================== */
 
 MANZER.toggle = function(){
@@ -358,7 +358,7 @@ MANZER.toggle = function(){
 }
 
 /* ==================================================
-   Tooltip
+	Tooltip
 ================================================== */
 
 MANZER.toolTip = function(){
