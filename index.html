@@ -139,6 +139,7 @@
               <nav id="options" class="work-nav">
                 <ul id="filters" class="option-set" data-option-key="filter">
                   <li class="type-work">Type of Work</li>
+
                   <li><a href="#filter" data-option-value=".layout">Layout/Advertising</a></li>
                   <li><a href="#filter" data-option-value=".identity">Identity/Logos</a></li>
                   <li><a href="#filter" data-option-value=".illustration">Digital Illustration</a></li>
@@ -158,26 +159,40 @@
                   <ul id="thumbs" ng-controller="WorkController">
 
                     <!-- layout Items -->
-                  	<li class="item-thumbs span3 layout" ng-repeat="item in layout">
+
+                  	<li class="item-thumbs span3 all" ng-repeat="item in all | limitTo:quantity">
                     	<!-- Full Image -->
                     	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" href="img/work/layout-design/full/{{item.shortname}}-full.jpg">
                       	<span class="overlay-img"></span>
                         <span class="overlay-img-thumb font-icon-plus"></span>
                       </a>
                       <!-- Thumb Image and Description -->
-                      <img src="img/work/layout-design/thumbs/{{item.shortname}}.jpg" alt="Thumb of {{item.name}}">
+                      <img ng-src="img/work/layout-design/thumbs/{{item.shortname}}.jpg" alt="Thumb of {{item.name}}">
+                    </li>
+                  	<!-- End layout Items -->
+
+                    <!-- layout Items -->
+
+                  	<li class="item-thumbs span3 layout" ng-repeat="item in layout">
+                    	<!-- Full Image -->
+                    	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" ng-href="img/work/layout-design/full/{{item.shortname}}-full.jpg">
+                      	<span class="overlay-img"></span>
+                        <span class="overlay-img-thumb font-icon-plus"></span>
+                      </a>
+                      <!-- Thumb Image and Description -->
+                      <img ng-src="img/work/layout-design/thumbs/{{item.shortname}}.jpg" alt="Thumb of {{item.name}}">
                     </li>
                   	<!-- End layout Items -->
 
                     <!-- Identity Items -->
                     <li class="item-thumbs span3 identity" ng-repeat="item in logos">
                     <!-- Full Image -->
-                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" href="img/work/logos-branding/full/{{item.shortname}}-full.jpg">
+                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" ng-href="img/work/logos-branding/full/{{item.shortname}}-full.jpg">
                         <span class="overlay-img"></span>
                         <span class="overlay-img-thumb font-icon-plus"></span>
                       </a>
                       <!-- Thumb Image and Description -->
-                      <img src="img/work/logos-branding/thumbs/{{item.shortname}}.jpg" alt="Thumb of {{item.name}}">
+                      <img ng-src="img/work/logos-branding/thumbs/{{item.shortname}}.jpg" alt="Thumb of {{item.name}}">
                     </li>
                     <!-- End Item Project -->
 
@@ -185,12 +200,12 @@
       							<!-- Item Project and Filter Name -->
                     <li class="item-thumbs span3 illustration" ng-repeat="item in illustrations">
                       <!-- Full Image -->
-                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" href="img/work/illustrations/full/{{item.shortname}}-full.jpg">
+                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" ng-href="img/work/illustrations/full/{{item.shortname}}-full.jpg">
                         <span class="overlay-img"></span>
                         <span class="overlay-img-thumb font-icon-plus"></span>
                       </a>
                       <!-- Thumb Image and Description -->
-                      <img src="img/work/illustrations/thumbs/{{item.shortname}}.jpg" alt="Thumb of {{item.name}}">
+                      <img ng-src="img/work/illustrations/thumbs/{{item.shortname}}.jpg" alt="Thumb of {{item.name}}">
                     </li>
                     <!-- End Item Project -->
 
@@ -198,12 +213,12 @@
                     <!-- Item Project and Filter Name -->
                     <li class="item-thumbs span3 package" ng-repeat="item in package">
                       <!-- Full Image -->
-                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" href="img/work/package-design/full/{{item.shortname}}-full.jpg">
+                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" ng-href="img/work/package-design/full/{{item.shortname}}-full.jpg">
                         <span class="overlay-img"></span>
                         <span class="overlay-img-thumb font-icon-plus"></span>
                       </a>
                       <!-- Thumb Image and Description -->
-                      <img src="img/work/package-design/thumbs/{{item.shortname}}.jpg" alt="Thumb of {{item.name}}">
+                      <img ng-src="img/work/package-design/thumbs/{{item.shortname}}.jpg" alt="Thumb of {{item.name}}">
                     </li>
                     <!-- End Item Project -->
 
@@ -211,60 +226,60 @@
                     <!-- Item Project and Filter Name -->
                     <li class="item-thumbs span3 web" ng-repeat="item in web">
                       <!-- Full Image -->
-                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" href="img/work/web-development/full/{{item.shortname}}-full.jpg">
+                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" ng-href="img/work/web-development/full/{{item.shortname}}-full.jpg">
                         <span class="overlay-img"></span>
                         <span class="overlay-img-thumb font-icon-plus"></span>
                       </a>
                       <!-- Thumb Image and Description -->
-                      <img src="img/work/web-development/thumbs/{{item.shortname}}.jpg" alt="Thumb of {{item.name}}">
+                      <img ng-src="img/work/web-development/thumbs/{{item.shortname}}.jpg" alt="Thumb of {{item.name}}">
                     </li>
                     <!-- End Item Project -->
 
                     <!-- Email Start -->
                     <li class="item-thumbs span3 email" ng-repeat="item in email">
                       <!-- Full Image -->
-                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" href="img/work/email-development/full/{{item.shortname}}-full.jpg">
+                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" ng-href="img/work/email-development/full/{{item.shortname}}-full.jpg">
                         <span class="overlay-img"></span>
                         <span class="overlay-img-thumb font-icon-plus"></span>
                       </a>
                       <!-- Thumb Image and Description -->
-                      <img src="img/work/email-development/thumbs/{{item.shortname}}.jpg" alt="Thumb of {{item.name}}">
+                      <img ng-src="img/work/email-development/thumbs/{{item.shortname}}.jpg" alt="Thumb of {{item.name}}">
                     </li>
                     <!-- End Item Project -->
 
                     <!-- Photography Start -->
                     <li class="item-thumbs span3 photography" ng-repeat="item in photo">
                       <!-- Full Image -->
-                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" href="img/work/creative-photography/full/{{item.shortname}}-full.jpg">
+                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" ng-href="img/work/creative-photography/full/{{item.shortname}}-full.jpg">
                         <span class="overlay-img"></span>
                         <span class="overlay-img-thumb font-icon-plus"></span>
                       </a>
                       <!-- Thumb Image and Description -->
-                      <img src="img/work/creative-photography/thumbs/{{item.shortname}}.jpg" alt="Thumb of {{item.name}}">
+                      <img ng-src="img/work/creative-photography/thumbs/{{item.shortname}}.jpg" alt="Thumb of {{item.name}}">
                     </li>
                     <!-- End Item Project -->
 
       							<!-- Fonts Start -->
                     <li class="item-thumbs span3 fonts" ng-repeat="item in fonts">
                       <!-- Full Image -->
-                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" href="img/work/font-development/full/{{item.shortname}}-full.jpg">
+                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" ng-href="img/work/font-development/full/{{item.shortname}}-full.jpg">
                         <span class="overlay-img"></span>
                         <span class="overlay-img-thumb font-icon-plus"></span>
                       </a>
                       <!-- Thumb Image and Description -->
-                      <img src="img/work/font-development/thumbs/{{item.shortname}}.jpg" alt="Thumb of {{item.name}}">
+                      <img ng-src="img/work/font-development/thumbs/{{item.shortname}}.jpg" alt="Thumb of {{item.name}}">
                     </li>
                     <!-- End Item Project -->
 
                     <!-- Portfolio placeholder -->
                     <li class="item-thumbs span9 placeholder">
                       <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" href="#">
+                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="#">
                         <span class="overlay-img"></span>
                         <span class="overlay-img-thumb font-icon-plus"></span>
                       </a>
                       <!-- Thumb Image and Description -->
-                      <img src="//placehold.it/1x1" alt="" style="height:0px !important;">
+                      <img ng-src="//placehold.it/1x1" alt="" style="height:0px !important;">
                     </li>
 
                   </ul>
