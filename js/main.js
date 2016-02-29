@@ -112,9 +112,10 @@ MANZER.filter = function (){
 		$container.imagesLoaded(function() {
 			$container.isotope({
 			  // options
+				filter: '.layout',
 			  animationEngine: 'best-available',
 			  itemSelector : '.item-thumbs',
-			  layoutMode : 'fitRows',
+			  layoutMode : 'fitRows'
 
 			});
 		});
