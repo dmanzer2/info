@@ -140,7 +140,6 @@
               <nav id="options" class="work-nav">
                 <ul id="filters" class="option-set" data-option-key="filter">
                   <li class="type-work">Type of Work</li>
-
                   <li><a href="#filter" data-option-value=".layout">Layout/Advertising</a></li>
                   <li><a href="#filter" data-option-value=".identity">Identity/Logos</a></li>
                   <li><a href="#filter" data-option-value=".illustration">Digital Illustration</a></li>
@@ -160,20 +159,6 @@
                   <ul id="thumbs" ng-controller="WorkController">
 
                     <!-- layout Items -->
-
-                  	<li class="item-thumbs span3 clearfix all" ng-repeat="item in all | limitTo:quantity">
-                    	<!-- Full Image -->
-                    	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" href="img/work/layout-design/full/{{item.shortname}}-full.jpg">
-                      	<span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img ng-src="img/work/layout-design/thumbs/{{item.shortname}}.jpg" alt="Thumb of {{item.name}}">
-                    </li>
-                  	<!-- End layout Items -->
-
-                    <!-- layout Items -->
-
                   	<li class="item-thumbs span3 clearfix layout" ng-repeat="item in layout">
                     	<!-- Full Image -->
                     	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" ng-href="img/work/layout-design/full/{{item.shortname}}-full.jpg">
