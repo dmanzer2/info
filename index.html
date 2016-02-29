@@ -133,7 +133,7 @@
         <!-- End Title Page -->
 
         <!-- Portfolio Projects -->
-        <div class="row" ng-controller="WorkController">
+        <div class="row">
         	<div class="span3">
           	<!-- Filter -->
               <nav id="options" class="work-nav">
@@ -155,23 +155,9 @@
             <div class="span9">
               <div class="row">
                 <section id="projects">
-                  <ul id="thumbs">
+                  <ul id="thumbs" ng-controller="WorkController">
 
                     <!-- layout Items -->
-
-                  	<li class="item-thumbs span3 all" ng-repeat="item in all | limitTo:quantity">
-                    	<!-- Full Image -->
-                    	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" href="img/work/layout-design/full/{{item.shortname}}-full.jpg">
-                      	<span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img src="img/work/layout-design/thumbs/{{item.shortname}}.jpg" alt="Thumb of {{item.name}}">
-                    </li>
-                  	<!-- End layout Items -->
-
-                    <!-- layout Items -->
-
                   	<li class="item-thumbs span3 layout" ng-repeat="item in layout">
                     	<!-- Full Image -->
                     	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" href="img/work/layout-design/full/{{item.shortname}}-full.jpg">
