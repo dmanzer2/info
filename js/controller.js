@@ -32,6 +32,14 @@ myApp.controller('WorkController', ['$scope', '$http', function ($scope, $http) 
     $scope.fonts = data;
   });
 
+<<<<<<< HEAD
 
+=======
+  //This is a filter for all items/////////////////////////////////
+  $http.get('js/all.json').success(function(data) {
+    $scope.all = data;
+    $scope.quantity = 12;
+  });
+>>>>>>> parent of 652ce54... to a good spot here
 
 }]);

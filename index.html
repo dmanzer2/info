@@ -159,6 +159,21 @@
                   <ul id="thumbs" ng-controller="WorkController">
 
                     <!-- layout Items -->
+<<<<<<< HEAD
+=======
+                  	<li class="item-thumbs span3 all" ng-repeat="item in all | limitTo:quantity">
+                    	<!-- Full Image -->
+                    	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" href="img/work/layout-design/full/{{item.shortname}}-full.jpg">
+                      	<span class="overlay-img"></span>
+                        <span class="overlay-img-thumb font-icon-plus"></span>
+                      </a>
+                      <!-- Thumb Image and Description -->
+                      <img src="img/work/layout-design/thumbs/{{item.shortname}}.jpg" alt="Thumb of {{item.name}}">
+                    </li>
+                  	<!-- End layout Items -->
+
+                    <!-- layout Items -->
+>>>>>>> parent of 652ce54... to a good spot here
                   	<li class="item-thumbs span3 layout" ng-repeat="item in layout">
                     	<!-- Full Image -->
                     	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" ng-href="img/work/layout-design/full/{{item.shortname}}-full.jpg">
