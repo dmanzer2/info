@@ -2,11 +2,6 @@ var myApp = angular.module('myApp',[]);
 
 myApp.controller('WorkController', ['$scope', '$http', function ($scope, $http) {
 
-  //This is a filter for all items/////////////////////////////////
-  $http.get('js/all.json').success(function(data) {
-    $scope.featured = data;
-  });
-
   $http.get('js/lay-des.json').success(function(data) {
     $scope.layout = data;
   });

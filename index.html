@@ -9,6 +9,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>David Manzer / Designer / Front End Developer</title>
+
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="js/controller.js"></script>
+
 <meta name="description" content="David Manzer - Front End Developer" />
 
 <!-- Mobile Specifics -->
@@ -64,9 +68,6 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
-
-<script src="bower_components/angular/angular.min.js"></script>
-<script src="js/controller.js"></script>
 
 </head>
 <body>
@@ -160,7 +161,7 @@
 
                     <!-- layout Items -->
 
-                  	<li class="item-thumbs span3 all" ng-repeat="item in all | limitTo:quantity">
+                  	<li class="item-thumbs span3 clearfix all" ng-repeat="item in all | limitTo:quantity">
                     	<!-- Full Image -->
                     	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" href="img/work/layout-design/full/{{item.shortname}}-full.jpg">
                       	<span class="overlay-img"></span>
@@ -173,7 +174,7 @@
 
                     <!-- layout Items -->
 
-                  	<li class="item-thumbs span3 layout" ng-repeat="item in layout">
+                  	<li class="item-thumbs span3 clearfix layout" ng-repeat="item in layout">
                     	<!-- Full Image -->
                     	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" ng-href="img/work/layout-design/full/{{item.shortname}}-full.jpg">
                       	<span class="overlay-img"></span>
@@ -185,7 +186,7 @@
                   	<!-- End layout Items -->
 
                     <!-- Identity Items -->
-                    <li class="item-thumbs span3 identity" ng-repeat="item in logos">
+                    <li class="item-thumbs span3 clearfix identity" ng-repeat="item in logos">
                     <!-- Full Image -->
                       <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" ng-href="img/work/logos-branding/full/{{item.shortname}}-full.jpg">
                         <span class="overlay-img"></span>
@@ -198,7 +199,7 @@
 
                     <!--Illustrations Start-->
       							<!-- Item Project and Filter Name -->
-                    <li class="item-thumbs span3 illustration" ng-repeat="item in illustrations">
+                    <li class="item-thumbs span3 clearfix illustration" ng-repeat="item in illustrations">
                       <!-- Full Image -->
                       <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" ng-href="img/work/illustrations/full/{{item.shortname}}-full.jpg">
                         <span class="overlay-img"></span>
@@ -211,7 +212,7 @@
 
                     <!--Package Design Start-->
                     <!-- Item Project and Filter Name -->
-                    <li class="item-thumbs span3 package" ng-repeat="item in package">
+                    <li class="item-thumbs span3 clearfix package" ng-repeat="item in package">
                       <!-- Full Image -->
                       <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" ng-href="img/work/package-design/full/{{item.shortname}}-full.jpg">
                         <span class="overlay-img"></span>
@@ -224,7 +225,7 @@
 
                     <!--Web Start-->
                     <!-- Item Project and Filter Name -->
-                    <li class="item-thumbs span3 web" ng-repeat="item in web">
+                    <li class="item-thumbs span3 clearfix web" ng-repeat="item in web">
                       <!-- Full Image -->
                       <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" ng-href="img/work/web-development/full/{{item.shortname}}-full.jpg">
                         <span class="overlay-img"></span>
@@ -236,7 +237,7 @@
                     <!-- End Item Project -->
 
                     <!-- Email Start -->
-                    <li class="item-thumbs span3 email" ng-repeat="item in email">
+                    <li class="item-thumbs span3 clearfix email" ng-repeat="item in email">
                       <!-- Full Image -->
                       <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" ng-href="img/work/email-development/full/{{item.shortname}}-full.jpg">
                         <span class="overlay-img"></span>
@@ -248,7 +249,7 @@
                     <!-- End Item Project -->
 
                     <!-- Photography Start -->
-                    <li class="item-thumbs span3 photography" ng-repeat="item in photo">
+                    <li class="item-thumbs span3 clearfix photography" ng-repeat="item in photo">
                       <!-- Full Image -->
                       <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" ng-href="img/work/creative-photography/full/{{item.shortname}}-full.jpg">
                         <span class="overlay-img"></span>
@@ -260,7 +261,7 @@
                     <!-- End Item Project -->
 
       							<!-- Fonts Start -->
-                    <li class="item-thumbs span3 fonts" ng-repeat="item in fonts">
+                    <li class="item-thumbs span3 clearfix fonts" ng-repeat="item in fonts">
                       <!-- Full Image -->
                       <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.description}}" ng-href="img/work/font-development/full/{{item.shortname}}-full.jpg">
                         <span class="overlay-img"></span>
@@ -272,7 +273,7 @@
                     <!-- End Item Project -->
 
                     <!-- Portfolio placeholder -->
-                    <li class="item-thumbs span9 placeholder">
+                    <li class="item-thumbs span9 clearfix placeholder">
                       <!-- Fancybox - Gallery Enabled - Title - Full Image -->
                       <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="#">
                         <span class="overlay-img"></span>
