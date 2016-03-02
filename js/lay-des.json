@@ -1,85 +1,85 @@
 [
   {
-  "name" : "image-ad-01",
+  "name" : "Product Ad Design for Magazine",
   "shortname" : "image-ad-01",
-  "medium" : "web development",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Adobe Illustrator",
+  "client" : "Digital Art solutions",
+  "description" : "1/2 magazine ad designed for a product promotion."
   },
   {
-  "name" : "image-ad-02",
+  "name" : "Ad Designs for 2 Magazines",
   "shortname" : "image-ad-02",
-  "medium" : "web development",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Adobe Illustrator, Adobe InDesign",
+  "client" : "Digital Art solutions",
+  "description" : "3/4 page promotional magazine ads."
   },
   {
-  "name" : "image-ad-03",
+  "name" : "Bacardi Breezer Magazine ad",
   "shortname" : "image-ad-03",
-  "medium" : "web development",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Adobe Photoshop",
+  "client" : "School Project",
+  "description" : "Full Page Magazine ad"
   },
   {
-  "name" : "image-ad-04",
+  "name" : "Sundt College Intern Brochure",
   "shortname" : "image-ad-04",
-  "medium" : "web development",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Adobe Illustrator, Photoshop, InDesign, Acrobat Pro",
+  "client" : "Sundt",
+  "description" : "4 page brochure for Sundt college intern program."
   },
   {
-  "name" : "image-ad-05",
+  "name" : "USA Today Newspaper Infographic",
   "shortname" : "image-ad-05",
-  "medium" : "web development",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Adobe Illustrator",
+  "client" : "College Project",
+  "description" : "Small USA Today Newspaper Infographic"
   },
   {
   "name" : "image-ad-06",
   "shortname" : "image-ad-06",
-  "medium" : "web development",
+  "medium" : "print",
   "client" : "employer",
   "description" : "Here's where it goes"
   },
   {
   "name" : "image-ad-07",
   "shortname" : "image-ad-07",
-  "medium" : "web development",
+  "medium" : "print",
   "client" : "employer",
   "description" : "Here's where it goes"
   },
   {
   "name" : "image-ad-08",
   "shortname" : "image-ad-08",
-  "medium" : "web development",
+  "medium" : "print",
   "client" : "employer",
   "description" : "Here's where it goes"
   },
   {
   "name" : "image-ad-09",
   "shortname" : "image-ad-09",
-  "medium" : "web development",
+  "medium" : "print",
   "client" : "employer",
   "description" : "Here's where it goes"
   },
   {
   "name" : "image-ad-10",
   "shortname" : "image-ad-10",
-  "medium" : "web development",
+  "medium" : "print",
   "client" : "employer",
   "description" : "Here's where it goes"
   },
   {
   "name" : "image-ad-11",
   "shortname" : "image-ad-11",
-  "medium" : "web development",
+  "medium" : "print",
   "client" : "employer",
   "description" : "Here's where it goes"
   },
   {
   "name" : "image-ad-12",
   "shortname" : "image-ad-12",
-  "medium" : "web development",
+  "medium" : "printt",
   "client" : "employer",
   "description" : "Here's where it goes"
   }
