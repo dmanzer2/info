@@ -1,3 +1,8 @@
+@media (max-width: 979px) and (min-width: 768px) {
+	li.logo-area {
+	    min-height: 310px;
+	}
+}
 @media (min-width: 768px) and (max-width: 979px) {
 	#menu {
 		display: none;
@@ -10,6 +15,10 @@
 
 	#menu-nav-mobile {
 		margin: 0;
+	}
+
+	li.logo-area {
+		min-height: 735px;
 	}
 
 	header .sticky-nav #mobile-nav,
@@ -101,6 +110,10 @@
 		margin-left: -20px;
 		margin-right: -20px;
 		margin-bottom: 0;
+	}
+
+	li.logo-area {
+	    min-height: 515px;
 	}
 
 	header .sticky-nav.stuck #mobile-nav {
@@ -263,6 +276,11 @@
 		margin-bottom: 0;
 	}
 
+	li.logo-area {
+	    min-height: 255px;
+			padding:20px;
+	}
+
 	#navigation-mobile li a {
 		font-size: 14px;
 		padding: 12px 0;
@@ -277,7 +295,6 @@
 	}
 
 	.type-work {
-		background: url(../img/filter-icon.png) no-repeat;
 		width: 16px;
 		height: 16px;
 		display: inline-block;
@@ -293,7 +310,8 @@
 
 	.work-nav #filters,
 	.work-nav #filters li {
-		display: inline-block;
+		text-align: center;
+    line-height: 30px;
 	}
 
 	.work-nav #filters li {
@@ -338,11 +356,16 @@
 	#social-area #social ul li a {
 		width: 50px;
 		height: 50px;
+		background-color: none;
 	}
 
 	#social-area #social ul li a span {
-		font-size: 24px;
+		font-size: 20px;
 		line-height: 50px;
+	}
+
+	#social ul li:hover a, #social ul li.active a {
+		background-color: none;
 	}
 
 	#twitter-feed {
@@ -369,6 +392,7 @@
 	.info-text {
 		padding-right: 0;
 	}
+
 }
 
 @media (max-width: 320px) {

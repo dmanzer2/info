@@ -659,19 +659,19 @@ nav#menu #menu-nav li a:hover {
 
 .page-alternate {
 	background: #26292E;
-	padding: 100px 0;
+	padding: 0 0 100px 0;
 	position: relative;
 	z-index: 99;
 }
 
 .title-page {
 	text-align: center;
-	margin-bottom: 100px;
+	margin-bottom: 60px;
 }
 
 .title-page .title {
 	font-size: 48px;
-	margin: 0 0 10px 0
+	margin: 20px 0 10px 0
 }
 
 .title-page .title-description {
