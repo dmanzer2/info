@@ -1,65 +1,65 @@
 [
   {
-  "name" : "image-ill-01",
+  "name" : "Custom Drawn Vector Art",
   "shortname" : "image-ill-01",
-  "medium" : "digital illustrations",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Adobe Illustrator",
+  "client" : "Digital Art Solutions",
+  "description" : "Artwork for a retail clipart package."
   },
   {
-  "name" : "image-ill-02",
+  "name" : "VW Bug Illustration",
   "shortname" : "image-ill-02",
-  "medium" : "digital illustrations",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Adobe Photoshop, Adobe Illustrator",
+  "client" : "Personal Project",
+  "description" : "Illustrated from the ground up."
   },
   {
-  "name" : "image-ill-03",
+  "name" : "Custom Drawn Vector Art",
   "shortname" : "image-ill-03",
-  "medium" : "digital illustrations",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Adobe Illustrator",
+  "client" : "Digital Art Solutions",
+  "description" : "Artwork for a retail clipart package."
   },
   {
-  "name" : "image-ill-04",
+  "name" : "Custom Drawn Vector Ar",
   "shortname" : "image-ill-04",
-  "medium" : "digital illustrations",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Adobe Illustrator",
+  "client" : "Digital Art Solutions",
+  "description" : "Artwork for a retail clipart package."
   },
   {
-  "name" : "image-ill-05",
+  "name" : "Custom Drawn Vector Art",
   "shortname" : "image-ill-05",
-  "medium" : "digital illustrations",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Adobe Illustrator",
+  "client" : "Digital Art Solutions",
+  "description" : "Artwork for a retail clipart package."
   },
   {
-  "name" : "image-ill-06",
+  "name" : "Custom Drawn Vector Art",
   "shortname" : "image-ill-06",
-  "medium" : "digital illustrations",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Adobe Illustrator",
+  "client" : "Tutorial Project",
+  "description" : "Adobe Illustrator Mesh tools project."
   },
   {
-  "name" : "image-ill-07",
+  "name" : "Custom Drawn Vector Art",
   "shortname" : "image-ill-07",
-  "medium" : "digital illustrations",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Adobe Illustrator",
+  "client" : "Digital Art Solutions",
+  "description" : "Artwork for a retail clipart package."
   },
   {
-  "name" : "image-ill-08",
+  "name" : "Custom Drawn Vector Art",
   "shortname" : "image-ill-08",
-  "medium" : "digital illustrations",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Adobe Illustrator",
+  "client" : "Digital Art Solutions",
+  "description" : "Artwork for a retail clipart package."
   },
   {
-  "name" : "image-ill-09",
+  "name" : "Custom Drawn Vector Art",
   "shortname" : "image-ill-09",
-  "medium" : "digital illustrations",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Adobe Illustrator",
+  "client" : "Digital Art Solutions",
+  "description" : "Artwork for a retail clipart package."
   }
 ]

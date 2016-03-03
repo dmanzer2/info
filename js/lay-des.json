@@ -11,76 +11,76 @@
   "shortname" : "image-ad-02",
   "medium" : "Adobe Illustrator, Adobe InDesign",
   "client" : "Digital Art solutions",
-  "description" : "3/4 page promotional magazine ads."
+  "description" : "3/4 page promotional magazine ads for Digital Art Solutions."
   },
   {
-  "name" : "Bacardi Breezer Magazine ad",
+  "name" : "Product Magazine ad",
   "shortname" : "image-ad-03",
   "medium" : "Adobe Photoshop",
   "client" : "School Project",
-  "description" : "Full Page Magazine ad"
+  "description" : "Full Page Magazine ad for Bacardi Breezer."
   },
   {
-  "name" : "Sundt College Intern Brochure",
+  "name" : "Corporate Brochure",
   "shortname" : "image-ad-04",
   "medium" : "Adobe Illustrator, Photoshop, InDesign, Acrobat Pro",
   "client" : "Sundt",
-  "description" : "4 page brochure for Sundt college intern program."
+  "description" : "4 page brochure for Sundt Construction college intern program."
   },
   {
-  "name" : "USA Today Newspaper Infographic",
+  "name" : "USA Today Infographic",
   "shortname" : "image-ad-05",
   "medium" : "Adobe Illustrator",
   "client" : "College Project",
-  "description" : "Small USA Today Newspaper Infographic"
+  "description" : "Small USA Today Newspaper Infographic."
   },
   {
-  "name" : "image-ad-06",
+  "name" : "ZX7 Ninga Illustration",
   "shortname" : "image-ad-06",
-  "medium" : "print",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Airbrush, Pen and Ink, Acrylic, Pencil",
+  "client" : "High School Project",
+  "description" : "Custom illustration of motorcycle for ad."
   },
   {
-  "name" : "image-ad-07",
+  "name" : "Sundt Magazine ad",
   "shortname" : "image-ad-07",
-  "medium" : "print",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Adobe InDesign, Adobe Photoshop, Adobe Illustrator",
+  "client" : "Client Project",
+  "description" : "Full page Sundt Construction ad for GI Magazine."
   },
   {
-  "name" : "image-ad-08",
+  "name" : "Skyscraper Magazine ad",
   "shortname" : "image-ad-08",
-  "medium" : "print",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Adobe Illustrator",
+  "client" : "Digital Art Solutions",
+  "description" : "Skyscraper magazine ad for Digital Art Solutions product promotion."
   },
   {
-  "name" : "image-ad-09",
+  "name" : "Trade Show Displays",
   "shortname" : "image-ad-09",
-  "medium" : "print",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Adobe Illustrator, Adobe Photoshop",
+  "client" : "Digtial Art Solutions",
+  "description" : "Digital Art Solutions Trade Show Displays."
   },
   {
-  "name" : "image-ad-10",
+  "name" : "Promotional Posters",
   "shortname" : "image-ad-10",
-  "medium" : "print",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Color Pencils, Pencil",
+  "client" : "College Project",
+  "description" : "American Toys Poster Illustration, (displayed while attending college)."
   },
   {
-  "name" : "image-ad-11",
+  "name" : "Product Flyers",
   "shortname" : "image-ad-11",
-  "medium" : "print",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Adobe Illustrator, Adobe InDesign, Adobe Photoshop",
+  "client" : "Digital Art Solutions",
+  "description" : "2 product handouts offering a sale promotion."
   },
   {
-  "name" : "image-ad-12",
+  "name" : "Trade show Displays",
   "shortname" : "image-ad-12",
-  "medium" : "printt",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Adobe Illustrator, Adobe InDesign, Adobe Photoshop",
+  "client" : "Digital Art Solutions",
+  "description" : "Product displays use to draw customers at Tradeshow."
   }
 ]
