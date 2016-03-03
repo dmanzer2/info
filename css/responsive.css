@@ -278,7 +278,11 @@
 
 	li.logo-area {
 	    min-height: 255px;
-			padding:20px;
+			background-image: url('../img/lg-icon.png');
+			background-size: 50%;
+			background-position: center 40%;
+			background-repeat: no-repeat;
+			opacity: .2;
 	}
 
 	#navigation-mobile li a {
