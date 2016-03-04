@@ -1,8 +1,3 @@
-@media (max-width: 979px) and (min-width: 768px) {
-	li.logo-area {
-	    min-height: 310px;
-	}
-}
 @media (min-width: 768px) and (max-width: 979px) {
 	#menu {
 		display: none;
@@ -19,6 +14,10 @@
 
 	li.logo-area {
 		min-height: 735px;
+		background-image: url('../img/lg-icon.png');
+		background-size: 30%;
+		background-position: center 10%;
+		background-repeat: no-repeat;
 	}
 
 	header .sticky-nav #mobile-nav,
@@ -114,6 +113,10 @@
 
 	li.logo-area {
 	    min-height: 515px;
+			background-image: url('../img/lg-icon.png');
+			background-size: 50%;
+			background-position: center 40%;
+			background-repeat: no-repeat;
 	}
 
 	header .sticky-nav.stuck #mobile-nav {
@@ -282,7 +285,6 @@
 			background-size: 50%;
 			background-position: center 40%;
 			background-repeat: no-repeat;
-			opacity: .4;
 	}
 
 	#navigation-mobile li a {
