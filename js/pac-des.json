@@ -1,23 +1,23 @@
 [
   {
-  "name" : "image-pd-01",
+  "name" : "Design Template Product",
   "shortname" : "image-pd-01",
-  "medium" : "package design",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Adobe Illustrator, Adobe Photoshop, Adobe InDesign",
+  "client" : "Digital Art Solutions",
+  "description" : "Package design for a Vector template Design product."
   },
   {
-  "name" : "image-pd-02",
+  "name" : "Design Template Product",
   "shortname" : "image-pd-02",
-  "medium" : "package design",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Adobe Illustrator, Adobe Photoshop, Adobe InDesign",
+  "client" : "Digital Art Solutions",
+  "description" : "Package design for a Vector template Design product."
   },
   {
-  "name" : "image-pd-03",
+  "name" : "Design Template Product",
   "shortname" : "image-pd-03",
-  "medium" : "package design",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Adobe Illustrator, Adobe Photoshop, Adobe InDesign",
+  "client" : "Digital Art Solutions",
+  "description" : "Package design for a Vector template Design product."
   }
 ]

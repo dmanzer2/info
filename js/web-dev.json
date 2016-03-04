@@ -1,65 +1,65 @@
 [
   {
-  "name" : "image-web-01",
+  "name" : "Future of Work-life Forum Event Site",
   "shortname" : "image-web-01",
-  "medium" : "web development",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Web Development",
+  "client" : "WorldatWork",
+  "description" : "Responsive website built with bootstap, html5, css3, jQuery, Javascript, JSP, grunt, express server, npm."
   },
   {
-  "name" : "image-web-02",
+  "name" : "Deer Valley Dentistry",
   "shortname" : "image-web-02",
-  "medium" : "web development",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Web Development",
+  "client" : "Anderson Advertising",
+  "description" : "Resonsive website built with wordpress, html5 css3, jQuery, PHP."
   },
   {
-  "name" : "image-web-03",
+  "name" : "2016 Total Rewards Canada Conference Site",
   "shortname" : "image-web-03",
-  "medium" : "web development",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Web Development",
+  "client" : "WorldatWork",
+  "description" : "Responsive website built with bootstap, html5, css3, jQuery, Javascript, JSP."
   },
   {
-  "name" : "image-web-04",
+  "name" : "Altshuler Law",
   "shortname" : "image-web-04",
-  "medium" : "web development",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Web Design",
+  "client" : "Anderson Advertising",
+  "description" : "Complete site design (mockup phase)."
   },
   {
-  "name" : "image-web-05",
+  "name" : "Arizona State University Microsite",
   "shortname" : "image-web-05",
-  "medium" : "web development",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Web Design",
+  "client" : "Anderson Advertising",
+  "description" : "Site design then sent out for coding."
   },
   {
-  "name" : "image-web-06",
+  "name" : "Firedaughter clothing website",
   "shortname" : "image-web-06",
-  "medium" : "web development",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Web Design & Development",
+  "client" : "Anderson Advertising",
+  "description" : "Resonsive website built with wordpress, html5 css3, jQuery, PHP."
   },
   {
-  "name" : "image-web-07",
+  "name" : "Spotlight on Sale Compensation Event Site",
   "shortname" : "image-web-07",
-  "medium" : "web development",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Web Development",
+  "client" : "WorldatWork",
+  "description" : "Responsive website built with bootstap, html5, css3, jQuery, Javascript, JSP."
   },
   {
-  "name" : "image-web-08",
+  "name" : "Phoenis Children's Hospital, Beachball Event",
   "shortname" : "image-web-08",
-  "medium" : "web development",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Web Design",
+  "client" : "Anderson Advertising",
+  "description" : "Multiple pages designed for PCH."
   },
   {
-  "name" : "image-web-09",
+  "name" : "Total Rewards Conference 2016",
   "shortname" : "image-web-09",
-  "medium" : "web development",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Web Development",
+  "client" : "WorldatWork",
+  "description" : "Responsive website built with bootstap, html5, css3, jQuery, Javascript, JSP."
   }
 ]
