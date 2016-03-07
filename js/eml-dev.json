@@ -1,65 +1,65 @@
 [
   {
-  "name" : "image-em-01",
+  "name" : "Blue Wasabi email",
   "shortname" : "image-em-01",
   "medium" : "email development",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "client" : "Anderson",
+  "description" : "Monthly email blast. Send using MailChimp."
   },
   {
-  "name" : "image-em-02",
+  "name" : "DBSI email",
   "shortname" : "image-em-02",
   "medium" : "email development",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "client" : "Anderson",
+  "description" : "Muckup for client"
   },
   {
-  "name" : "image-em-03",
+  "name" : "Hamara Jewlers email",
   "shortname" : "image-em-03",
   "medium" : "email development",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "client" : "Anderson",
+  "description" : "Monthly email blast. Send using MailChimp."
   },
   {
-  "name" : "image-em-04",
+  "name" : "Phoenix Children's Hospital email",
   "shortname" : "image-em-04",
   "medium" : "email development",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "client" : "Anderson",
+  "description" : "Mockup for client"
   },
   {
-  "name" : "image-em-05",
+  "name" : "Surgical Hospital of Phoenix",
   "shortname" : "image-em-05",
   "medium" : "email development",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "client" : "Anderson",
+  "description" : "Monthly email blast. Send using MailChimp."
   },
   {
-  "name" : "image-em-06",
+  "name" : "Hamara Jewlers email",
   "shortname" : "image-em-06",
   "medium" : "email development",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "client" : "Anderson",
+  "description" : "Monthly email blast. Send using MailChimp."
   },
   {
-  "name" : "image-em-07",
+  "name" : "Phoenix Children's Hospital email",
   "shortname" : "image-em-07",
   "medium" : "email development",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "client" : "Anderson",
+  "description" : "Mockup for client"
   },
   {
-  "name" : "image-em-08",
+  "name" : "Arizona Sunrays Classic Rock Invitational email",
   "shortname" : "image-em-08",
   "medium" : "email development",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "client" : "Anderson",
+  "description" : "Monthly email blast. Send using MailChimp."
   },
   {
-  "name" : "image-em-09",
+  "name" : "Phoenix Children's Hospital email",
   "shortname" : "image-em-09",
   "medium" : "email development",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "client" : "Anderson",
+  "description" : "Mockup for client"
   }
 ]
