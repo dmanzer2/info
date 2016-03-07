@@ -1,65 +1,65 @@
 [
   {
-  "name" : "image-cp-01",
+  "name" : "Photo of lights",
   "shortname" : "image-cp-01",
-  "medium" : "creative photography",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Canon DSLR, Photoshop Color Enhancements",
+  "client" : "Self",
+  "description" : "Used shutter speed, light and color."
   },
   {
-  "name" : "image-cp-02",
+  "name" : "Used 2 photos and Ilusutration",
   "shortname" : "image-cp-02",
-  "medium" : "creative photography",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Canon DSLR, Photoshop",
+  "client" : "Self",
+  "description" : "Used a mix of photos and color enhancements."
   },
   {
-  "name" : "image-cp-03",
+  "name" : "Photograph of Butterfly",
   "shortname" : "image-cp-03",
-  "medium" : "creative photography",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Canon DSLR, Photoshop and Illustrator elements",
+  "client" : "Self",
+  "description" : "Butterfly photo and color enhancements."
   },
   {
-  "name" : "image-cp-04",
+  "name" : "Koi photograph",
   "shortname" : "image-cp-04",
-  "medium" : "creative photography",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Canon DSLR, Photoshop",
+  "client" : "Self",
+  "description" : "Koi photo and color enhancements."
   },
   {
-  "name" : "image-cp-05",
+  "name" : "Photo Montage",
   "shortname" : "image-cp-05",
-  "medium" : "creative photography",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Design and Photoshop",
+  "client" : "Self",
+  "description" : "Grouped photos to create a imaginative story."
   },
   {
-  "name" : "image-cp-06",
+  "name" : "Rose Photo",
   "shortname" : "image-cp-06",
-  "medium" : "creative photography",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Canon DSLR, Photoshop and Illustrator elements",
+  "client" : "Self",
+  "description" : "Rose photo and color enhancements."
   },
   {
-  "name" : "image-cp-07",
+  "name" : "Photo Montage",
   "shortname" : "image-cp-07",
-  "medium" : "creative photography",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Design and Photoshop",
+  "client" : "Self",
+  "description" : "Grouped photos to create a imaginative story."
   },
   {
-  "name" : "image-cp-08",
+  "name" : "Photo of lights",
   "shortname" : "image-cp-08",
-  "medium" : "creative photography",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Canon DSLR, Photoshop Color Enhancements",
+  "client" : "Self",
+  "description" : "Used shutter speed, light and color."
   },
   {
-  "name" : "image-cp-09",
+  "name" : "Photo Montage",
   "shortname" : "image-cp-09",
-  "medium" : "creative photography",
-  "client" : "employer",
-  "description" : "Here's where it goes"
+  "medium" : "Design and Photoshop",
+  "client" : "Self",
+  "description" : "Grouped photos to create a imaginative story."
   }
 ]
