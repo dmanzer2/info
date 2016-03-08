@@ -126,521 +126,516 @@
 <!-- Work Section -->
 <div id="work" class="page">
 	<div class="container">
-    	<!-- Title Page -->
-        <div class="row">
-            <div class="span12">
-                <div class="title-page">
-                    <h2 class="title">My Work</h2>
-                    <h3 class="title-description">Check Out My Projects</h3>
-                </div>
+
+    <div class="row">
+        <div class="span12">
+            <div class="title-page">
+                <h2 class="title">My Work</h2>
+                <h3 class="title-description">Check Out My Projects</h3>
             </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Area -->
+    <div class="row">
+    	<div class="span3">
+      	<!-- Filter -->
+        <nav id="options" class="work-nav">
+          <ul id="filters" class="option-set" data-option-key="filter">
+            <li class="type-work">Type of Work</li>
+            <li><a href="#filter" data-option-value=".layout" class="selected">Layout/Advertising</a></li>
+            <li><a href="#filter" data-option-value=".identity">Identity/Logos</a></li>
+            <li><a href="#filter" data-option-value=".illustration">Digital Illustration</a></li>
+            <li><a href="#filter" data-option-value=".package">Package Design</a></li>
+            <li><a href="#filter" data-option-value=".web">Web Development</a></li>
+            <li><a href="#filter" data-option-value=".email">email Marketing</a></li>
+            <li><a href="#filter" data-option-value=".photography">Creative Photography</a></li>
+            <li><a href="#filter" data-option-value=".fonts">Font Development</a></li>
+            <li><a href="#filter" data-option-value=".placeholder">&nbsp;</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="span9">
+        <div class="row">
+          <section id="projects">
+            <ul id="thumbs" ng-controller="WorkController">
+
+              <!-- layout Items -->
+            	<li class="item-thumbs span3 clearfix layout" ng-repeat="item in layout">
+              	<!-- Full Image -->
+              	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.name}}" ng-href="img/work/layout-design/full/{{item.shortname}}-full.jpg">
+                	<span class="overlay-img"></span>
+                  <span class="overlay-img-thumb font-icon-plus"></span>
+                </a>
+                <!-- Thumb Image and Description -->
+                <img ng-src="img/work/layout-design/thumbs/{{item.shortname}}.jpg" alt="<i class='fa fa-question-circle'></i>&nbsp;&nbsp; {{item.description}} <br /><i class='fa fa-object-group'></i>&nbsp;&nbsp;Medium: {{item.medium}}">
+              </li>
+
+              <!-- Identity Items -->
+              <li class="item-thumbs span3 clearfix identity" ng-repeat="item in logos">
+              <!-- Full Image -->
+                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.name}}" ng-href="img/work/logos-branding/full/{{item.shortname}}-full.jpg">
+                  <span class="overlay-img"></span>
+                  <span class="overlay-img-thumb font-icon-plus"></span>
+                </a>
+                <!-- Thumb Image and Description -->
+                <img ng-src="img/work/logos-branding/thumbs/{{item.shortname}}.jpg" alt="<i class='fa fa-question-circle'></i>&nbsp;&nbsp; {{item.description}} <br /><i class='fa fa-rocket'></i>&nbsp;&nbsp;Medium: {{item.medium}}">
+              </li>
+
+              <!--Illustrations Start-->
+							<!-- Item Project and Filter Name -->
+              <li class="item-thumbs span3 clearfix illustration" ng-repeat="item in illustrations">
+                <!-- Full Image -->
+                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.name}}" ng-href="img/work/illustrations/full/{{item.shortname}}-full.jpg">
+                  <span class="overlay-img"></span>
+                  <span class="overlay-img-thumb font-icon-plus"></span>
+                </a>
+                <!-- Thumb Image and Description -->
+                <img ng-src="img/work/illustrations/thumbs/{{item.shortname}}.jpg" alt="<i class='fa fa-question-circle'></i>&nbsp;&nbsp; {{item.description}} <br /><i class='fa fa-paw'></i>&nbsp;&nbsp;Medium: {{item.medium}}">
+              </li>
+
+              <!--Package Design Start-->
+              <!-- Item Project and Filter Name -->
+              <li class="item-thumbs span3 clearfix package" ng-repeat="item in package">
+                <!-- Full Image -->
+                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.name}}" ng-href="img/work/package-design/full/{{item.shortname}}-full.jpg">
+                  <span class="overlay-img"></span>
+                  <span class="overlay-img-thumb font-icon-plus"></span>
+                </a>
+                <!-- Thumb Image and Description -->
+                <img ng-src="img/work/package-design/thumbs/{{item.shortname}}.jpg" alt="<i class='fa fa-question-circle'></i>&nbsp;&nbsp; {{item.description}} <br /><i class='fa fa-coffee'></i>&nbsp;&nbsp;Medium: {{item.medium}}">
+              </li>
+
+              <!--Web Start-->
+              <!-- Item Project and Filter Name -->
+              <li class="item-thumbs span3 clearfix web" ng-repeat="item in web">
+                <!-- Full Image -->
+                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.name}}" ng-href="img/work/web-development/full/{{item.shortname}}-full.jpg">
+                  <span class="overlay-img"></span>
+                  <span class="overlay-img-thumb font-icon-plus"></span>
+                </a>
+                <!-- Thumb Image and Description -->
+                <img ng-src="img/work/web-development/thumbs/{{item.shortname}}.jpg" alt="<i class='fa fa-question-circle'></i>&nbsp;&nbsp; {{item.description}} <br /><i class='fa fa-desktop'></i>&nbsp;&nbsp;Medium: {{item.medium}}">
+              </li>
+
+              <!-- Email Start -->
+              <li class="item-thumbs span3 clearfix email" ng-repeat="item in email">
+                <!-- Full Image -->
+                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.name}}" ng-href="img/work/email-development/full/{{item.shortname}}-full.jpg">
+                  <span class="overlay-img"></span>
+                  <span class="overlay-img-thumb font-icon-plus"></span>
+                </a>
+                <!-- Thumb Image and Description -->
+                <img ng-src="img/work/email-development/thumbs/{{item.shortname}}.jpg" alt="<i class='fa fa-question-circle'></i>&nbsp;&nbsp; {{item.description}} <br /><i class='fa fa-envelope-o'></i>&nbsp;&nbsp;Medium: {{item.medium}}">
+              </li>
+
+              <!-- Photography Start -->
+              <li class="item-thumbs span3 clearfix photography" ng-repeat="item in photo">
+                <!-- Full Image -->
+                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.name}}" ng-href="img/work/creative-photography/full/{{item.shortname}}-full.jpg">
+                  <span class="overlay-img"></span>
+                  <span class="overlay-img-thumb font-icon-plus"></span>
+                </a>
+                <!-- Thumb Image and Description -->
+                <img ng-src="img/work/creative-photography/thumbs/{{item.shortname}}.jpg" alt="<i class='fa fa-question-circle'></i>&nbsp;&nbsp; {{item.description}} <br /><i class='fa fa-picture-o'></i>&nbsp;&nbsp;Medium: {{item.medium}}">
+              </li>
+
+							<!-- Fonts Start -->
+              <li class="item-thumbs span3 clearfix fonts" ng-repeat="item in fonts">
+                <!-- Full Image -->
+                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.name}}" ng-href="img/work/font-development/full/{{item.shortname}}-full.jpg">
+                  <span class="overlay-img"></span>
+                  <span class="overlay-img-thumb font-icon-plus"></span>
+                </a>
+                <!-- Thumb Image and Description -->
+                <img ng-src="img/work/font-development/thumbs/{{item.shortname}}.jpg" alt="<i class='fa fa-question-circle'></i>&nbsp;&nbsp; {{item.description}} <br /><i class='fa fa-font'></i>&nbsp;&nbsp;Medium: {{item.medium}}">
+              </li>
+
+              <!-- Portfolio placeholder - Holds Angular in Place -->
+              <li class="item-thumbs span9 clearfix placeholder">
+                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="#">
+                  <span class="overlay-img"></span>
+                  <span class="overlay-img-thumb font-icon-plus"></span>
+                </a>
+                <img ng-src="//placehold.it/1x1" alt="" style="height:0px !important;">
+              </li>
+
+            </ul>
+          </section>
+
+        </div>
+      </div>
+
+    </div>
+    <!-- End Portfolio Projects -->
+
+  </div>
+</div>
+<!-- End Work Section -->
+
+<!-- About Section -->
+<div id="skills" class="page-alternate">
+  <div class="container">
+
+    <!-- Title Page -->
+    <div class="row">
+      <div class="span12">
+        <div class="title-page">
+          <h2 class="title">Skills</h2>
+          <h3 class="title-description">Technical skills I've learned along the way. <small>(scale from 0-100)</small></h3>
+          <p>Over <a href="https://www.linkedin.com/in/david-manzer-bb081855?trk=hp-identity-name">50 certifications</a> in Web Design, Development and Business practices.</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Skills Area-->
+    <div class="row">
+      <div class="span4">
+        <!-- Chart Start -->
+        <div class="chart-horiz">
+
+          <ul class="chart">
+            <li class="title" title="Adobe CS6 and CC"></li>
+        		<li class="current" title="Adobe Photoshop"><span class="bar" data-number="90"></span><span class="number">90</span></li>
+        		<li class="past" title="Adobe Illustrator"><span class="bar" data-number="95"></span><span class="number">95</span></li>
+            <li class="past" title="Adobe InDesign"><span class="bar" data-number="85"></span><span class="number">85</span></li>
+            <li class="past" title="Adobe Acrobat Pro"><span class="bar" data-number="85"></span><span class="number">85</span></li>
+            <li class="past" title="Adobe Dreamweaver"><span class="bar" data-number="90"></span><span class="number">90</span></li>
+            <li class="past" title="Adobe Bridge"><span class="bar" data-number="85"></span><span class="number">85</span></li>
+            <li class="past" title="Adobe Flash"><span class="bar" data-number="70"></span><span class="number">70</span></li>
+
+            <li class="title" title="Design Principles"></li>
+            <li class="past" title="Typography"><span class="bar" data-number="95"></span><span class="number">95</span></li>
+            <li class="past" title="Color Theory"><span class="bar" data-number="85"></span><span class="number">85</span></li>
+            <li class="past" title="Layout"><span class="bar" data-number="95"></span><span class="number">95</span></li>
+
+            <li class="title" title="Microsoft Office"></li>
+            <li class="past" title="Outlook"><span class="bar" data-number="90"></span><span class="number">90</span></li>
+            <li class="past" title="Word"><span class="bar" data-number="65"></span><span class="number">65</span></li>
+            <li class="past" title="Excel"><span class="bar" data-number="65"></span><span class="number">65</span></li>
+
+            <li class="title" title="Font Development"></li>
+            <li class="past" title="FontLab"><span class="bar" data-number="75"></span><span class="number">75</span></li>
+            <li class="past" title="Fontographer"><span class="bar" data-number="65"></span><span class="number">65</span></li>
+
+            <li class="title" title="Cross Browser Testing"></li>
+            <li class="past" title="VMFusion - Virtual PC"><span class="bar" data-number="95"></span><span class="number">95</span></li>
+            <li class="past" title="Litmus"><span class="bar" data-number="85"></span><span class="number">85</span></li>
+            <li class="past" title="Browserstack"><span class="bar" data-number="75"></span><span class="number">75</span></li>
+
+            <li class="title" title="Noteworthy"></li>
+            <li class="past" title="Bootstrap"><span class="bar" data-number="95"></span><span class="number">95</span></li>
+            <li class="past" title="SVG animation"><span class="bar" data-number="80"></span><span class="number">80</span></li>
+            <li class="past" title="UI/UX"><span class="bar" data-number="85"></span><span class="number">85</span></li>
+            <li class="past" title="Responsive and Adaptive Design"><span class="bar" data-number="80"></span><span class="number">80</span></li>
+        	</ul>
+
+        </div>
+        <!-- Chart End -->
+      </div>
+
+      <div class="span4">
+        <!-- Chart Start -->
+        <div class="chart-horiz">
+          <!-- Actual bar chart -->
+          <ul class="chart">
+            <li class="title" title="IDE"></li>
+            <li class="past" title="Atom.oi"><span class="bar" data-number="90"></span><span class="number">90</span></li>
+            <li class="past" title="Brackets"><span class="bar" data-number="70"></span><span class="number">70</span></li>
+            <li class="past" title="Sublime"><span class="bar" data-number="65"></span><span class="number">65</span></li>
+            <li class="past" title="Coda"><span class="bar" data-number="65"></span><span class="number">65</span></li>
+
+            <li class="title" title="Client Side Coding"></li>
+        		<li class="current" title="HTML & XHTML"><span class="bar" data-number="95"></span><span class="number">95</span></li>
+        		<li class="past" title="CSS & CSS3"><span class="bar" data-number="85"></span><span class="number">85</span></li>
+            <li class="past" title="Javascript"><span class="bar" data-number="75"></span><span class="number">75</span></li>
+            <li class="past" title="jQuery"><span class="bar" data-number="70"></span><span class="number">70</span></li>
+            <li class="past" title="JSON"><span class="bar" data-number="75"></span><span class="number">75</span></li>
+            <li class="past" title="XML"><span class="bar" data-number="65"></span><span class="number">65</span></li>
+            <li class="past" title="LESS"><span class="bar" data-number="75"></span><span class="number">75</span></li>
+            <li class="past" title="Sass"><span class="bar" data-number="75"></span><span class="number">75</span></li>
+
+            <li class="title" title="Server Side Coding"></li>
+            <li class="past" title="PHP"><span class="bar" data-number="65"></span><span class="number">65</span></li>
+            <li class="past" title="JSP"><span class="bar" data-number="70"></span><span class="number">70</span></li>
+            <li class="past" title="MySQL"><span class="bar" data-number="65"></span><span class="number">65</span></li>
+
+            <li class="title" title="Javascript MVC"></li>
+            <li class="past" title="AngularJS"><span class="bar" data-number="80"></span><span class="number">80</span></li>
+            <li class="past" title="Handlebars"><span class="bar" data-number="75"></span><span class="number">75</span></li>
+            <li class="past" title="Ember.js"><span class="bar" data-number="65"></span><span class="number">65</span></li>
+            <li class="past" title="React.js"><span class="bar" data-number="65"></span><span class="number">65</span></li>
+            <li class="past" title="Backbone.js"><span class="bar" data-number="65"></span><span class="number">65</span></li>
+
+            <li class="title" title="Content Management"></li>
+            <li class="past" title="Wordpress"><span class="bar" data-number="75"></span><span class="number">75</span></li>
+            <li class="past" title="CushyCMS"><span class="bar" data-number="95"></span><span class="number">95</span></li>
+            <li class="past" title="dotCMS"><span class="bar" data-number="65"></span><span class="number">65</span></li>
+        	</ul>
+
+        </div>
+        <!-- Chart End -->
+      </div>
+
+      <div class="span4">
+        <!-- Chart Start -->
+        <div class="chart-horiz">
+          <!-- Actual bar chart -->
+          <ul class="chart">
+            <li class="title" title="Development Tools"></li>
+            <li class="past" title="Terminal Commands"><span class="bar" data-number="75"></span><span class="number">75</span></li>
+            <li class="past" title="npm"><span class="bar" data-number="85"></span><span class="number">85</span></li>
+            <li class="past" title="yeoman"><span class="bar" data-number="95"></span><span class="number">95</span></li>
+            <li class="past" title="grunt"><span class="bar" data-number="70"></span><span class="number">70</span></li>
+            <li class="past" title="bower"><span class="bar" data-number="85"></span><span class="number">85</span></li>
+            <li class="past" title="node.js"><span class="bar" data-number="65"></span><span class="number">65</span></li>
+            <li class="past" title="express"><span class="bar" data-number="65"></span><span class="number">65</span></li>
+
+            <li class="title" title="Debugging"></li>
+            <li class="past" title="Chrome Dev Tools"><span class="bar" data-number="80"></span><span class="number">80</span></li>
+            <li class="past" title="Console.log()"><span class="bar" data-number="75"></span><span class="number">75</span></li>
+
+            <li class="title" title="Source Control"></li>
+            <li class="past" title="SVN - Cornerstone"><span class="bar" data-number="65"></span><span class="number">65</span></li>
+            <li class="past" title="Git - SourceTree"><span class="bar" data-number="90"></span><span class="number">90</span></li>
+            <li class="past" title="GitHub"><span class="bar" data-number="80"></span><span class="number">80</span></li>
+            <li class="past" title="Git via terminal"><span class="bar" data-number="75"></span><span class="number">75</span></li>
+
+            <li class="title" title="Workflow"></li>
+            <li class="past" title="JIRA"><span class="bar" data-number="95"></span><span class="number">95</span></li>
+            <li class="past" title="Stash"><span class="bar" data-number="65"></span><span class="number">65</span></li>
+            <li class="past" title="HipChat"><span class="bar" data-number="65"></span><span class="number">65</span></li>
+
+            <li class="title" title="NoSQL"></li>
+            <li class="past" title="Mongodb"><span class="bar" data-number="95"></span><span class="number">95</span></li>
+            <li class="past" title="heroku"><span class="bar" data-number="65"></span><span class="number">65</span></li>
+            <li class="past" title="MongoLab"><span class="bar" data-number="65"></span><span class="number">65</span></li>
+          </ul>
+
+          <p class="platform" style="margin:30px 0 0 30px;">
+            <img src="img/apple-logo.png" /> <span style="color:#7F8289; font-size:14px;">Platform of choice.</span>
+          </p>
+
+        </div>
+        <!-- Chart End -->
+      </div>
+    </div>
+
+    <div class="row"><hr /></div>
+    <!--Experience Section-->
+    <div id="experience" class="page-alternate">
+      <div class="container">
+
+        <!-- Title Page -->
+        <div class="row">
+          <div class="span12">
+            <div class="title-page">
+              <h2 class="title">Experience</h2>
+              <h3 class="title-description">Over 20 years of Experience in Graphic Design, Web Development and Art Direction.</h3>
+            </div>
+          </div>
         </div>
         <!-- End Title Page -->
 
-        <!-- Portfolio Projects -->
         <div class="row">
-        	<div class="span3">
-          	<!-- Filter -->
-              <nav id="options" class="work-nav">
-                <ul id="filters" class="option-set" data-option-key="filter">
-                  <li class="type-work">Type of Work</li>
-                  <li><a href="#filter" data-option-value=".layout" class="selected">Layout/Advertising</a></li>
-                  <li><a href="#filter" data-option-value=".identity">Identity/Logos</a></li>
-                  <li><a href="#filter" data-option-value=".illustration">Digital Illustration</a></li>
-                  <li><a href="#filter" data-option-value=".package">Package Design</a></li>
-                  <li><a href="#filter" data-option-value=".web">Web Development</a></li>
-                  <li><a href="#filter" data-option-value=".email">email Marketing</a></li>
-                  <li><a href="#filter" data-option-value=".photography">Creative Photography</a></li>
-                  <li><a href="#filter" data-option-value=".fonts">Font Development</a></li>
-                  <li><a href="#filter" data-option-value=".placeholder">&nbsp;</a></li>
-                </ul>
-              </nav>
-            </div>
-
-            <div class="span9">
-              <div class="row">
-                <section id="projects">
-                  <ul id="thumbs" ng-controller="WorkController">
-
-                    <!-- layout Items -->
-                  	<li class="item-thumbs span3 clearfix layout" ng-repeat="item in layout">
-                    	<!-- Full Image -->
-                    	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.name}}" ng-href="img/work/layout-design/full/{{item.shortname}}-full.jpg">
-                      	<span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img ng-src="img/work/layout-design/thumbs/{{item.shortname}}.jpg" alt="<i class='fa fa-question-circle'></i>&nbsp;&nbsp; {{item.description}} <br /><i class='fa fa-object-group'></i>&nbsp;&nbsp;Medium: {{item.medium}}">
-                    </li>
-                  	<!-- End layout Items -->
-
-                    <!-- Identity Items -->
-                    <li class="item-thumbs span3 clearfix identity" ng-repeat="item in logos">
-                    <!-- Full Image -->
-                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.name}}" ng-href="img/work/logos-branding/full/{{item.shortname}}-full.jpg">
-                        <span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img ng-src="img/work/logos-branding/thumbs/{{item.shortname}}.jpg" alt="<i class='fa fa-question-circle'></i>&nbsp;&nbsp; {{item.description}} <br /><i class='fa fa-rocket'></i>&nbsp;&nbsp;Medium: {{item.medium}}">
-                    </li>
-                    <!-- End Item Project -->
-
-                    <!--Illustrations Start-->
-      							<!-- Item Project and Filter Name -->
-                    <li class="item-thumbs span3 clearfix illustration" ng-repeat="item in illustrations">
-                      <!-- Full Image -->
-                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.name}}" ng-href="img/work/illustrations/full/{{item.shortname}}-full.jpg">
-                        <span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img ng-src="img/work/illustrations/thumbs/{{item.shortname}}.jpg" alt="<i class='fa fa-question-circle'></i>&nbsp;&nbsp; {{item.description}} <br /><i class='fa fa-paw'></i>&nbsp;&nbsp;Medium: {{item.medium}}">
-                    </li>
-                    <!-- End Item Project -->
-
-                    <!--Package Design Start-->
-                    <!-- Item Project and Filter Name -->
-                    <li class="item-thumbs span3 clearfix package" ng-repeat="item in package">
-                      <!-- Full Image -->
-                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.name}}" ng-href="img/work/package-design/full/{{item.shortname}}-full.jpg">
-                        <span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img ng-src="img/work/package-design/thumbs/{{item.shortname}}.jpg" alt="<i class='fa fa-question-circle'></i>&nbsp;&nbsp; {{item.description}} <br /><i class='fa fa-coffee'></i>&nbsp;&nbsp;Medium: {{item.medium}}">
-                    </li>
-                    <!-- End Item Project -->
-
-                    <!--Web Start-->
-                    <!-- Item Project and Filter Name -->
-                    <li class="item-thumbs span3 clearfix web" ng-repeat="item in web">
-                      <!-- Full Image -->
-                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.name}}" ng-href="img/work/web-development/full/{{item.shortname}}-full.jpg">
-                        <span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img ng-src="img/work/web-development/thumbs/{{item.shortname}}.jpg" alt="<i class='fa fa-question-circle'></i>&nbsp;&nbsp; {{item.description}} <br /><i class='fa fa-desktop'></i>&nbsp;&nbsp;Medium: {{item.medium}}">
-                    </li>
-                    <!-- End Item Project -->
-
-                    <!-- Email Start -->
-                    <li class="item-thumbs span3 clearfix email" ng-repeat="item in email">
-                      <!-- Full Image -->
-                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.name}}" ng-href="img/work/email-development/full/{{item.shortname}}-full.jpg">
-                        <span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img ng-src="img/work/email-development/thumbs/{{item.shortname}}.jpg" alt="<i class='fa fa-question-circle'></i>&nbsp;&nbsp; {{item.description}} <br /><i class='fa fa-envelope-o'></i>&nbsp;&nbsp;Medium: {{item.medium}}">
-                    </li>
-                    <!-- End Item Project -->
-
-                    <!-- Photography Start -->
-                    <li class="item-thumbs span3 clearfix photography" ng-repeat="item in photo">
-                      <!-- Full Image -->
-                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.name}}" ng-href="img/work/creative-photography/full/{{item.shortname}}-full.jpg">
-                        <span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img ng-src="img/work/creative-photography/thumbs/{{item.shortname}}.jpg" alt="<i class='fa fa-question-circle'></i>&nbsp;&nbsp; {{item.description}} <br /><i class='fa fa-picture-o'></i>&nbsp;&nbsp;Medium: {{item.medium}}">
-                    </li>
-                    <!-- End Item Project -->
-
-      							<!-- Fonts Start -->
-                    <li class="item-thumbs span3 clearfix fonts" ng-repeat="item in fonts">
-                      <!-- Full Image -->
-                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.name}}" ng-href="img/work/font-development/full/{{item.shortname}}-full.jpg">
-                        <span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <!-- Thumb Image and Description -->
-                      <img ng-src="img/work/font-development/thumbs/{{item.shortname}}.jpg" alt="<i class='fa fa-question-circle'></i>&nbsp;&nbsp; {{item.description}} <br /><i class='fa fa-font'></i>&nbsp;&nbsp;Medium: {{item.medium}}">
-                    </li>
-                    <!-- End Item Project -->
-
-                    <!-- Portfolio placeholder - Holds Angular in Place -->
-                    <li class="item-thumbs span9 clearfix placeholder">
-                      <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="" href="#">
-                        <span class="overlay-img"></span>
-                        <span class="overlay-img-thumb font-icon-plus"></span>
-                      </a>
-                      <img ng-src="//placehold.it/1x1" alt="" style="height:0px !important;">
-                    </li>
-
-                  </ul>
-                </section>
-
-              </div>
-            </div>
-          </div>
-          <!-- End Portfolio Projects -->
-        </div>
-      </div>
-      <!-- End Work Section -->
-
-      <!-- Skills Section -->
-      <div id="skills" class="page-alternate">
-        <div class="container">
-
-          <!-- Title Page -->
-          <div class="row">
-            <div class="span12">
-              <div class="title-page">
-                <h2 class="title">Skills</h2>
-                <h3 class="title-description">Technical skills I've learned along the way. <small>(scale from 0-100)</small></h3>
-                <p>Over <a href="https://www.linkedin.com/in/david-manzer-bb081855?trk=hp-identity-name">50 certifications</a> in Web Design, Development and Business practices.</p>
-              </div>
-            </div>
-          </div>
-          <!-- End Title Page -->
-
-          <div class="row">
-
-            <div class="span4">
-              <!-- Chart Start -->
-              <div class="chart-horiz">
-                <!-- Actual bar chart -->
-                <ul class="chart">
-                  <li class="title" title="Adobe CS6 and CC"></li>
-              		<li class="current" title="Adobe Photoshop"><span class="bar" data-number="90"></span><span class="number">90</span></li>
-              		<li class="past" title="Adobe Illustrator"><span class="bar" data-number="95"></span><span class="number">95</span></li>
-                  <li class="past" title="Adobe InDesign"><span class="bar" data-number="85"></span><span class="number">85</span></li>
-                  <li class="past" title="Adobe Acrobat Pro"><span class="bar" data-number="85"></span><span class="number">85</span></li>
-                  <li class="past" title="Adobe Dreamweaver"><span class="bar" data-number="90"></span><span class="number">90</span></li>
-                  <li class="past" title="Adobe Bridge"><span class="bar" data-number="85"></span><span class="number">85</span></li>
-                  <li class="past" title="Adobe Flash"><span class="bar" data-number="70"></span><span class="number">70</span></li>
-
-                  <li class="title" title="Design Principles"></li>
-                  <li class="past" title="Typography"><span class="bar" data-number="95"></span><span class="number">95</span></li>
-                  <li class="past" title="Color Theory"><span class="bar" data-number="85"></span><span class="number">85</span></li>
-                  <li class="past" title="Layout"><span class="bar" data-number="95"></span><span class="number">95</span></li>
-
-                  <li class="title" title="Microsoft Office"></li>
-                  <li class="past" title="Outlook"><span class="bar" data-number="90"></span><span class="number">90</span></li>
-                  <li class="past" title="Word"><span class="bar" data-number="65"></span><span class="number">65</span></li>
-                  <li class="past" title="Excel"><span class="bar" data-number="65"></span><span class="number">65</span></li>
-
-                  <li class="title" title="Font Development"></li>
-                  <li class="past" title="FontLab"><span class="bar" data-number="75"></span><span class="number">75</span></li>
-                  <li class="past" title="Fontographer"><span class="bar" data-number="65"></span><span class="number">65</span></li>
-
-                  <li class="title" title="Cross Browser Testing"></li>
-                  <li class="past" title="VMFusion - Virtual PC"><span class="bar" data-number="95"></span><span class="number">95</span></li>
-                  <li class="past" title="Litmus"><span class="bar" data-number="85"></span><span class="number">85</span></li>
-                  <li class="past" title="Browserstack"><span class="bar" data-number="75"></span><span class="number">75</span></li>
-
-                  <li class="title" title="Noteworthy"></li>
-                  <li class="past" title="Bootstrap"><span class="bar" data-number="95"></span><span class="number">95</span></li>
-                  <li class="past" title="SVG animation"><span class="bar" data-number="80"></span><span class="number">80</span></li>
-                  <li class="past" title="UI/UX"><span class="bar" data-number="85"></span><span class="number">85</span></li>
-                  <li class="past" title="Responsive and Adaptive Design"><span class="bar" data-number="80"></span><span class="number">80</span></li>
-
-              	</ul>
-              </div>
-              <!-- Chart End -->
-            </div>
-
-            <div class="span4">
-              <!-- Chart Start -->
-              <div class="chart-horiz">
-                <!-- Actual bar chart -->
-                <ul class="chart">
-                  <li class="title" title="IDE"></li>
-                  <li class="past" title="Atom.oi"><span class="bar" data-number="90"></span><span class="number">90</span></li>
-                  <li class="past" title="Brackets"><span class="bar" data-number="70"></span><span class="number">70</span></li>
-                  <li class="past" title="Sublime"><span class="bar" data-number="65"></span><span class="number">65</span></li>
-                  <li class="past" title="Coda"><span class="bar" data-number="65"></span><span class="number">65</span></li>
-
-                  <li class="title" title="Client Side Coding"></li>
-              		<li class="current" title="HTML & XHTML"><span class="bar" data-number="95"></span><span class="number">95</span></li>
-              		<li class="past" title="CSS & CSS3"><span class="bar" data-number="85"></span><span class="number">85</span></li>
-                  <li class="past" title="Javascript"><span class="bar" data-number="75"></span><span class="number">75</span></li>
-                  <li class="past" title="jQuery"><span class="bar" data-number="70"></span><span class="number">70</span></li>
-                  <li class="past" title="JSON"><span class="bar" data-number="75"></span><span class="number">75</span></li>
-                  <li class="past" title="XML"><span class="bar" data-number="65"></span><span class="number">65</span></li>
-                  <li class="past" title="LESS"><span class="bar" data-number="75"></span><span class="number">75</span></li>
-                  <li class="past" title="Sass"><span class="bar" data-number="75"></span><span class="number">75</span></li>
-
-                  <li class="title" title="Server Side Coding"></li>
-                  <li class="past" title="PHP"><span class="bar" data-number="65"></span><span class="number">65</span></li>
-                  <li class="past" title="JSP"><span class="bar" data-number="70"></span><span class="number">70</span></li>
-                  <li class="past" title="MySQL"><span class="bar" data-number="65"></span><span class="number">65</span></li>
-
-                  <li class="title" title="Javascript MVC"></li>
-                  <li class="past" title="AngularJS"><span class="bar" data-number="80"></span><span class="number">80</span></li>
-                  <li class="past" title="Handlebars"><span class="bar" data-number="75"></span><span class="number">75</span></li>
-                  <li class="past" title="Ember.js"><span class="bar" data-number="65"></span><span class="number">65</span></li>
-                  <li class="past" title="React.js"><span class="bar" data-number="65"></span><span class="number">65</span></li>
-                  <li class="past" title="Backbone.js"><span class="bar" data-number="65"></span><span class="number">65</span></li>
-
-                  <li class="title" title="Content Management"></li>
-                  <li class="past" title="Wordpress"><span class="bar" data-number="75"></span><span class="number">75</span></li>
-                  <li class="past" title="CushyCMS"><span class="bar" data-number="95"></span><span class="number">95</span></li>
-                  <li class="past" title="dotCMS"><span class="bar" data-number="65"></span><span class="number">65</span></li>
-
-              	</ul>
-              </div>
-              <!-- Chart End -->
-            </div>
-
-            <div class="span4">
-              <!-- Chart Start -->
-              <div class="chart-horiz">
-                <!-- Actual bar chart -->
-                <ul class="chart">
-
-                  <li class="title" title="Development Tools"></li>
-                  <li class="past" title="Terminal Commands"><span class="bar" data-number="75"></span><span class="number">75</span></li>
-                  <li class="past" title="npm"><span class="bar" data-number="85"></span><span class="number">85</span></li>
-                  <li class="past" title="yeoman"><span class="bar" data-number="95"></span><span class="number">95</span></li>
-                  <li class="past" title="grunt"><span class="bar" data-number="70"></span><span class="number">70</span></li>
-                  <li class="past" title="bower"><span class="bar" data-number="85"></span><span class="number">85</span></li>
-                  <li class="past" title="node.js"><span class="bar" data-number="65"></span><span class="number">65</span></li>
-                  <li class="past" title="express"><span class="bar" data-number="65"></span><span class="number">65</span></li>
-
-                  <li class="title" title="Debugging"></li>
-                  <li class="past" title="Chrome Dev Tools"><span class="bar" data-number="80"></span><span class="number">80</span></li>
-                  <li class="past" title="Console.log()"><span class="bar" data-number="75"></span><span class="number">75</span></li>
-
-                  <li class="title" title="Source Control"></li>
-                  <li class="past" title="SVN - Cornerstone"><span class="bar" data-number="65"></span><span class="number">65</span></li>
-                  <li class="past" title="Git - SourceTree"><span class="bar" data-number="90"></span><span class="number">90</span></li>
-                  <li class="past" title="GitHub"><span class="bar" data-number="80"></span><span class="number">80</span></li>
-                  <li class="past" title="Git via terminal"><span class="bar" data-number="75"></span><span class="number">75</span></li>
-
-                  <li class="title" title="Workflow"></li>
-                  <li class="past" title="JIRA"><span class="bar" data-number="95"></span><span class="number">95</span></li>
-                  <li class="past" title="Stash"><span class="bar" data-number="65"></span><span class="number">65</span></li>
-                  <li class="past" title="HipChat"><span class="bar" data-number="65"></span><span class="number">65</span></li>
-
-                  <li class="title" title="NoSQL"></li>
-                  <li class="past" title="Mongodb"><span class="bar" data-number="95"></span><span class="number">95</span></li>
-                  <li class="past" title="heroku"><span class="bar" data-number="65"></span><span class="number">65</span></li>
-                  <li class="past" title="MongoLab"><span class="bar" data-number="65"></span><span class="number">65</span></li>
-
-                </ul>
-                <p class="platform" style="margin:30px 0 0 30px;">
-                  <img src="img/apple-logo.png" /> <span style="color:#7F8289; font-size:14px;">Platform of Choice.</span>
-                </p>
-              </div>
-              <!-- Chart End -->
-            </div>
-          </div>
-
-          <div class="row"><hr /></div>
-      <div id="experience" class="page-alternate">
-        <div class="container">
-
-          <!-- Title Page -->
-          <div class="row">
-            <div class="span12">
-              <div class="title-page">
-                <h2 class="title">Experience</h2>
-                <h3 class="title-description">Over 20 years of Experience in Graphic Design, Web Development and Art Direction.</h3>
-              </div>
-            </div>
-          </div>
-          <!-- End Title Page -->
-
-          <div class="row">
-            <!-- Start Profile -->
-          	<div class="span4 profile">
-            	<div class="image-wrap">
-                <div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Web Designer<br />Front End Developer</span>
-                </div>
-                <img src="img/profile/profile-web-01.jpg" alt="">
-              </div>
-              <h3 class="profile-name">Worldatwork <a href="https://www.worldatwork.org" target="_blank"><i class="fa fa-external-link pull-right res"></i></a></h3>
-              <h4><small><span style="color:#fff;">Web Designer / FrontEnd Developer</span><br />
-              Sept 2013 - Present</small></h4>
-              <p class="profile-description">Ongoing web page maintenance and development of a vast site structure exceeding 40,000 html and jsp pages. Consistent work with internal marketing managers and stakeholders on custom revenue generating web campaigns, promotions and landing pages. Design and development of custom event web sites, from the ground up, for 6 major annual events that generates a the greater portion of total annual revenue. Key web designer on redesign efforts for high traffic areas of the site. Key role in introducing forward thinking web technologies that would save development time, increase production and overall page performance. Technologies used on a daily basis include; HTML5, CSS3, jQuery, Javascript, JSON, Ajax, JSP, grunt, node.js, express, Bower, git, Atom.io, terminal, JIRA, SourceTree, Adobe CS6 Suite in mac environment. Cross browser debugging and compatibility performed in a mac and virtual PC environment.</p>
-
-
-            </div>
-            <!-- End Profile -->
-
-            <!-- Start Profile -->
-            <div class="span4 profile">
-              <div class="image-wrap">
-                <div class="hover-wrap">
+          <!-- Start Profile -->
+        	<div class="span4 profile">
+          	<div class="image-wrap">
+              <div class="hover-wrap">
                   <span class="overlay-img"></span>
-                  <span class="overlay-text-thumb">Front End Developer</span>
-                </div>
-                <img src="img/profile/profile-web-02.jpg" alt="">
+                  <span class="overlay-text-thumb">Web Designer<br />Front End Developer</span>
               </div>
-              <h3 class="profile-name">Anderson Advertising <a href="http://www.anderson-adv.com/" target="_blank"><i class="fa fa-external-link pull-right res"></i></a></h3>
-              <h4><small><span style="color:#fff;">Front End Developer</span><br />
-              March 2013 - Sept 2013</small></h4>
-              <p class="profile-description">Primary responsibilities included meeting with clients, designing, developing and maintaining new and original web content for agency clients. This included email development, html website development, wordpress web development and flash ad creation. Primarily front end development utilizing Bootstrap, HTML5, CSS3, jQuery, PHP, Flash, Wordpress, Dreamweaver, Photoshop, Illustrator, and various other web development tools. Creation of email marketing templates and content for new and existing projects. Extensive browser debugging and testing using Litmus. Involvement in projects for the following clients; Harkins  Theaters, Phoenix Coyotes, Mayo Clinic, Desert Schools, Blue Wasabi, Hamra Jewelers, and Phoenix Children’s Hospital. Other duties included identity design, print layout, web banner design and flash ad creation.</p>
-
+              <img src="img/profile/profile-web-01.jpg" alt="">
             </div>
-            <!-- End Profile -->
+            <h3 class="profile-name">Worldatwork <a href="https://www.worldatwork.org" target="_blank"><i class="fa fa-external-link pull-right res"></i></a></h3>
+            <h4><small><span style="color:#fff;">Web Designer / FrontEnd Developer</span><br />
+            Sept 2013 - Present</small></h4>
+            <p class="profile-description">Ongoing web page maintenance and development of a vast site structure exceeding 40,000 html and jsp pages. Consistent work with internal marketing managers and stakeholders on custom revenue generating web campaigns, promotions and landing pages. Design and development of custom event web sites, from the ground up, for 6 major annual events that generates a the greater portion of total annual revenue. Key web designer on redesign efforts for high traffic areas of the site. Key role in introducing forward thinking web technologies that would save development time, increase production and overall page performance. Technologies used on a daily basis include; HTML5, CSS3, jQuery, Javascript, JSON, Ajax, JSP, grunt, node.js, express, Bower, git, Atom.io, terminal, JIRA, SourceTree, Adobe CS6 Suite in mac environment. Cross browser debugging and compatibility performed in a mac and virtual PC environment.</p>
 
-            <!-- Start Profile -->
-            <div class="span4 profile">
-              <div class="image-wrap">
-                <div class="hover-wrap">
-                  <span class="overlay-img"></span>
-                  <span class="overlay-text-thumb">Web Designer</span>
-                </div>
-                <img src="img/profile/profile-web-03.jpg" alt="">
-              </div>
-              <h3 class="profile-name">AngelMedFlight <a href="http://www.angelmedflight.com/" target="_blank"><i class="fa fa-external-link pull-right res"></i></a></h3>
-              <h4><small><span style="color:#fff;">Web Designer</span><br />
-              Sept 2012 - March 2013</small></h4>
-              <p class="profile-description">Responsible for the design, maintenance and overall user experience of angelmedflight.com and moversandshuckers.com. Creating clean yet complex designs while keeping them user-friendly and intuitive was key. Day to day tasks include creating original web content and design concepts while developing them out using proven SEO practices and cross-browser testing methods. Tools utilized are HTML5, XHTML, CSS, PHP, firebug, Wordpress, Photoshop, Illustrator and Dreamweaver while working in a MAC environment. Additional functions would include designing and sending intuitive and attractive email marketing campaigns, creating and implementing dynamic content using jQuery and CSS3 and assisting in video production. Conducting photo shoots for website content and utilizing Canon DSLR photography. Providing weekly web development updates and providing creative input in strategic business development meetings that create effective business opportunities for future growth.</p>
 
-            </div>
-            <!-- End Profile -->
-          </div>
-
-          <div class="row"><hr /></div>
-
-          <div class="row">
-            <!-- Start Profile -->
-            <div class="span12 profile">
-              <h3 class="profile-name">Digital Art Solutions</h3>
-              <h4><small><span style="color:#fff;">Graphic Designer, Senior Designer, Art Director</span> &mdash; October 1998 - July 2012</small></h4>
-              <p class="profile-description"><strong>Design, Illustration & Layout:</strong><br />I've Designed packaging for art and software products; books, cds, cd sleeves, dvd cases and manuals as well as tradeshow posters and banners, then output these items using large format printing technologies. I've also Illustrated designs and clip art using traditional skills as well as the latest software technologies as well as created original typestyle TrueType fonts, then packaged for sales. I've created print and web ads for national publications, flyers for shipping and trade show marketing, brochures for products and training events, coupons and direct mail for distribution, 300 page book designs and layouts, static and animated gif web ads for multiple web publications and affiliates, web banners for advertising products and monthly specials while sustained a branding standard.</p>
-
-              <p class="profile-description"><strong>Art Direction & Management:</strong><br />I participated in management meetings, strategized corporate success and revenue building activities. Directed an art team of 2 graphic artists and 1 web developer and wrote and conducted art department performance reviews on an annual basis for 5 years. I created, organized and managed art department file structure and performed weekly backups. I held production meetings with staff, created and managed art production schedules. I conducted and oversaw the art and design research of new trends and technologies. I worked directly with printers on quotes, coordinated printing needs for dozens of products, provided press ready files, then oversaw, reviewed and scrutinized proofs for final product. I was also responsible for the overall look and feel of the entire corporate identity.</p>
-
-              <p class="profile-description"><strong>Marketing Strategies & Web Interaction:</strong><br />I developed, designed and implemented marketing strategies with art and marketing team and worked with multiple publication managers while coordinating and preparing art files for timely releases. I helped develop the most comprehensive web experience for the company; both graphical and analytical.</p>
-            </div>
           </div>
           <!-- End Profile -->
 
-          <div class="row"><hr /></div>
-
-          <div class="row">
-            <!-- Start Profile -->
-            <div class="span6 profile">
-              <h3 class="profile-name">The Administrators</h3>
-              <h4><small><span style="color:#fff;">Graphic Designer</span> &mdash; November 1995 - June 1998</small></h4>
-              <p class="profile-description">Day to day layout, design and production of Newsletters, Brochures, Directories, Programs, ads, Stationary and direct mail pieces using QuarkXPress, Adobe Illustrator, Adobe Photoshop in a mac environment. Coordinated with service bureaus to deliver film ready assets then proofed delivered blueline proofs as well as scrutinized final press checks.</p>
-            </div>
-            <!-- End Profile -->
-
-            <!-- Start Profile -->
-            <div class="span6 profile">
-              <h3 class="profile-name">US West Direct Yellow Pages</h3>
-              <h4><small><span style="color:#fff;">Graphic Designer</span> &mdash; June 1995 - October 1998</small></h4>
-              <p class="profile-description">In my first graphic design job I was responsible for the production, design and layout of Yellow Page Ads utilizing QuarkXPress, Adobe Illustrator, Adobe Photoshop in a Mac environment. I also, worked directly with small business owners to help them see the vision of their unique ad and the impact it would make in their respective market.</p>
-            </div>
-            <!-- End Profile -->
-          </div>
-
-          <div class="row"><hr /></div>
-
-          <div class="row">
-            <div class="span12">
-              <div class="title-page">
-                <h2 class="title">Download My Resume <a href="#" target="_blank"><i class="fa fa-file-pdf-o"></i></a></h2>
+          <!-- Start Profile -->
+          <div class="span4 profile">
+            <div class="image-wrap">
+              <div class="hover-wrap">
+                <span class="overlay-img"></span>
+                <span class="overlay-text-thumb">Front End Developer</span>
               </div>
+              <img src="img/profile/profile-web-02.jpg" alt="">
+            </div>
+            <h3 class="profile-name">Anderson Advertising <a href="http://www.anderson-adv.com/" target="_blank"><i class="fa fa-external-link pull-right res"></i></a></h3>
+            <h4><small><span style="color:#fff;">Front End Developer</span><br />
+            March 2013 - Sept 2013</small></h4>
+            <p class="profile-description">Primary responsibilities included meeting with clients, designing, developing and maintaining new and original web content for agency clients. This included email development, html website development, wordpress web development and flash ad creation. Primarily front end development utilizing Bootstrap, HTML5, CSS3, jQuery, PHP, Flash, Wordpress, Dreamweaver, Photoshop, Illustrator, and various other web development tools. Creation of email marketing templates and content for new and existing projects. Extensive browser debugging and testing using Litmus. Involvement in projects for the following clients; Harkins  Theaters, Phoenix Coyotes, Mayo Clinic, Desert Schools, Blue Wasabi, Hamra Jewelers, and Phoenix Children’s Hospital. Other duties included identity design, print layout, web banner design and flash ad creation.</p>
+
+          </div>
+          <!-- End Profile -->
+
+          <!-- Start Profile -->
+          <div class="span4 profile">
+            <div class="image-wrap">
+              <div class="hover-wrap">
+                <span class="overlay-img"></span>
+                <span class="overlay-text-thumb">Web Designer</span>
+              </div>
+              <img src="img/profile/profile-web-03.jpg" alt="">
+            </div>
+            <h3 class="profile-name">AngelMedFlight <a href="http://www.angelmedflight.com/" target="_blank"><i class="fa fa-external-link pull-right res"></i></a></h3>
+            <h4><small><span style="color:#fff;">Web Designer</span><br />
+            Sept 2012 - March 2013</small></h4>
+            <p class="profile-description">Responsible for the design, maintenance and overall user experience of angelmedflight.com and moversandshuckers.com. Creating clean yet complex designs while keeping them user-friendly and intuitive was key. Day to day tasks include creating original web content and design concepts while developing them out using proven SEO practices and cross-browser testing methods. Tools utilized are HTML5, XHTML, CSS, PHP, firebug, Wordpress, Photoshop, Illustrator and Dreamweaver while working in a MAC environment. Additional functions would include designing and sending intuitive and attractive email marketing campaigns, creating and implementing dynamic content using jQuery and CSS3 and assisting in video production. Conducting photo shoots for website content and utilizing Canon DSLR photography. Providing weekly web development updates and providing creative input in strategic business development meetings that create effective business opportunities for future growth.</p>
+
+          </div>
+          <!-- End Profile -->
+        </div>
+
+        <div class="row"><hr /></div>
+
+        <div class="row">
+          <!-- Start Profile -->
+          <div class="span12 profile">
+            <h3 class="profile-name">Digital Art Solutions</h3>
+            <h4><small><span style="color:#fff;">Graphic Designer, Senior Designer, Art Director</span> &mdash; October 1998 - July 2012</small></h4>
+            <p class="profile-description"><strong>Design, Illustration & Layout:</strong><br />I've Designed packaging for art and software products; books, cds, cd sleeves, dvd cases and manuals as well as tradeshow posters and banners, then output these items using large format printing technologies. I've also Illustrated designs and clip art using traditional skills as well as the latest software technologies as well as created original typestyle TrueType fonts, then packaged for sales. I've created print and web ads for national publications, flyers for shipping and trade show marketing, brochures for products and training events, coupons and direct mail for distribution, 300 page book designs and layouts, static and animated gif web ads for multiple web publications and affiliates, web banners for advertising products and monthly specials while sustained a branding standard.</p>
+
+            <p class="profile-description"><strong>Art Direction & Management:</strong><br />I participated in management meetings, strategized corporate success and revenue building activities. Directed an art team of 2 graphic artists and 1 web developer and wrote and conducted art department performance reviews on an annual basis for 5 years. I created, organized and managed art department file structure and performed weekly backups. I held production meetings with staff, created and managed art production schedules. I conducted and oversaw the art and design research of new trends and technologies. I worked directly with printers on quotes, coordinated printing needs for dozens of products, provided press ready files, then oversaw, reviewed and scrutinized proofs for final product. I was also responsible for the overall look and feel of the entire corporate identity.</p>
+
+            <p class="profile-description"><strong>Marketing Strategies & Web Interaction:</strong><br />I developed, designed and implemented marketing strategies with art and marketing team and worked with multiple publication managers while coordinating and preparing art files for timely releases. I helped develop the most comprehensive web experience for the company; both graphical and analytical.</p>
+          </div>
+        </div>
+        <!-- End Profile -->
+
+        <div class="row"><hr /></div>
+
+        <div class="row">
+          <!-- Start Profile -->
+          <div class="span6 profile">
+            <h3 class="profile-name">The Administrators</h3>
+            <h4><small><span style="color:#fff;">Graphic Designer</span> &mdash; November 1995 - June 1998</small></h4>
+            <p class="profile-description">Day to day layout, design and production of Newsletters, Brochures, Directories, Programs, ads, Stationary and direct mail pieces using QuarkXPress, Adobe Illustrator, Adobe Photoshop in a mac environment. Coordinated with service bureaus to deliver film ready assets then proofed delivered blueline proofs as well as scrutinized final press checks.</p>
+          </div>
+          <!-- End Profile -->
+
+          <!-- Start Profile -->
+          <div class="span6 profile">
+            <h3 class="profile-name">US West Direct Yellow Pages</h3>
+            <h4><small><span style="color:#fff;">Graphic Designer</span> &mdash; June 1995 - October 1998</small></h4>
+            <p class="profile-description">In my first graphic design job I was responsible for the production, design and layout of Yellow Page Ads utilizing QuarkXPress, Adobe Illustrator, Adobe Photoshop in a Mac environment. I also, worked directly with small business owners to help them see the vision of their unique ad and the impact it would make in their respective market.</p>
+          </div>
+          <!-- End Profile -->
+        </div>
+
+        <div class="row"><hr /></div>
+
+        <div class="row">
+          <div class="span12">
+            <div class="title-page">
+              <h2 class="title">Download My Resume <a href="#" target="_blank"><i class="fa fa-file-pdf-o"></i></a></h2>
             </div>
           </div>
-
         </div>
 
-      </div><!--.container-->
-    </div><!--#about-->
-
-  <!-- Contact Section -->
-  <div id="contact" class="page">
-    <div class="container">
-      <!-- Title Page -->
-      <div class="row">
-        <div class="span12">
-          <div class="title-page">
-            <h2 class="title">Get in Touch</h2>
-            <h3 class="title-description">I'm currently accepting new client projects. I look forward to serving you.</h3>
-          </div>
-        </div>
       </div>
-      <!-- End Title Page -->
-
-      <!-- Contact Form -->
-      <div class="row">
-        <div class="span9">
-
-          <form id="contact-form" class="contact-form" action="//formspree.io/dmanzer2@gmail.com" method="POST">
-            <p class="contact-name">
-              <input id="contact_name" type="text" placeholder="Full Name" name="Name" required>
-            </p>
-            <p class="contact-email">
-              <input id="contact_email" required pattern="^\S+@\S+\.\S+$" type="email" placeholder="Email Address" name="Email" required>
-            </p>
-            <p class="contact-message">
-              <textarea id="contact_message" placeholder="Your Message" name="Message" rows="15" cols="40" required></textarea>
-            </p>
-            <input class="is-hidden" type="text" name="_gotcha">
-            <input type="hidden" name="_subject" value="New submission!" />
-            <input type="hidden" name="_next" value="//site.io/thanks.html" />
-            <p class="contact-submit">
-              <input class="submit" type="submit" value="Send your Message"></input>
-            </p>
-          </form>
-
-        </div>
-
-        <div class="span3">
-          <div class="contact-details">
-            <h3>Contact Details</h3>
-            <ul>
-              <li>480-570-6417</li>
-              <li>
-                David Manzer
-                <br>
-                Mesa, Arizona
-                <br>
-                United States
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- End Contact Form -->
     </div>
-  </div>
-  <!-- End Contact Section -->
 
-  <!-- Socialize -->
-  <div id="social-area" class="page">
-  	<div class="container">
-      <div class="row">
-        <div class="span12">
-          <nav id="social">
-            <ul>
-              <li><a href="https://www.behance.net/dmanzer2" title="Follow Me on Behance" target="_blank"><span class="fa fa-behance"></i></a></li>
-              <li><a href="http://facebook.com/david.manzer" title="Follow Me on Facebook" target="_blank"><span class="fa fa-facebook"></span></a></li>
-              <li><a href="https://plus.google.com/u/0/" title="Follow Me on Google Plus" target="_blank"><span class="fa fa-google-plus"></span></a></li>
-              <li><a href="https://www.linkedin.com/in/david-manzer-bb081855?trk=nav_responsive_tab_profile" title="Follow Me on LinkedIn" target="_blank"><span class="fa fa-linkedin"></span></a></li>
-              <li><a href="https://github.com/dmanzer2" title="github" target="_blank"><span class="fa fa-github"></span></a></li>
-            </ul>
-          </nav>
+  </div><!--.container-->
+</div><!--#about section-->
+
+<!-- Contact Section -->
+<div id="contact" class="page">
+  <div class="container">
+
+    <!-- Title Page -->
+    <div class="row">
+      <div class="span12">
+        <div class="title-page">
+          <h2 class="title">Get in Touch</h2>
+          <h3 class="title-description">I'm currently accepting new client projects. I look forward to serving you.</h3>
         </div>
       </div>
     </div>
+    <!-- End Title Page -->
+
+    <!-- Contact Form -->
+    <div class="row">
+      <div class="span9">
+
+        <form id="contact-form" class="contact-form" action="//formspree.io/dmanzer2@gmail.com" method="POST">
+          <p class="contact-name">
+            <input id="contact_name" type="text" placeholder="Full Name" name="Name" required>
+          </p>
+          <p class="contact-email">
+            <input id="contact_email" required pattern="^\S+@\S+\.\S+$" type="email" placeholder="Email Address" name="Email" required>
+          </p>
+          <p class="contact-message">
+            <textarea id="contact_message" placeholder="Your Message" name="Message" rows="15" cols="40" required></textarea>
+          </p>
+          <input class="is-hidden" type="text" name="_gotcha">
+          <input type="hidden" name="_subject" value="New submission!" />
+          <input type="hidden" name="_next" value="//site.io/thanks.html" />
+          <p class="contact-submit">
+            <input class="submit" type="submit" value="Send your Message"></input>
+          </p>
+        </form>
+
+      </div>
+
+      <div class="span3">
+        <div class="contact-details">
+          <h3>Contact Details</h3>
+          <ul>
+            <li>480-570-6417</li>
+            <li>
+              David Manzer
+              <br>
+              Mesa, Arizona
+              <br>
+              United States
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Contact Form -->
   </div>
-  <!-- End Socialize -->
+</div>
+<!-- End Contact Section -->
 
-  <!-- Footer -->
-  <footer>
-  	<p class="credits">&copy;2016 David Manzer<br>
-      Designer / Front End Developer</p>
-  </footer>
-  <!-- End Footer -->
+<!-- Socialize -->
+<div id="social-area" class="page">
+	<div class="container">
+    <div class="row">
+      <div class="span12">
+        <nav id="social">
+          <ul>
+            <li><a href="https://www.behance.net/dmanzer2" title="Follow Me on Behance" target="_blank"><span class="fa fa-behance"></i></a></li>
+            <li><a href="http://facebook.com/david.manzer" title="Follow Me on Facebook" target="_blank"><span class="fa fa-facebook"></span></a></li>
+            <li><a href="https://plus.google.com/u/0/" title="Follow Me on Google Plus" target="_blank"><span class="fa fa-google-plus"></span></a></li>
+            <li><a href="https://www.linkedin.com/in/david-manzer-bb081855?trk=nav_responsive_tab_profile" title="Follow Me on LinkedIn" target="_blank"><span class="fa fa-linkedin"></span></a></li>
+            <li><a href="https://github.com/dmanzer2" title="github" target="_blank"><span class="fa fa-github"></span></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Socialize -->
 
-  <!-- Back To Top -->
-  <a id="back-to-top" href="#">
-  	<i class="font-icon-arrow-simple-up"></i>
-  </a>
-  <!-- End Back to Top -->
+<!-- Footer -->
+<footer>
+	<p class="credits">&copy;2016 David Manzer<br>
+    Designer / Front End Developer</p>
+</footer>
+<!-- End Footer -->
+
+<!-- Back To Top -->
+<a id="back-to-top" href="#">
+	<i class="font-icon-arrow-simple-up"></i>
+</a>
+<!-- End Back to Top -->
 
 <!-- Js -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
