@@ -799,7 +799,12 @@ nav#menu #menu-nav li a:hover {
    About Section
 ================================================== */
 
+
 .chart-horiz .chart { width: 90% }
+
+ul.chart {
+  margin-left:0;
+}
 
 .chart-horiz .chart li {
   display: block;
