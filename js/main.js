@@ -143,7 +143,7 @@ MANZER.filter = function (){
 			options[ key ] = value;
 			if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
 			  // changes in layout modes need extra logic
-			  changeLayoutMode( $this, options )
+			  changeLayoutMode( $this, options );
 			} else {
 			  // otherwise, apply new options
 			  $container.isotope( options );
@@ -321,7 +321,7 @@ MANZER.scrollToTop = function(){
 	$arrow.click(function(e) {
 		$('body,html').animate({ scrollTop: "0" }, 750, 'easeOutExpo' );
 		e.preventDefault();
-	})
+	});
 
 	$(window).scroll(function() {
 		didScroll = true;

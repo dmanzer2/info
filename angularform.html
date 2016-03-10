@@ -1,0 +1,61 @@
+<div class="row"><hr /></div>
+
+<!--Angular Form-->
+<div class="row" ng-controller="formController">
+  <div class="span9">
+
+    <form id="contact-form" class="contact-form" action="//formspree.io/dmanzer2@gmail.com" method="POST" name="userForm" novalidate>
+
+      <p class="contact-name name" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
+        <span class="fa fa-user" ng-class="{ success: userForm.name.$valid, clean: userForm.name.$invalid }"></span>
+        <input id="contact_name" type="text" placeholder="Full Name" name="name" ng-model="user.name" required>
+      </p>
+
+      <p class="contact-email email" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
+        <span class="fa fa-envelope-o" ng-class="{ success: userForm.email.$valid, clean: userForm.email.$invalid }"></span>
+
+        <input id="contact_email" required pattern="^\S+@\S+\.\S+$" type="email" placeholder="Email Address" name="email" ng-model="user.email" required>
+      </p>
+
+      <p class="contact-message message" ng-class="{ 'has-error' : userForm.message.$invalid && !userForm.message.$pristine }">
+        <span class="fa fa-comment" ng-class="{ success: userForm.message.$valid, clean: userForm.message.$invalid }"></span>
+        <textarea id="contact_message" placeholder="Your Message" name="message" rows="15" cols="40" ng-model="user.message" ng-minlength="3" ng-maxlength="250" required></textarea>
+      </p>
+
+      <input class="is-hidden" type="text" name="_gotcha">
+      <input type="hidden" name="_subject" value="New submission!" />
+      <input type="hidden" name="_next" value="//site.io/thanks.html" />
+
+      <p class="contact-submit">
+        <input class="submit" type="submit" value="Send your Message" ng-disabled="userForm.$invalid"></input>
+
+        &nbsp;<span ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="danger">You name is required.</span>&nbsp;
+        &nbsp;<span ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="danger">Enter a valid email.</span>
+      </p>
+
+    </form>
+
+  </div>
+
+  <div class="span3">
+    <h3>Form</h3>
+
+    <span ng-class="{ success: userForm.$valid, clean: userForm.$invalid }">Valid</span>
+
+    <h3>Name</h3>
+
+    <span ng-class="{ success: userForm.name.$valid, clean: userForm.name.$invalid }">Valid</span>
+    <span ng-class="{ clean: userForm.name.$pristine, warning: !userForm.name.$pristine }">Pristine</span>
+    <span ng-class="{ warning: userForm.name.$dirty }">Dirty</span>
+    <span ng-class="{ clean: userForm.name.$touched }">Touched</span>
+
+    <h3>Email</h3>
+    <span ng-class="{ success: userForm.email.$valid, clean: userForm.email.$invalid }">Valid</span>
+
+    <h3>message</h3>
+    <span ng-class="{ success: userForm.message.$valid, clean: userForm.message.$invalid }">Valid</span>
+
+  </div>
+</div>
+
+<!--Angular Form End-->

@@ -1042,7 +1042,8 @@ form#contact-form p textarea:focus {
 }
 
 #contact-form .submit {
-    background: #3C3F45;
+		background: #3C3F45;
+    /*background: #84c641;*/
     color: #23262C;
     cursor: pointer;
     display: inline-block;
@@ -1052,12 +1053,24 @@ form#contact-form p textarea:focus {
     text-align: center;
     vertical-align: middle;
     width: auto;
-	margin-top: 30px;
+		margin-top: 30px;
 
 	-webkit-transition: background 0.1s linear 0s, color 0.1s linear 0s;
 	   -moz-transition: background 0.1s linear 0s, color 0.1s linear 0s;
 		 -o-transition: background 0.1s linear 0s, color 0.1s linear 0s;
 		    transition: background 0.1s linear 0s, color 0.1s linear 0s;
+}
+
+#contact-form .submit[disabled] {
+	background: #26292E;
+	color: #2F3238;
+	cursor:no-drop;
+}
+
+#contact-form .submit:hover[disabled] {
+	background: #26292E;
+	color: #2F3238;
+	cursor:no-drop;
 }
 
 #contact-form .submit:hover {
@@ -1072,6 +1085,42 @@ form#contact-form p textarea:focus {
 
 .is-hidden {
 	display: none !important;
+}
+
+.clean,
+.name .fa-user .clean,
+.email .fa-envelope-o .clean,
+.message .fa-comment .clean {
+	color: #2F3238;
+}
+
+.success,
+.name .fa-user .success,
+.email .fa-envelope-o .success,
+.message .fa-comment .success {
+  color: #84c641;
+}
+.warning,
+.name .fa-user .warning,
+.email .fa-envelope-o .warning,
+.message .fa-comment .warning {
+  color: orange;
+}
+
+.danger,
+.name .fa-user .danger,
+.email .fa-envelope-o .danger,
+.message .fa-comment .danger {
+	color: red;
+}
+
+.name, .email, .message { position: relative; }
+.name input, .email input, .message textarea { text-indent: 0px;}
+.name .fa-user, .email .fa-envelope-o, .message .fa-comment {
+  position: absolute;
+  top: 15px;
+  left: 840px;
+  font-size: 22px;
 }
 
 
