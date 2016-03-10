@@ -35,7 +35,7 @@ myApp.controller('WorkController', ['$scope', '$http', function ($scope, $http) 
 myApp.controller('formController', function($scope) {
 
 	// function to submit the form after all validation has occurred
-	$scope.submitForm = function() {
+	$scope.contactForm = function() {
 
 		// check to make sure the form is completely valid
 		if ($scope.userForm.$valid) {

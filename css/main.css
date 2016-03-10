@@ -1042,8 +1042,8 @@ form#contact-form p textarea:focus {
 }
 
 #contact-form .submit {
-		background: #3C3F45;
-    /*background: #84c641;*/
+		/*background: #3C3F45;*/
+    background: #84c641;
     color: #23262C;
     cursor: pointer;
     display: inline-block;
@@ -1059,6 +1059,11 @@ form#contact-form p textarea:focus {
 	   -moz-transition: background 0.1s linear 0s, color 0.1s linear 0s;
 		 -o-transition: background 0.1s linear 0s, color 0.1s linear 0s;
 		    transition: background 0.1s linear 0s, color 0.1s linear 0s;
+}
+
+form#contact-form .submit:focus {
+	color:#2F3238;
+	border:none;
 }
 
 #contact-form .submit[disabled] {
@@ -1123,6 +1128,12 @@ form#contact-form p textarea:focus {
   font-size: 22px;
 }
 
+.form-message {
+	display: inline;
+	font-size: ;
+	padding-top: 15px;
+
+}
 
 /* ==================================================
    Twitter Feed

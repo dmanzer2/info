@@ -558,7 +558,45 @@
     </div>
     <!-- End Title Page -->
 
-      <div class="row">
+    <!--Angular Form-->
+    <div class="row" ng-controller="formController">
+      <div class="span9">
+
+        <form id="contact-form" class="contact-form" action="//formspree.io/dmanzer2@gmail.com" method="POST" name="userForm">
+
+          <p class="contact-name name" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
+            <span class="fa fa-user" ng-class="{ success: userForm.name.$valid, clean: userForm.name.$invalid }"></span>
+            <input id="contact_name" type="text" placeholder="Full Name" name="name" ng-model="user.name" required>
+          </p>
+
+          <p class="contact-email email" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
+            <span class="fa fa-envelope-o" ng-class="{ success: userForm.email.$valid, clean: userForm.email.$invalid }"></span>
+
+            <input id="contact_email" required pattern="^\S+@\S+\.\S+$" type="email" placeholder="Email Address" name="email" ng-model="user.email" required>
+          </p>
+
+          <p class="contact-message message" ng-class="{ 'has-error' : userForm.message.$invalid && !userForm.message.$pristine }">
+            <span class="fa fa-comment" ng-class="{ success: userForm.message.$valid, clean: userForm.message.$invalid }"></span>
+            <textarea id="contact_message" placeholder="Your Message" name="message" rows="15" cols="40" ng-model="user.message" ng-minlength="3" ng-maxlength="250" required></textarea>
+          </p>
+
+          <input class="is-hidden" type="text" name="_gotcha">
+          <input type="hidden" name="_subject" value="New submission!" />
+          <input type="hidden" name="_next" value="//site.io/thanks.html" />
+
+          <p class="contact-submit">
+            <input class="submit" type="submit" value="Send your Message" ng-disabled="userForm.$invalid"></input>
+
+            &nbsp;<span ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="danger">Your name is required.</span>&nbsp;
+            &nbsp;<span ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="danger">Enter a valid email.</span>
+          </p>
+
+        </form>
+
+      </div>
+
+
+      <!--<div class="row">
         <div class="span9">
 
           <form id="contact-form" class="contact-form" action="//formspree.io/dmanzer2@gmail.com" method="POST">
@@ -579,7 +617,7 @@
             </p>
           </form>
 
-        </div>
+        </div>-->
 
         <div class="span3">
           <div class="contact-details">
