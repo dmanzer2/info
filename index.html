@@ -569,7 +569,6 @@
             <input id="contact_name" type="text" placeholder="Full Name" name="name" ng-model="user.name" required>
             <span class="fa fa-user warning" ng-show="userForm.name.$invalid && !userForm.name.$pristine"></span>
           </p>
-
           <p class="contact-email email" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
             <span class="fa fa-envelope-o" ng-class="{ success: userForm.email.$valid, clean: userForm.email.$invalid }"></span>
 
