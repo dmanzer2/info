@@ -176,6 +176,8 @@ MANZER.contactForm = function(){
 				$contactForm.append('<div class="alert alert-success">Message sent!</div>');
 				$contactForm[0].reset();
 				$contactForm.find('.alert-success').delay(7000).fadeOut(1500);
+				$contactForm.find('.success').removeClass("success").addClass("clean");
+				$contactForm.find('.button-area').removeClass("button-area").addClass("remove-button-area");
 			},
 			error: function(err) {
 				$contactForm.find('.alert-standard').hide();
@@ -183,7 +185,6 @@ MANZER.contactForm = function(){
 			},
 			cache: false
 		});
-		$contactForm[0].reset();
 	});
 
 }

@@ -13,7 +13,7 @@
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="js/controller.js"></script>
 
-<meta name="description" content="David Manzer - Front End Developer" />
+<meta name="description" content="David Manzer - Designer - Front End Developer" />
 
 <!-- Mobile Specifics -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -567,10 +567,13 @@
           <p class="contact-name name" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
             <span class="fa fa-user" ng-class="{ success: userForm.name.$valid, clean: userForm.name.$invalid }"></span>
             <input id="contact_name" type="text" placeholder="Full Name" name="name" ng-model="user.name" required>
+            <span class="fa fa-user warning" ng-show="userForm.name.$invalid && !userForm.name.$pristine"></span>
           </p>
 
           <p class="contact-email email" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
             <span class="fa fa-envelope-o" ng-class="{ success: userForm.email.$valid, clean: userForm.email.$invalid }"></span>
+
+            <span class="fa fa-envelope-o warning" ng-show="userForm.email.$invalid && !userForm.email.$pristine"></span>
 
             <input id="contact_email" required pattern="^\S+@\S+\.\S+$" type="email" placeholder="Email Address" name="email" ng-model="user.email" required>
           </p>
@@ -584,40 +587,20 @@
           <input type="hidden" name="_subject" value="New submission!" />
           <input type="hidden" name="_next" value="//site.io/thanks.html" />
 
-          <p class="contact-submit">
-            <input class="submit" type="submit" value="Send your Message" ng-disabled="userForm.$invalid"></input>
+          <div class="row button-area">
+            <div class="span3 contact-submit">
+              <input class="submit" type="submit" value="Send your Message" ng-disabled="userForm.$invalid"></input>
+            </div>
 
-            &nbsp;<span ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="danger">Your name is required.</span>&nbsp;
-            &nbsp;<span ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="danger">Enter a valid email.</span>
-          </p>
+            <div class="span6 invalid-alerts">
+                <span ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="danger">Your name is required.</span>&nbsp;
+                <span ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="danger">Enter a valid email.</span>
+            </div>
+          </div>
 
         </form>
 
       </div>
-
-
-      <!--<div class="row">
-        <div class="span9">
-
-          <form id="contact-form" class="contact-form" action="//formspree.io/dmanzer2@gmail.com" method="POST">
-            <p class="contact-name">
-              <input id="contact_name" type="text" placeholder="Full Name" name="Name" required>
-            </p>
-            <p class="contact-email">
-              <input id="contact_email" required pattern="^\S+@\S+\.\S+$" type="email" placeholder="Email Address" name="Email" required>
-            </p>
-            <p class="contact-message">
-              <textarea id="contact_message" placeholder="Your Message" name="Message" rows="15" cols="40" required></textarea>
-            </p>
-            <input class="is-hidden" type="text" name="_gotcha">
-            <input type="hidden" name="_subject" value="New submission!" />
-            <input type="hidden" name="_next" value="//site.io/thanks.html" />
-            <p class="contact-submit">
-              <input class="submit" type="submit" value="Send your Message"></input>
-            </p>
-          </form>
-
-        </div>-->
 
         <div class="span3">
           <div class="contact-details">
@@ -634,6 +617,7 @@
             </ul>
           </div>
         </div>
+
       </div>
 
     <!-- End Contact Form -->

@@ -968,11 +968,11 @@ i.fa.res {
 
 .contact-details h3 {
 	color: #FFFFFF;
-    font-size: 24px;
-    font-weight: 300;
-    margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 30px;
 	line-height: 1em;
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .contact-details ul {
@@ -1061,6 +1061,10 @@ form#contact-form p textarea:focus {
 		    transition: background 0.1s linear 0s, color 0.1s linear 0s;
 }
 
+.remove-button-area {
+	display: none;
+}
+
 form#contact-form .submit:focus {
 	color:#2F3238;
 	border:none;
@@ -1068,19 +1072,19 @@ form#contact-form .submit:focus {
 
 #contact-form .submit[disabled] {
 	background: #26292E;
-	color: #2F3238;
+	color: #7F8289;
 	cursor:no-drop;
 }
 
 #contact-form .submit:hover[disabled] {
 	background: #26292E;
-	color: #2F3238;
+	color: #7F8289;
 	cursor:no-drop;
 }
 
 #contact-form .submit:hover {
-    background: #d71f26;
-    color: #FFFFFF;
+  background: #d71f26;
+  color: #FFFFFF;
 }
 
 #response {
@@ -1128,11 +1132,17 @@ form#contact-form .submit:focus {
   font-size: 22px;
 }
 
-.form-message {
-	display: inline;
-	font-size: ;
-	padding-top: 15px;
+/*needs to go here for 600x800*/
+@media (max-width: 767px) and (min-width: 481px) {
+	.name .fa-user, .email .fa-envelope-o, .message .fa-comment {
+    left: 523px;
+	}
+}
 
+.invalid-alerts {
+	margin-top:30px;
+	padding: 12px 0;
+	font-size:20px;
 }
 
 /* ==================================================
