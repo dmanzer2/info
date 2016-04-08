@@ -231,7 +231,7 @@ MANZER.contactForm = function(options) {
 
   }; // horizChart
 
-}(jQuery);
+}(jQuery));
 
 
 /* ==================================================
