@@ -229,9 +229,9 @@ MANZER.contactForm = function(options) {
     	});
 	  });
 
-  }); // horizChart
+  }; // horizChart
 
-}
+}(jQuery);
 
 
 /* ==================================================
