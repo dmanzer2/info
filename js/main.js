@@ -193,10 +193,10 @@ MANZER.contactForm = function(){
 	Skill Chart
 ================================================== */
 
-MANZER.chart = function() {
+(function ($) {
   "use strict";
 
-  $.fn.chart = function(options) {
+  $.fn.horizBarChart = function(options) {
 
     var settings = $.extend({
       // default settings
@@ -234,7 +234,7 @@ MANZER.chart = function() {
 
   }; // horizChart
 
-};
+}(jQuery));
 
 
 /* ==================================================
@@ -442,7 +442,7 @@ $(document).ready(function(){
 		}
 	});
 
-	$('.chart').chart({
+	$('.chart').horizBarChart({
 		selector: '.bar',
 		speed: 6000
 	});
@@ -455,7 +455,7 @@ $(document).ready(function(){
 	MANZER.goUp();
 	MANZER.filter();
 	MANZER.fancyBox();
-	MANZER.chart();
+	MANZER.horizBarChart();
 	MANZER.contactForm();
 	MANZER.scrollToTop();
 	MANZER.utils();
