@@ -193,7 +193,7 @@ MANZER.contactForm = function(){
 	Skill Chart
 ================================================== */
 
-MANZER.chart = function($){
+MANZER.fancyBox = function() {
   "use strict";
 
   $.fn.horizBarChart = function(options) {
@@ -234,7 +234,7 @@ MANZER.chart = function($){
 
   }; // horizChart
 
-}(jQuery);
+};
 
 
 /* ==================================================
