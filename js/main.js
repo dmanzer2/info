@@ -442,7 +442,7 @@ $(document).ready(function(){
 		}
 	});
 
-	$('.chart').horizBarChart({
+	$('.chart').chart({
 		selector: '.bar',
 		speed: 6000
 	});
