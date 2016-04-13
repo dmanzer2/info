@@ -1,9 +1,11 @@
 jQuery(function($){
 
+"use strict";
+
 var MANZER = window.MANZER || {};
 
 /* ==================================================
-	Mobile Navigation
+Mobile Navigation
 ================================================== */
 var mobileMenuClone = $('#menu').clone().attr('id', 'navigation-mobile');
 
@@ -43,7 +45,7 @@ MANZER.listenerMenu = function(){
 
 
 /* ==================================================
-	Slider Options
+Slider Options
 ================================================== */
 
 MANZER.slider = function(){
@@ -93,7 +95,7 @@ MANZER.slider = function(){
 
 
 /* ==================================================
-	Navigation Fix
+Navigation Fix
 ================================================== */
 
 MANZER.nav = function(){
@@ -102,7 +104,7 @@ MANZER.nav = function(){
 
 
 /* ==================================================
-	Filter Works
+Filter Works
 ================================================== */
 
 MANZER.filter = function (){
@@ -190,7 +192,7 @@ MANZER.contactForm = function(){
 }
 
 /* ==================================================
-	Skill Chart
+Skill Chart
 ================================================== */
 
 $.fn.horizBarChart = function(options) {
@@ -232,7 +234,7 @@ $.fn.horizBarChart = function(options) {
 }
 
 /* ==================================================
-	FancyBox
+FancyBox
 ================================================== */
 
 MANZER.fancyBox = function(){
@@ -261,7 +263,7 @@ MANZER.fancyBox = function(){
 
 
 /* ==================================================
-	Menu Highlight
+Menu Highlight
 ================================================== */
 
 MANZER.menu = function(){
@@ -278,7 +280,7 @@ MANZER.menu = function(){
 
 
 /* ==================================================
-	Next Section
+Next Section
 ================================================== */
 
 MANZER.goSection = function(){
@@ -292,7 +294,7 @@ MANZER.goSection = function(){
 
 
 /* ==================================================
-	GoUp
+GoUp
 ================================================== */
 
 MANZER.goUp = function(){
@@ -306,7 +308,7 @@ MANZER.goUp = function(){
 
 
 /* ==================================================
-	Scroll to Top
+Scroll to Top
 ================================================== */
 
 MANZER.scrollToTop = function(){
@@ -339,7 +341,7 @@ MANZER.scrollToTop = function(){
 
 
 /* ==================================================
-   Thumbs / Social Effects
+Thumbs / Social Effects
 ================================================== */
 
 MANZER.utils = function(){
@@ -361,7 +363,7 @@ MANZER.utils = function(){
 }
 
 /* ==================================================
-	Accordion
+Accordion
 ================================================== */
 
 MANZER.accordion = function(){
@@ -383,7 +385,7 @@ MANZER.accordion = function(){
 }
 
 /* ==================================================
-	Toggle
+Toggle
 ================================================== */
 
 MANZER.toggle = function(){
@@ -403,7 +405,7 @@ MANZER.toggle = function(){
 }
 
 /* ==================================================
-	Tooltip
+Tooltip
 ================================================== */
 
 MANZER.toolTip = function(){
@@ -412,7 +414,7 @@ MANZER.toolTip = function(){
 
 
 /* ==================================================
-	Init
+Init
 ================================================== */
 
 MANZER.slider();
@@ -421,7 +423,7 @@ $(document).ready(function(){
 	Modernizr.load([
 	{
 		test: Modernizr.placeholder,
-		nope: 'js/placeholder.js',
+		nope: 'js/placeholder.js'
 	}
 	]);
 
