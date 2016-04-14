@@ -227,7 +227,7 @@ $.fn.horizBarChart = function(options) {
   		    percentage = Math.round((num / highestNumber) * 100) + '%';
   		// Time to assign and animate the bar widths
   		$(this).animate({ 'width' : percentage }, settings.speed);
-  		$(this).next('.number').animate({ 'left' : percentage }, settings.speed);
+  		$(this).next('.number').animate({ 'left' : percentage++ }, settings.speed);
   	});
   });
 
