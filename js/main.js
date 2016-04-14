@@ -229,7 +229,7 @@ $.fn.horizBarChart = function(options) {
   		$(this).animate({ 'width' : percentage }, settings.speed);
   		$(this).next('.number').animate({ 'left' : percentage++ }, settings.speed);
   	});
-		
+
   });
 
 }
