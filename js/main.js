@@ -183,7 +183,7 @@ MANZER.contactForm = function(){
 			},
 			error: function(err) {
 				$contactForm.find('.alert-standard').hide();
-				$contactForm.append('<div class="alert alert-error">Ops, there was an error.</div>');
+				$contactForm.append('<div class="alert alert-error">Oops, there was an error.</div>');
 			},
 			cache: false
 		});
@@ -422,10 +422,10 @@ MANZER.slider();
 
 $(document).ready(function(){
 	Modernizr.load([
-	{
-		test: Modernizr.placeholder,
-		nope: 'js/placeholder.js'
-	}
+		{
+			test: Modernizr.placeholder,
+			nope: 'js/placeholder.js'
+		}
 	]);
 
 	// Preload the page with jPreLoader
