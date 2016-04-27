@@ -78,11 +78,9 @@
 <!-- Homepage Slider -->
 <div id="home-slider">
   <div class="overlay"></div>
-
   <div class="slider-text">
     <div id="slidecaption"></div>
   </div>
-
 	<div class="control-nav">
     <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
     <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
@@ -126,7 +124,7 @@
         </div>
     </div>
 
-    <!-- Portfolio Area -->
+    <!-- Portfolio Category Area -->
     <div class="row">
     	<div class="span3">
       	<!-- Filter -->
@@ -152,7 +150,7 @@
             <ul id="thumbs" ng-controller="WorkController">
 
               <!-- layout Items -->
-            	<li class="item-thumbs span3 clearfix layout" ng-repeat="item in layout">
+            	<li class="item-thumbs span3 clearfix layout" ng-repeat="item in layout" style="min-height:183px; display:block;">
               	<!-- Full Image -->
               	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.name}}" ng-href="img/work/layout-design/full/{{item.shortname}}-full.jpg">
                 	<span class="overlay-img"></span>
@@ -163,7 +161,7 @@
               </li>
 
               <!-- Identity Items -->
-              <li class="item-thumbs span3 clearfix identity" ng-repeat="item in logos">
+              <li class="item-thumbs span3 clearfix identity" ng-repeat="item in logos" style="min-height:183px; display:block;">
               <!-- Full Image -->
                 <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.name}}" ng-href="img/work/logos-branding/full/{{item.shortname}}-full.jpg">
                   <span class="overlay-img"></span>
@@ -173,9 +171,8 @@
                 <img ng-src="img/work/logos-branding/thumbs/{{item.shortname}}.jpg" alt="<i class='fa fa-question-circle'></i>&nbsp;&nbsp; {{item.description}} <br /><i class='fa fa-rocket'></i>&nbsp;&nbsp;Medium: {{item.medium}}">
               </li>
 
-              <!--Illustrations Start-->
-							<!-- Item Project and Filter Name -->
-              <li class="item-thumbs span3 clearfix illustration" ng-repeat="item in illustrations">
+              <!--Illustrations Items-->
+              <li class="item-thumbs span3 clearfix illustration" ng-repeat="item in illustrations" style="min-height:183px; display:block;">
                 <!-- Full Image -->
                 <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.name}}" ng-href="img/work/illustrations/full/{{item.shortname}}-full.jpg">
                   <span class="overlay-img"></span>
@@ -186,8 +183,7 @@
               </li>
 
               <!--Package Design Start-->
-              <!-- Item Project and Filter Name -->
-              <li class="item-thumbs span3 clearfix package" ng-repeat="item in package">
+              <li class="item-thumbs span3 clearfix package" ng-repeat="item in package" style="min-height:183px; display:block;">
                 <!-- Full Image -->
                 <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.name}}" ng-href="img/work/package-design/full/{{item.shortname}}-full.jpg">
                   <span class="overlay-img"></span>
@@ -198,8 +194,7 @@
               </li>
 
               <!--Web Start-->
-              <!-- Item Project and Filter Name -->
-              <li class="item-thumbs span3 clearfix web" ng-repeat="item in web">
+              <li class="item-thumbs span3 clearfix web" ng-repeat="item in web" style="min-height:183px; display:block;">
                 <!-- Full Image -->
                 <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.name}}" ng-href="img/work/web-development/full/{{item.shortname}}-full.jpg">
                   <span class="overlay-img"></span>
@@ -210,7 +205,7 @@
               </li>
 
               <!-- Email Start -->
-              <li class="item-thumbs span3 clearfix email" ng-repeat="item in email">
+              <li class="item-thumbs span3 clearfix email" ng-repeat="item in email" style="min-height:183px; display:block;">
                 <!-- Full Image -->
                 <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.name}}" ng-href="img/work/email-development/full/{{item.shortname}}-full.jpg">
                   <span class="overlay-img"></span>
@@ -221,7 +216,7 @@
               </li>
 
               <!-- Photography Start -->
-              <li class="item-thumbs span3 clearfix photography" ng-repeat="item in photo">
+              <li class="item-thumbs span3 clearfix photography" ng-repeat="item in photo" style="min-height:183px; display:block;">
                 <!-- Full Image -->
                 <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.name}}" ng-href="img/work/creative-photography/full/{{item.shortname}}-full.jpg">
                   <span class="overlay-img"></span>
@@ -232,7 +227,7 @@
               </li>
 
 							<!-- Fonts Start -->
-              <li class="item-thumbs span3 clearfix fonts" ng-repeat="item in fonts">
+              <li class="item-thumbs span3 clearfix fonts" ng-repeat="item in fonts" style="min-height:183px; display:block;">
                 <!-- Full Image -->
                 <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{item.name}}" ng-href="img/work/font-development/full/{{item.shortname}}-full.jpg">
                   <span class="overlay-img"></span>
@@ -285,6 +280,7 @@
         <!-- Chart Start -->
         <div class="chart-horiz">
           <ul class="chart">
+
             <li class="title" title="Adobe CS6 and CC"></li>
         		<li class="current" title="Adobe Photoshop"><span class="bar" data-number="90"></span><span class="number">90</span></li>
         		<li class="past" title="Adobe Illustrator"><span class="bar" data-number="95"></span><span class="number">95</span></li>
@@ -321,6 +317,7 @@
         <div class="chart-horiz">
           <!-- Actual bar chart -->
           <ul class="chart">
+
             <li class="title" title="Workflow"></li>
             <li class="past" title="JIRA"><span class="bar" data-number="85"></span><span class="number">85</span></li>
             <li class="past" title="Stash"><span class="bar" data-number="65"></span><span class="number">65</span></li>
