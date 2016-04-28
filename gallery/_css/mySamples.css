@@ -39,9 +39,6 @@
 .fullscreen-inner-button:hover{
 	background-color: #FDB800;
 	cursor: pointer;
-	-webkit-border-radius: 35%;
-	-moz-border-radius: 35%;
-	border-radius: 35%;
 }
 #fullscreen-inner-left {
 	left: 20px;
