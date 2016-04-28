@@ -280,9 +280,7 @@ MANZER.menu = function(){
 }
 
 
-/* ==================================================
-Next Section
-================================================== */
+/*
 
 MANZER.goSection = function(){
 	$('#nextsection').on('click', function(){
@@ -292,7 +290,7 @@ MANZER.goSection = function(){
 		return false;
 	});
 }
-
+ */
 
 /* ==================================================
 GoUp
