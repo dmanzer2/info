@@ -279,6 +279,7 @@ MANZER.menu = function(){
 	});
 }
 
+
 /* ==================================================
 Next Section
 ================================================== */
@@ -292,24 +293,26 @@ MANZER.goSection = function(){
 	});
 }
 
+
 /* ==================================================
 GoUp
 ================================================== */
 
-MANZER.goUp = (function(){
+MANZER.goUp = function(){
 	$('#goUp').on('click', function(){
 		$target = $($(this).attr('href')).offset().top-30;
 
 		$('body, html').animate({scrollTop : $target}, 750, 'easeOutExpo');
 		return false;
 	});
-});
+}
+
 
 /* ==================================================
 Scroll to Top
 ================================================== */
 
-MANZER.scrollToTop = (function(){
+MANZER.scrollToTop = function(){
 	var windowWidth = $(window).width(),
 		didScroll = false;
 
@@ -335,14 +338,14 @@ MANZER.scrollToTop = (function(){
 			}
 		}
 	}, 250);
-});
+}
 
 
 /* ==================================================
 Thumbs / Social Effects
 ================================================== */
 
-MANZER.utils = (function(){
+MANZER.utils = function(){
 
 	$('.item-thumbs').bind('touchstart', function(){
 		$(".active").removeClass("active");
@@ -358,7 +361,7 @@ MANZER.utils = (function(){
 		$(".active").removeClass("active");
       	$(this).addClass('active');
     });
-});
+}
 
 /* ==================================================
 Accordion
