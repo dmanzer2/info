@@ -286,7 +286,7 @@ Next Section
 
 MANZER.goSection = function(){
 	$('#nextsection').on('click', function(){
-		$target = $($(this).attr('href')).offset().top-30;
+		$target = $(this).attr('href').offset().top-30;
 
 		$('body, html').animate({scrollTop : $target}, 750, 'easeOutExpo');
 		return false;
@@ -300,7 +300,7 @@ GoUp
 
 MANZER.goUp = function(){
 	$('#goUp').on('click', function(){
-		$target = $($(this).attr('href')).offset().top-30;
+		$target = $(this).attr('href').offset().top-30;
 
 		$('body, html').animate({scrollTop : $target}, 750, 'easeOutExpo');
 		return false;
