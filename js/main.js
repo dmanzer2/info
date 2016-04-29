@@ -1,11 +1,9 @@
-$(function(){
-
-"use strict";
+jQuery(function($){
 
 var MANZER = window.MANZER || {};
 
 /* ==================================================
-Mobile Navigation
+	Mobile Navigation
 ================================================== */
 var mobileMenuClone = $('#menu').clone().attr('id', 'navigation-mobile');
 
@@ -45,7 +43,7 @@ MANZER.listenerMenu = function(){
 
 
 /* ==================================================
-Slider Options
+	Slider Options
 ================================================== */
 
 MANZER.slider = function(){
@@ -95,7 +93,7 @@ MANZER.slider = function(){
 
 
 /* ==================================================
-Navigation Fix
+	Navigation Fix
 ================================================== */
 
 MANZER.nav = function(){
@@ -104,7 +102,7 @@ MANZER.nav = function(){
 
 
 /* ==================================================
-Filter Works
+	Filter Works
 ================================================== */
 
 MANZER.filter = function (){
@@ -183,7 +181,7 @@ MANZER.contactForm = function(){
 			},
 			error: function(err) {
 				$contactForm.find('.alert-standard').hide();
-				$contactForm.append('<div class="alert alert-error">Oops, there was an error.</div>');
+				$contactForm.append('<div class="alert alert-error">Ops, there was an error.</div>');
 			},
 			cache: false
 		});
@@ -192,50 +190,55 @@ MANZER.contactForm = function(){
 }
 
 /* ==================================================
-Skill Chart
+	Skill Chart
 ================================================== */
 
-$.fn.horizBarChart = function(options) {
+(function ($) {
+  "use strict";
 
-  var settings = $.extend({
-    // default settings
-    selector: '.bar',
-    speed: 10000
-  }, options);
+  $.fn.horizBarChart = function(options) {
 
-  // Cycle through all charts on page
-  return this.each(function(){
-    // Start highest number variable as 0
-    // Nowhere to go but up!
-	  var highestNumber = 0;
+    var settings = $.extend({
+      // default settings
+      selector: '.bar',
+      speed: 10000
+    }, options);
 
-    // Set highest number and use that as 100%
-    // This will always make sure the graph is a decent size and all numbers are relative to each other
-  	$(this).find($(settings.selector)).each(function() {
-  	  var num = $(this).data('number');
-      if (num > highestNumber) {
-        highestNumber = num;
-      }
-  	});
+    // Cycle through all charts on page
+	  return this.each(function(){
+	    // Start highest number variable as 0
+	    // Nowhere to go but up!
+  	  var highestNumber = 0;
 
-    // Time to set the widths
-  	$(this).find($(settings.selector)).each(function() {
-  		var bar = $(this),
-  		    // get all the numbers
-  		    num = bar.data('number'),
-  		    // math to convert numbers to percentage and round to closest number (no decimal)
-  		    percentage = Math.round((num / highestNumber) * 100) + '%';
-  		// Time to assign and animate the bar widths
-  		$(this).animate({ 'width' : percentage }, settings.speed);
-  		$(this).next('.number').animate({ 'left' : percentage++ }, settings.speed);
-  	});
+      // Set highest number and use that as 100%
+      // This will always make sure the graph is a decent size and all numbers are relative to each other
+    	$(this).find($(settings.selector)).each(function() {
+    	  var num = $(this).data('number');
+        if (num > highestNumber) {
+          highestNumber = num;
+        }
+    	});
 
-  });
+      // Time to set the widths
+    	$(this).find($(settings.selector)).each(function() {
+    		var bar = $(this),
+    		    // get all the numbers
+    		    num = bar.data('number'),
+    		    // math to convert numbers to percentage and round to closest number (no decimal)
+    		    percentage = Math.round((num / highestNumber) * 100) + '%';
+    		// Time to assign and animate the bar widths
+    		$(this).animate({ 'width' : percentage }, settings.speed);
+    		$(this).next('.number').animate({ 'left' : percentage }, settings.speed);
+    	});
+	  });
 
-}
+  }; // horizChart
+
+}(jQuery));
+
 
 /* ==================================================
-FancyBox
+	FancyBox
 ================================================== */
 
 MANZER.fancyBox = function(){
@@ -264,7 +267,7 @@ MANZER.fancyBox = function(){
 
 
 /* ==================================================
-Menu Highlight
+	Menu Highlight
 ================================================== */
 
 MANZER.menu = function(){
@@ -281,7 +284,7 @@ MANZER.menu = function(){
 
 
 /* ==================================================
-Next Section
+	Next Section
 ================================================== */
 
 MANZER.goSection = function(){
@@ -295,7 +298,7 @@ MANZER.goSection = function(){
 
 
 /* ==================================================
-GoUp
+	GoUp
 ================================================== */
 
 MANZER.goUp = function(){
@@ -309,7 +312,7 @@ MANZER.goUp = function(){
 
 
 /* ==================================================
-Scroll to Top
+	Scroll to Top
 ================================================== */
 
 MANZER.scrollToTop = function(){
@@ -342,7 +345,7 @@ MANZER.scrollToTop = function(){
 
 
 /* ==================================================
-Thumbs / Social Effects
+   Thumbs / Social Effects
 ================================================== */
 
 MANZER.utils = function(){
@@ -364,7 +367,7 @@ MANZER.utils = function(){
 }
 
 /* ==================================================
-Accordion
+	Accordion
 ================================================== */
 
 MANZER.accordion = function(){
@@ -386,7 +389,7 @@ MANZER.accordion = function(){
 }
 
 /* ==================================================
-Toggle
+	Toggle
 ================================================== */
 
 MANZER.toggle = function(){
@@ -406,7 +409,7 @@ MANZER.toggle = function(){
 }
 
 /* ==================================================
-Tooltip
+	Tooltip
 ================================================== */
 
 MANZER.toolTip = function(){
@@ -415,17 +418,17 @@ MANZER.toolTip = function(){
 
 
 /* ==================================================
-Init
+	Init
 ================================================== */
 
 MANZER.slider();
 
 $(document).ready(function(){
 	Modernizr.load([
-		{
-			test: Modernizr.placeholder,
-			nope: 'js/placeholder.js'
-		}
+	{
+		test: Modernizr.placeholder,
+		nope: 'js/placeholder.js',
+	}
 	]);
 
 	// Preload the page with jPreLoader
@@ -452,7 +455,6 @@ $(document).ready(function(){
 	MANZER.goUp();
 	MANZER.filter();
 	MANZER.fancyBox();
-	MANZER.chart();
 	MANZER.contactForm();
 	MANZER.scrollToTop();
 	MANZER.utils();
