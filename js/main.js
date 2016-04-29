@@ -21,7 +21,7 @@ MANZER.mobileNav = function(){
 			$('#mobile-nav').removeClass('open');
 		}
 	}
-}
+},
 
 MANZER.listenerMenu = function(){
 	$('#mobile-nav').on('click', function(e){
@@ -39,7 +39,7 @@ MANZER.listenerMenu = function(){
 		$('#mobile-nav').removeClass('open');
 		$('#navigation-mobile').slideUp(350, 'easeOutExpo');
 	});
-}
+},
 
 
 /* ==================================================
@@ -89,7 +89,7 @@ MANZER.slider = function(){
 
 	});
 
-}
+},
 
 
 /* ==================================================
@@ -98,7 +98,7 @@ MANZER.slider = function(){
 
 MANZER.nav = function(){
 	$('.sticky-nav').waypoint('sticky');
-}
+},
 
 
 /* ==================================================
@@ -152,14 +152,13 @@ MANZER.filter = function (){
 			return false;
 		});
 	}
-}
+},
 
 /* ==================================================
 	Contact Form
 ================================================== */
 
 MANZER.contactForm = function(){
-
 	var $contactForm = $('#contact-form');
 	$contactForm.submit(function(e) {
 		e.preventDefault();
@@ -186,55 +185,50 @@ MANZER.contactForm = function(){
 			cache: false
 		});
 	});
-
-}
+},
 
 /* ==================================================
 	Skill Chart
 ================================================== */
 
-(function ($) {
-  "use strict";
+$.fn.horizBarChart = function(options) {
 
-  $.fn.horizBarChart = function(options) {
+  var settings = $.extend({
+    // default settings
+    selector: '.bar',
+    speed: 10000
+  }, options);
 
-    var settings = $.extend({
-      // default settings
-      selector: '.bar',
-      speed: 10000
-    }, options);
+  // Cycle through all charts on page
+  return this.each(function(){
+    // Start highest number variable as 0
+    // Nowhere to go but up!
+	  var highestNumber = 0;
 
-    // Cycle through all charts on page
-	  return this.each(function(){
-	    // Start highest number variable as 0
-	    // Nowhere to go but up!
-  	  var highestNumber = 0;
+    // Set highest number and use that as 100%
+    // This will always make sure the graph is a decent size and all numbers are relative to each other
+  	$(this).find($(settings.selector)).each(function() {
+  	  var num = $(this).data('number');
+      if (num > highestNumber) {
+        highestNumber = num;
+      }
+  	});
 
-      // Set highest number and use that as 100%
-      // This will always make sure the graph is a decent size and all numbers are relative to each other
-    	$(this).find($(settings.selector)).each(function() {
-    	  var num = $(this).data('number');
-        if (num > highestNumber) {
-          highestNumber = num;
-        }
-    	});
+    // Time to set the widths
+  	$(this).find($(settings.selector)).each(function() {
+  		var bar = $(this),
+  		    // get all the numbers
+  		    num = bar.data('number'),
+  		    // math to convert numbers to percentage and round to closest number (no decimal)
+  		    percentage = Math.round((num / highestNumber) * 100) + '%';
+  		// Time to assign and animate the bar widths
+  		$(this).animate({ 'width' : percentage }, settings.speed);
+  		$(this).next('.number').animate({ 'left' : percentage++ }, settings.speed);
+  	});
 
-      // Time to set the widths
-    	$(this).find($(settings.selector)).each(function() {
-    		var bar = $(this),
-    		    // get all the numbers
-    		    num = bar.data('number'),
-    		    // math to convert numbers to percentage and round to closest number (no decimal)
-    		    percentage = Math.round((num / highestNumber) * 100) + '%';
-    		// Time to assign and animate the bar widths
-    		$(this).animate({ 'width' : percentage }, settings.speed);
-    		$(this).next('.number').animate({ 'left' : percentage }, settings.speed);
-    	});
-	  });
+  });
 
-  }; // horizChart
-
-}(jQuery));
+},
 
 
 /* ==================================================
@@ -263,7 +257,7 @@ MANZER.fancyBox = function(){
 			}
 		});
 	}
-}
+},
 
 
 /* ==================================================
@@ -280,7 +274,7 @@ MANZER.menu = function(){
 		easing: 'easeOutExpo',
 		filter: ':not(.external)'
 	});
-}
+},
 
 
 /* ==================================================
@@ -294,7 +288,7 @@ MANZER.goSection = function(){
 		$('body, html').animate({scrollTop : $target}, 750, 'easeOutExpo');
 		return false;
 	});
-}
+},
 
 
 /* ==================================================
@@ -308,7 +302,7 @@ MANZER.goUp = function(){
 		$('body, html').animate({scrollTop : $target}, 750, 'easeOutExpo');
 		return false;
 	});
-}
+},
 
 
 /* ==================================================
@@ -341,7 +335,7 @@ MANZER.scrollToTop = function(){
 			}
 		}
 	}, 250);
-}
+},
 
 
 /* ==================================================
@@ -364,7 +358,7 @@ MANZER.utils = function(){
 		$(".active").removeClass("active");
       	$(this).addClass('active');
     });
-}
+},
 
 /* ==================================================
 	Accordion
@@ -386,7 +380,7 @@ MANZER.accordion = function(){
 	 	}
 		event.preventDefault();
 	});
-}
+},
 
 /* ==================================================
 	Toggle
@@ -406,7 +400,7 @@ MANZER.toggle = function(){
 	 	}
 		event.preventDefault();
 	});
-}
+},
 
 /* ==================================================
 	Tooltip
@@ -414,7 +408,7 @@ MANZER.toggle = function(){
 
 MANZER.toolTip = function(){
     $('a[data-toggle=tooltip]').tooltip();
-}
+},
 
 
 /* ==================================================
