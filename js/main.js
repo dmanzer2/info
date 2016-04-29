@@ -452,6 +452,7 @@ $(document).ready(function(){
 	MANZER.goUp();
 	MANZER.filter();
 	MANZER.fancyBox();
+	MANZER.chart();
 	MANZER.contactForm();
 	MANZER.scrollToTop();
 	MANZER.utils();
