@@ -77,10 +77,30 @@ MANZER.slider = function(){
 		thumb_links				:	0,			// Individual thumb links for each slide
 		thumbnail_navigation    :   0,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
-											{image : 'img/slider-images/image01.jpg', title : '<div class="slide-content">DAVID MANZER</div><div class="slide-content-title">Designer / Front end Developer</div>', thumb : '', url : ''},
-											{image : 'img/slider-images/image02.jpg', title : '<div class="slide-content">DAVID MANZER</div><div class="slide-content-title">Designer / Front end Developer</div>', thumb : '', url : ''},
-											{image : 'img/slider-images/image03.jpg', title : '<div class="slide-content">DAVID MANZER</div><div class="slide-content-title">Designer / Front end Developer</div>', thumb : '', url : ''},
-											{image : 'img/slider-images/image04.jpg', title : '<div class="slide-content">Tools I Used</div><div class="slide-content-title" style="text-transform: lowercase; letter-spacing: 1px;">HTML5, CSS3, Javascript, jQuery, Angular.JS<br>JSON, Ajax, node.js, express, Grunt.js, bower.js, github</div>', thumb : '', url : ''}
+											{
+												image : 'img/slider-images/image01.jpg',
+												title : '<div class="slide-content">DAVID MANZER</div><div class="slide-content-title">Designer / Front end Developer</div>',
+												thumb : '',
+												url : ''
+											},
+											{
+												image : 'img/slider-images/image02.jpg',
+												title : '<div class="slide-content">Tools I used for this site.</div><div class="slide-content-title" style="text-transform: lowercase; letter-spacing: 1px;">HTML5, CSS3, Javascript, jQuery, Angular.JS<br>JSON, Ajax, node.js, express, Grunt.js, bower.js, github</div>',
+												thumb : '',
+												url : ''
+											},
+											{
+												image : 'img/slider-images/image03.jpg',
+												title : '<div class="slide-content">DAVID MANZER</div><div class="slide-content-title">Designer / Front end Developer</div>',
+												thumb : '',
+												url : ''
+											},
+											{
+												image : 'img/slider-images/image04.jpg',
+												title : '<div class="slide-content">Tools I used for this site.</div><div class="slide-content-title" style="text-transform: lowercase; letter-spacing: 1px;">HTML5, CSS3, Javascript, jQuery, Angular.JS<br>JSON, Ajax, node.js, express, Grunt.js, bower.js, github</div>',
+												thumb : '',
+												url : ''
+											}
 									],
 
 		// Theme Options
