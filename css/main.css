@@ -335,16 +335,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0026292e', e
 }
 
 #home-slider .slide-content-title {
-	font-size: 30px;
+	font-size: 26px;
 	color: #ddd;
-	letter-spacing: -2px;
+	letter-spacing: -1px;
 	text-transform: uppercase;
 }
 
 @media only screen and (max-width: 450px) {
 	#home-slider .slide-content {
 		font-size: 40px;
-		letter-spacing: -2px;
+		letter-spacing: -1px;
 	}
 	#home-slider .slide-content-title {
 		font-size: 16px;
@@ -503,12 +503,12 @@ header .sticky-nav {
 	position: relative;
 	width: 100%;
 	height: 60px;
-	background: #26292E;
+	background: #212428;
 	z-index: 1001;
 
 	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
 	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
 }
 
 header .sticky-nav.stuck {
@@ -1297,7 +1297,7 @@ footer {
 	position: relative;
 	width: 100%;
 	height: auto;
-	background: #26292E;
+	background: #212428;
 	text-align: center;
 	z-index: 99;
 }
