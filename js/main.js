@@ -85,7 +85,7 @@ MANZER.slider = function(){
 											},
 											{
 												image : 'img/slider-images/image02.jpg',
-												title : '<div class="slide-content">Tools I used<br>for this site.</div><div class="slide-content-title" style="text-transform: lowercase; letter-spacing: 1px;">HTML5, CSS3, Javascript, jQuery, Angular.JS<br>JSON, Ajax, node.js, express,<br>Grunt.js, bower.js, github</div>',
+												title : '<div class="slide-content">Tools I used<br>for this site.</div><div class="slide-content-title" style="text-transform: lowercase; letter-spacing: 1px;">HTML5, CSS3, Javascript, jQuery, Angular.JS<br>JSON, Ajax, node.js, express<br>Grunt.js, bower.js, github</div>',
 												thumb : '',
 												url : ''
 											},
@@ -97,7 +97,7 @@ MANZER.slider = function(){
 											},
 											{
 												image : 'img/slider-images/image02.jpg',
-												title : '<div class="slide-content">Tools I used<br>for this site.</div><div class="slide-content-title" style="text-transform: lowercase; letter-spacing: 1px;">HTML5, CSS3, Javascript, jQuery, Angular.JS<br>JSON, Ajax, node.js, express,<br>Grunt.js, bower.js, github</div>',
+												title : '<div class="slide-content">Tools I used<br>for this site.</div><div class="slide-content-title" style="text-transform: lowercase; letter-spacing: 1px;">HTML5, CSS3, Javascript, jQuery, Angular.JS<br>JSON, Ajax, node.js, express<br>Grunt.js, bower.js, github</div>',
 												thumb : '',
 												url : ''
 											}
