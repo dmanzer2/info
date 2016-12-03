@@ -79,25 +79,25 @@ MANZER.slider = function(){
 		slides 					:  	[			// Slideshow Images
 											{
 												image : 'img/slider-images/image01.jpg',
-												title : '<div class="slide-content">DAVID MANZER</div><div class="slide-content-title">Designer / Front end Developer</div>',
+												title : '<div class="slide-content">DAVID MANZER</div><div class="slide-content-title">Designer / Front End Developer</div>',
 												thumb : '',
 												url : ''
 											},
 											{
 												image : 'img/slider-images/image02.jpg',
-												title : '<div class="slide-content">Tools I used<br>for this site.</div><div class="slide-content-title" style="text-transform: lowercase; letter-spacing: 1px;">HTML5, CSS3, Javascript, jQuery, Angular.JS<br>JSON, Ajax, node.js, express<br>Grunt.js, bower.js, github</div>',
+												title : '<div class="slide-content">DAVID MANZER</div><div class="slide-content-title">Designer / Front End Developer</div>',
 												thumb : '',
 												url : ''
 											},
 											{
 												image : 'img/slider-images/image03.jpg',
-												title : '<div class="slide-content">DAVID MANZER</div><div class="slide-content-title">Designer / Front end Developer</div>',
+												title : '<div class="slide-content">DAVID MANZER</div><div class="slide-content-title">Designer / Front End Developer</div>',
 												thumb : '',
 												url : ''
 											},
 											{
 												image : 'img/slider-images/image04.jpg',
-												title : '<div class="slide-content">Tools I used<br>for this site.</div><div class="slide-content-title" style="text-transform: lowercase; letter-spacing: 1px;">HTML5, CSS3, Javascript, jQuery, Angular.JS<br>JSON, Ajax, node.js, express<br>Grunt.js, bower.js, github</div>',
+												title : '<div class="slide-content">DAVID MANZER</div><div class="slide-content-title">Designer / Front End Developer</div>',
 												thumb : '',
 												url : ''
 											}
