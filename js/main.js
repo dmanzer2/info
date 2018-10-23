@@ -426,9 +426,9 @@ MANZER.toggle = function(){
 	Tooltip
 ================================================== */
 
-MANZER.toolTip = function(){
-    $('a[data-toggle=tooltip]').tooltip();
-},
+// MANZER.toolTip = function(){
+//     $('a[data-toggle=tooltip]').tooltip();
+// },
 
 
 /* ==================================================
@@ -474,7 +474,7 @@ $(document).ready(function(){
 	MANZER.utils();
 	MANZER.accordion();
 	MANZER.toggle();
-	MANZER.toolTip();
+	// MANZER.toolTip();
 });
 
 $(window).resize(function(){
