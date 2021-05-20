@@ -483,7 +483,7 @@ $(window).resize(function(){
 
 });
 
-$('a').click(function(){
+$('a.nav').click(function(){
     $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top
     }, 500);
