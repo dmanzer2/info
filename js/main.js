@@ -35,10 +35,20 @@ MANZER.listenerMenu = function(){
 		e.preventDefault();
 	});
 
-	$('#menu-nav-mobile a').on('click', function(){
+	$('#menu-nav-mobile a.smooth-nav, a.smooth-nav').on('click', function(){
+		$('html, body').animate({
+			scrollTop: $( $(this).attr('href') ).offset().top
+		}, 500);
 		$('#mobile-nav').removeClass('open');
 		$('#navigation-mobile').slideUp(350, 'easeOutExpo');
 	});
+
+	// $('a.smooth-nav').click(function(){
+	// 	$('html, body').animate({
+	// 			scrollTop: $( $(this).attr('href') ).offset().top
+	// 	}, 500);
+	// 	return false;
+	// });
 },
 
 
@@ -483,9 +493,3 @@ $(window).resize(function(){
 
 });
 
-$('a.nav').click(function(){
-    $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top
-    }, 500);
-    return false;
-});
