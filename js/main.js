@@ -43,12 +43,6 @@ MANZER.listenerMenu = function(){
 		$('#navigation-mobile').slideUp(350, 'easeOutExpo');
 	});
 
-	// $('a.smooth-nav').click(function(){
-	// 	$('html, body').animate({
-	// 			scrollTop: $( $(this).attr('href') ).offset().top
-	// 	}, 500);
-	// 	return false;
-	// });
 },
 
 
