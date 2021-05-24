@@ -95,13 +95,13 @@ MANZER.slider = function(){
 											},
 											{
 												image : 'img/slider-images/image03.jpg',
-												title : '<div class="slide-content">DAVID MANZER</div><div class="slide-content-title">Designer / Front End Web Developer</div>',
+												title : '<div class="slide-content">DAVID MANZER</div><div class="slide-content-title">Designer / Front End Developer</div>',
 												thumb : '',
 												url : ''
 											},
 											{
 												image : 'img/slider-images/image04.jpg',
-												title : '<div class="slide-content">DAVID MANZER</div><div class="slide-content-title">Designer / Front End Web Developer</div>',
+												title : '<div class="slide-content">DAVID MANZER</div><div class="slide-content-title">Designer / Front End Developer</div>',
 												thumb : '',
 												url : ''
 											}
