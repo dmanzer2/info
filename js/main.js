@@ -83,25 +83,25 @@ MANZER.slider = function(){
 		slides 					:  	[			// Slideshow Images
 											{
 												image : 'img/slider-images/image01.jpg',
-												title : '<div class="slide-content">DAVID MANZER</div><div class="slide-content-title">Designer / Front End Developer</div>',
+												title : '<div class="slide-content">DAVID MANZER</div><div class="slide-content-title">Designer / Front End UI Developer</div>',
 												thumb : '',
 												url : ''
 											},
 											{
 												image : 'img/slider-images/image02.jpg',
-												title : '<div class="slide-content">DAVID MANZER</div><div class="slide-content-title">Designer / Front End Developer</div>',
+												title : '<div class="slide-content">DAVID MANZER</div><div class="slide-content-title">Designer / Front End UI Developer</div>',
 												thumb : '',
 												url : ''
 											},
 											{
 												image : 'img/slider-images/image03.jpg',
-												title : '<div class="slide-content">DAVID MANZER</div><div class="slide-content-title">Designer / Front End Developer</div>',
+												title : '<div class="slide-content">DAVID MANZER</div><div class="slide-content-title">Designer / Front End UI Developer</div>',
 												thumb : '',
 												url : ''
 											},
 											{
 												image : 'img/slider-images/image04.jpg',
-												title : '<div class="slide-content">DAVID MANZER</div><div class="slide-content-title">Designer / Front End Developer</div>',
+												title : '<div class="slide-content">DAVID MANZER</div><div class="slide-content-title">Designer / Front End UI Developer</div>',
 												thumb : '',
 												url : ''
 											}
