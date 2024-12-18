@@ -541,6 +541,7 @@
     <div class="row" ng-controller="formController">
       <div class="span9">
         <form id="contact-form" class="contact-form" action="https://formspree.io/f/dmanzer2@gmail.com" method="POST" name="userForm">
+          <div class="g-recaptcha" data-sitekey="6LeNiyAUAAAAACaakTP5HNwga9dHhImxDtRI_lw3"></div>
           <p class="contact-name name" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
             <span class="fa fa-user" ng-class="{ success: userForm.name.$valid, clean: userForm.name.$invalid }"></span>
             <input id="contact_name" type="text" placeholder="Full Name" name="name" ng-model="user.name" required>
@@ -555,7 +556,7 @@
             <span class="fa fa-comment" ng-class="{ success: userForm.message.$valid, clean: userForm.message.$invalid }"></span>
             <textarea id="contact_message" placeholder="Your Message" name="message" rows="15" cols="40" ng-model="user.message" ng-minlength="3" ng-maxlength="250" required></textarea>
           </p>
-          <input class="is-hidden" type="text" name="_gotcha">
+          <!-- <input class="is-hidden" type="text" name="_gotcha"> -->
           <input type="hidden" name="_subject" value="New submission!" />
           <input type="hidden" name="_next" value="https://site.io/thanks.html" />
           <div class="row button-area">
