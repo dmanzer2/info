@@ -2,4 +2,4 @@
 my professional site
 
 
-grunt (to run)
+grunt serve (to run)
