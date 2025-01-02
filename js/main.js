@@ -512,12 +512,10 @@ $(document).ready(function(){
 	MANZER.goUp();
 	MANZER.filter();
 	MANZER.fancyBox();
-	MANZER.contactForm();
 	MANZER.scrollToTop();
 	MANZER.utils();
 	MANZER.accordion();
 	MANZER.toggle();
-	// MANZER.toolTip();
 });
 
 $(window).resize(function(){
