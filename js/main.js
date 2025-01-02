@@ -186,10 +186,21 @@ MANZER.contactForm = function(){
 	var $contactForm = $('#contact-form');
 	$contactForm.submit(function(e) {
 		e.preventDefault();
+		
+		var recaptchaResponse = grecaptcha.getResponse();
+		
+		if (!recaptchaResponse) {
+			alert('Please complete the reCAPTCHA challenge.');
+			return;
+		}
+		
+		var formData = $contactForm.serialize();
+		formData += '&g-recaptcha-response=' + recaptchaResponse;
+
 		$.ajax({
 			url: 'https://formspree.io/f/dmanzer2@gmail.com',
 			method: 'POST',
-			data: $(this).serialize(),
+			data: formData,
 			dataType: 'json',
 			beforeSend: function() {
 				$contactForm.append('<div class="alert alert-standard">Sending message…</div>');
@@ -198,17 +209,17 @@ MANZER.contactForm = function(){
 				$contactForm.find('.alert-standard').delay(500).fadeOut(1500);
 				$contactForm.append('<div class="alert alert-success">Message sent!</div>');
 				$contactForm[0].reset();
+				grecaptcha.reset(); // Reset the reCAPTCHA after form submission
 				$contactForm.find('.alert-success').delay(7000).fadeOut(1500);
-				$contactForm.find('.success').removeClass("success").addClass("clean");
-				$contactForm.find('.button-area').removeClass("button-area").addClass("remove-button-area");
 			},
 			error: function(err) {
 				$contactForm.find('.alert-standard').hide();
-				$contactForm.append('<div class="alert alert-error">Ops, there was an error.</div>');
+				$contactForm.append('<div class="alert alert-error">Oops, there was an error.</div>');
 			},
 			cache: false
 		});
 	});
+
 },
 
 /* ==================================================
