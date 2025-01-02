@@ -166,7 +166,7 @@ MANZER.contactForm = function(){
 	$contactForm.submit(function(e) {
 		e.preventDefault();
 		$.ajax({
-			url: '//formspree.io/dmanzer2@gmail.com',
+			url: 'https://formspree.io/f/dmanzer2@gmail.com',
 			method: 'POST',
 			data: $(this).serialize(),
 			dataType: 'json',
