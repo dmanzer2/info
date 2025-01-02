@@ -65,7 +65,7 @@
 <script src="https://www.google.com/recaptcha/api.js"></script>
 <script>
   function onSubmit() {
-    document.getElementById("userForm").submit()
+    document.getElementById("contact-form").submit()
   }
 </script>
 
@@ -547,7 +547,7 @@
     <!--Angular Form-->
     <div class="row" ng-controller="formController">
       <div class="span9">
-        <form id="userForm" class="contact-form" action="https://formspree.io/f/dmanzer2@gmail.com" method="POST" name="userForm">
+        <form id="contact-form" class="contact-form" action="https://formspree.io/f/dmanzer2@gmail.com" method="POST" name="userForm">
           <p class="contact-name name" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
             <span class="fa fa-user" ng-class="{ success: userForm.name.$valid, clean: userForm.name.$invalid }"></span>
             <input id="contact_name" type="text" placeholder="Full Name" name="name" ng-model="user.name" required>
