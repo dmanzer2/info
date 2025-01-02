@@ -62,10 +62,17 @@
   gtag('config', 'G-C0Y5S6HJL3');
 </script>
 
-<script src="https://www.google.com/recaptcha/api.js"></script>
+<!-- <script src="https://www.google.com/recaptcha/api.js"></script>
 <script>
   function onSubmit() {
     document.getElementById("contact-form").submit()
+  }
+</script> -->
+
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script>
+  function onSubmit() {
+    document.getElementById("myForm").submit()
   }
 </script>
 
@@ -547,7 +554,7 @@
     <!--Angular Form-->
     <div class="row" ng-controller="formController">
       <div class="span9">
-        <form id="contact-form" class="contact-form" action="https://formspree.io/f/dmanzer2@gmail.com" method="POST" name="userForm">
+        <!-- <form id="contact-form" class="contact-form" action="https://formspree.io/f/dmanzer2@gmail.com" method="POST" name="userForm">
           <p class="contact-name name" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
             <span class="fa fa-user" ng-class="{ success: userForm.name.$valid, clean: userForm.name.$invalid }"></span>
             <input id="contact_name" type="text" placeholder="Full Name" name="name" ng-model="user.name" required>
@@ -562,14 +569,14 @@
             <span class="fa fa-comment" ng-class="{ success: userForm.message.$valid, clean: userForm.message.$invalid }"></span>
             <textarea id="contact_message" placeholder="Your Message" name="message" rows="15" cols="40" ng-model="user.message" ng-minlength="3" ng-maxlength="250" required></textarea>
           </p>
-          <!-- <input class="is-hidden" type="text" name="_gotcha"> -->
-          <!-- <div class="g-recaptcha" data-sitekey="6LceWKwqAAAAAAB0etljcGixDY1SyWvNuWcfIF3L"></div> -->
+          <input class="is-hidden" type="text" name="_gotcha">
+          <div class="g-recaptcha" data-sitekey="6LceWKwqAAAAAAB0etljcGixDY1SyWvNuWcfIF3L"></div>
           <input type="hidden" name="_subject" value="New submission!" />
           <input type="hidden" name="_next" value="https://site.io/thanks.html" />
           <div class="row button-area">
             <div class="span3 contact-submit">
-              <!-- <button class="submit" type="submit" data-sitekey="6LceWKwqAAAAAAB0etljcGixDY1SyWvNuWcfIF3L"
-          data-callback='onSubmit' data-action='submit' ng-disabled="userForm.$invalid">Send your Message</button> -->
+              <button class="submit" type="submit" data-sitekey="6LceWKwqAAAAAAB0etljcGixDY1SyWvNuWcfIF3L"
+          data-callback='onSubmit' data-action='submit' ng-disabled="userForm.$invalid">Send your Message</button>
               <input class="submit" type="submit" value="Send your Message" ng-disabled="userForm.$invalid"></input>
             </div>
             <div class="span6 invalid-alerts">
@@ -577,6 +584,12 @@
                 <span ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="danger">Enter a valid email.</span>
             </div>
           </div>
+        </form> -->
+
+        <form id="myForm" action="https://formspree.io/f/dmanzer2@gmail.com" method="POST">
+          <input name="email" type="email">
+          <button class="g-recaptcha" data-sitekey="6LceWKwqAAAAAAB0etljcGixDY1SyWvNuWcfIF3L"
+              data-callback='onSubmit' data-action='submit'>Submit</button>
         </form>
       </div>
 
