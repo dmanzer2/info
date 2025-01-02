@@ -1349,6 +1349,10 @@ footer .credits {
 	margin-left: -7px;
 }
 
+#contact-form iframe {
+	filter: invert(1);
+}
+
 
 /* ==================================================
    Preloader

@@ -560,12 +560,12 @@
           <input type="hidden" name="_subject" value="New submission!" />
           <div class="row button-area">
             <div class="span3 contact-submit">
-              <div class="g-recaptcha" data-sitekey="6Lc3WawqAAAAAFEkN0YCBgU_cio84MJ2DOOiSETY"></div>
+              <div class="g-recaptcha" data-theme="dark" data-sitekey="6Lc3WawqAAAAAFEkN0YCBgU_cio84MJ2DOOiSETY"></div>
               <input class="submit" type="submit" value="Send your Message" ng-disabled="userForm.$invalid"></input>
             </div>
             <div class="span6 invalid-alerts">
-                <span ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="danger">Your name is required.</span>&nbsp;
-                <span ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="danger">Enter a valid email.</span>
+              <span ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="danger">Your name is required.</span>&nbsp;
+              <span ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="danger">Enter a valid email.</span>
             </div>
           </div>
         </form>
