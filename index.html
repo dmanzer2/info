@@ -542,13 +542,6 @@
     <!--Angular Form-->
     <div class="row" ng-controller="formController">
       <div class="span9">
-        <form action="https://formspree.io/f/{form_id}" method="POST">
-          <input type="email" name="email" placeholder="email@example.com" />
-          <div class="g-recaptcha" data-sitekey="your_site_key"></div> <!-- replace with your recaptcha SITE key not secret key -->
-          <br/>
-          <input type="submit" value="Submit">
-        </form>
-
         <form id="contact-form" class="contact-form" action="https://formspree.io/f/dmanzer2@gmail.com" method="POST" name="userForm">
           <p class="contact-name name" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
             <span class="fa fa-user" ng-class="{ success: userForm.name.$valid, clean: userForm.name.$invalid }"></span>
@@ -568,8 +561,8 @@
           <div class="row button-area">
             <div class="span3 contact-submit">
               <input class="submit" type="submit" value="Send your Message" ng-disabled="userForm.$invalid"></input>
+              <div class="g-recaptcha" data-sitekey="6Lc3WawqAAAAAFEkN0YCBgU_cio84MJ2DOOiSETY"></div>
             </div>
-            <div class="g-recaptcha" data-sitekey="6Lc3WawqAAAAAFEkN0YCBgU_cio84MJ2DOOiSETY"></div>
             <div class="span6 invalid-alerts">
                 <span ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="danger">Your name is required.</span>&nbsp;
                 <span ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="danger">Enter a valid email.</span>
