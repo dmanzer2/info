@@ -179,50 +179,6 @@ MANZER.filter = function (){
 },
 
 /* ==================================================
-	Contact Form
-================================================== */
-
-MANZER.contactForm = function(){
-	var $contactForm = $('#contact-form');
-	$contactForm.submit(function(e) {
-		e.preventDefault();
-		
-		var recaptchaResponse = grecaptcha.getResponse();
-		
-		if (!recaptchaResponse) {
-			alert('Please complete the reCAPTCHA challenge.');
-			return;
-		}
-		
-		var formData = $contactForm.serialize();
-		formData += '&g-recaptcha-response=' + recaptchaResponse;
-
-		$.ajax({
-			url: 'https://formspree.io/f/dmanzer2@gmail.com',
-			method: 'POST',
-			data: formData,
-			dataType: 'json',
-			beforeSend: function() {
-				$contactForm.append('<div class="alert alert-standard">Sending message…</div>');
-			},
-			success: function(data) {
-				$contactForm.find('.alert-standard').delay(500).fadeOut(1500);
-				$contactForm.append('<div class="alert alert-success">Message sent!</div>');
-				$contactForm[0].reset();
-				grecaptcha.reset(); // Reset the reCAPTCHA after form submission
-				$contactForm.find('.alert-success').delay(7000).fadeOut(1500);
-			},
-			error: function(err) {
-				$contactForm.find('.alert-standard').hide();
-				$contactForm.append('<div class="alert alert-error">Oops, there was an error.</div>');
-			},
-			cache: false
-		});
-	});
-
-},
-
-/* ==================================================
 	Skill Chart
 ================================================== */
 
