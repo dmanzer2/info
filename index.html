@@ -540,15 +540,6 @@
     <!--Angular Form-->
     <div class="row" ng-controller="formController">
       <div class="span9">
-        <!-- <form id="my-form" action="https://formspree.io/f/dmanzer2@gmail.com" method="POST">
-          <label>Email:</label>
-          <input type="email" name="email" />
-          <label>Message:</label>
-          <input type="text" name="message" />
-          <button id="my-form-button">Submit</button>
-          <p id="my-form-status"></p>
-        </form> -->
-
         <form id="contact-form" class="contact-form" action="https://formspree.io/f/dmanzer2@gmail.com" method="POST" name="userForm">
           <p class="contact-name name" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
             <span class="fa fa-user" ng-class="{ success: userForm.name.$valid, clean: userForm.name.$invalid }"></span>
@@ -564,15 +555,18 @@
             <span class="fa fa-comment" ng-class="{ success: userForm.message.$valid, clean: userForm.message.$invalid }"></span>
             <textarea id="contact_message" placeholder="Your Message" name="message" rows="15" cols="40" ng-model="user.message" ng-minlength="3" ng-maxlength="250" required></textarea>
           </p>
+          <!-- <input class="is-hidden" type="text" name="_gotcha"> -->
+          <div class="g-recaptcha" data-sitekey="6LeNiyAUAAAAACaakTP5HNwga9dHhImxDtRI_lw3"></div>
+          <input type="hidden" name="_subject" value="New submission!" />
+          <input type="hidden" name="_next" value="https://site.io/thanks.html" />
           <div class="row button-area">
             <div class="span3 contact-submit">
-              <button id="my-form-button" class="submit" type="submit" ng-disabled="userForm.$invalid">Send your Message</button>
+              <input class="submit" type="submit" value="Send your Message" ng-disabled="userForm.$invalid"></input>
             </div>
             <div class="span6 invalid-alerts">
-              <span ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="danger">Your name is required.</span>&nbsp;
-              <span ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="danger">Enter a valid email.</span>
+                <span ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="danger">Your name is required.</span>&nbsp;
+                <span ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="danger">Enter a valid email.</span>
             </div>
-            <p id="my-form-status"></p>
           </div>
         </form>
       </div>
