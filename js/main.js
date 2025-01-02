@@ -182,34 +182,66 @@ MANZER.filter = function (){
 	Contact Form
 ================================================== */
 
-MANZER.contactForm = function(){
-	var $contactForm = $('#contact-form');
-	$contactForm.submit(function(e) {
-		e.preventDefault();
-		$.ajax({
-			url: 'https://formspree.io/f/dmanzer2@gmail.com',
-			method: 'POST',
-			data: $(this).serialize(),
-			dataType: 'json',
-			beforeSend: function() {
-				$contactForm.append('<div class="alert alert-standard">Sending message…</div>');
-			},
-			success: function(data) {
-				$contactForm.find('.alert-standard').delay(500).fadeOut(1500);
-				$contactForm.append('<div class="alert alert-success">Message sent!</div>');
-				$contactForm[0].reset();
-				$contactForm.find('.alert-success').delay(7000).fadeOut(1500);
-				$contactForm.find('.success').removeClass("success").addClass("clean");
-				$contactForm.find('.button-area').removeClass("button-area").addClass("remove-button-area");
-			},
-			error: function(err) {
-				$contactForm.find('.alert-standard').hide();
-				$contactForm.append('<div class="alert alert-error">Ops, there was an error.</div>');
-			},
-			cache: false
-		});
-	});
-},
+document.addEventListener("DOMContentLoaded", function() {
+    var form = document.getElementById("contact-form");
+
+    form.addEventListener("submit", async function(event) {
+        event.preventDefault();
+        
+        var status = document.getElementById("my-form-status");
+        var data = new FormData(event.target);
+        
+        // Clear previous alerts
+        var alertStandard = document.querySelector('.alert-standard');
+        var alertSuccess = document.querySelector('.alert-success');
+        var alertError = document.querySelector('.alert-error');
+        if (alertStandard) alertStandard.remove();
+        if (alertSuccess) alertSuccess.remove();
+        if (alertError) alertError.remove();
+        
+        // Show sending message
+        form.insertAdjacentHTML('beforeend', '<div class="alert alert-standard">Sending message…</div>');
+        
+        try {
+            var response = await fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+            
+            if (response.ok) {
+                status.innerHTML = "<div class='alert alert-success'>Message sent!</div>";
+                form.reset();
+                setTimeout(() => {
+                    document.querySelector('.alert-success').fadeOut(1500);
+                }, 7000);
+                
+                // Handle success class changes
+                form.classList.remove("success");
+                form.classList.add("clean");
+                document.querySelector('.button-area').classList.remove("button-area");
+                document.querySelector('.button-area').classList.add("remove-button-area");
+            } else {
+                var result = await response.json();
+                if (result.errors) {
+                    status.innerHTML = `<div class='alert alert-error'>${result.errors.map(error => error.message).join(", ")}</div>`;
+                } else {
+                    status.innerHTML = "<div class='alert alert-error'>Oops! There was a problem submitting your form</div>";
+                }
+            }
+        } catch (error) {
+            status.innerHTML = "<div class='alert alert-error'>Oops! There was a problem submitting your form</div>";
+        }
+        
+        // Fade out sending alert
+        setTimeout(() => {
+            var alertStandard = document.querySelector('.alert-standard');
+            if (alertStandard) alertStandard.fadeOut(1500);
+        }, 500);
+    });
+});
 
 /* ==================================================
 	Skill Chart
