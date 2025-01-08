@@ -316,7 +316,7 @@
 	.name, .email, .message { position: relative; }
 	.name input, .email input, .message textarea { text-indent: 0px;}
 	.name .fa-user, .email .fa-envelope-o, .message .fa-comment {
-	  left: 250px;
+	  left: 330px;
 	}
 
 	/* This is for the form validation styles - end*/
